@@ -1,0 +1,20 @@
+# PRD — Risk Register
+
+Probability/Impact: L/M/H. Sorted by severity (P×I).
+
+| # | Risk | P | I | Mitigation | Detection |
+|---|------|---|---|-----------|-----------|
+| R1 | **Sideload friction caps adoption** — free-account 7-day resign, per-device setup; historical sideload channels deliver low-thousands of users | H | M | AltStore/SideStore source JSON for in-app updates; first-class install guides; pursue AltStore PAL notarized lane (EU/JP/BR) where the AGPL Delta precedent applies; keep TestFlight as an explicitly gated option | Release download counts vs metric (≥5k/12mo); install-guide issue rate |
+| R2 | **Trademark exposure of the "CaesarPad" name** — embeds "Caesar™" (actively sold product) in an app name for the same class of goods | M | H | Use name descriptively + non-affiliation disclaimer now; **rename before any notarized/marketplace distribution** (Phase 6 gate); no gameplay screenshots in README; original icon art only | Any contact from rights holder → immediate rename plan already drafted |
+| R3 | **Upstream drift breaks builds/patches** — Augustus commits near-daily; patch queue can rot | H | M | Submodule pinning; nightly drift CI; upstream-first policy keeps queue small; monthly bump cadence | nightly.yml failures; patch-apply failures in CI |
+| R4 | **Touch UX misses the bar** — engine UI designed for mouse at 640×480; "too tiny" is the #1 existing mobile complaint | M | H | Display-scale-first strategy (44 pt floor); usability gates in Phases 4 & Beta with external testers; three touch modes retained | Phase-4 scripted-task failures; beta feedback |
+| R5 | **Lifecycle/data-loss bugs** — iOS kills backgrounded apps; 5-second save window | M | H | Autosave-on-background patch (P3.1); kill/resume tests in CI; beta soak | Lifecycle CI suite; crash/data-loss issue reports |
+| R6 | **Legal complaint from rights holder (assets/engine)** | L | H | Never bundle assets (OpenSC2K red line); GOG-endorsed engine precedent; 9 years of non-enforcement; buy-links in importer actively drive sales | Any DMCA/C&D → comply immediately; repo contains nothing infringing to remove |
+| R7 | **Apple policy shifts on sideloading/notarization** (DMA scope, PAL availability, on-device sideloading) | M | M | Multi-channel strategy (GitHub IPA is policy-immune); track PAL/DMA changes at Phase-6 gate | Channel-specific install failures; Apple/AltStore announcements |
+| R8 | **Maintainer bandwidth after launch** — solo-maintainer projects on app platforms rot (OpenTTD iOS precedent) | M | M | Automation-first release pipeline; upstreaming shrinks owned surface; recruit co-maintainers from Augustus Discord during beta | Time-to-close on issues; missed monthly bumps |
+| R9 | **Performance floor on older iPads** (Julius software blit at Retina resolutions; Augustus GPU path untested at 13" Retina) | M | M | Phase-0 device measurement before commitments; display-scale fallback; A14 perf gate per release | Phase-0/3 Instruments data |
+| R10 | **Importer variance** — GOG vs Steam vs CD vs localized layouts; case sensitivity | H | M | Layout-aware validation library with fixtures per source; degraded-mode imports; community folder-listing collection during alpha | Validation unit suite; import-failure issue rate |
+| R11 | **SDL iPadOS gaps** (pointer quirks, no safe-area API in SDL2, single-window) | M | L–M | Native bridges via patches; Augustus SDL3 path as forward option; declare fullscreen-only at 1.0 | Phase-5 input matrix results |
+| R12 | **Two-engine scope creep** — double testing/support surface | M | M | Augustus is primary; Julius flavor gated on identical patch set applying cleanly — if it diverges, Julius flavor drops to "best effort" | CI matrix cost; per-flavor issue volume |
+| R13 | **Vendored-license notice gaps** (sxml, zip in Augustus) ship in our IPA | M | L | Add upstream license texts to THIRD-PARTY-NOTICES; PR the headers upstream | License audit task in Phase 6 |
+| R14 | **CI macOS-runner cost/limits** (Xcode builds are slow) | M | L | Cache SDL builds (upstream already does); build matrix only on relevant paths; nightly not per-PR for device builds | Actions usage reports |
