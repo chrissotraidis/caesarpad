@@ -14,7 +14,7 @@ Last updated: 2026-07-26
 | G5 — Touch controls | PASS | Focused Simulator UI test passed tap, two-finger right-click, drag pan, pinch zoom, and native `Running` → `Paused` control state in 75.813 s; engine interaction test passed 350 ms long-press timing, movement rejection, release timing, and two-finger consumption; `artifacts/g5/touch-controls-pass-8.log`; `artifacts/g5/long-press-engine-test-final.log`; screenshots in ignored xcresult |
 | G6 — Lifecycle safe | PASS | `simctl` backgrounding created `Documents/caesarpad-autosave.svx` (58,320 bytes); after terminate + cold launch, XCUITest observed the engine-marked resumed state and the save was consumed; `artifacts/g6/build-final.log`; `artifacts/g6/lifecycle-pass-2.log`; screenshots in ignored xcresults |
 | G7 — Test suite | PASS | One `scripts/test.sh` run built the app, booted/installed/injected data, passed the engine touch test, playable UI flow, minimal-touch UI flow, and lifecycle cycle; final line `PASS: CaesarPad build, boot, data, gameplay, touch, and lifecycle suite`; `artifacts/g7/full-suite.log` |
-| G8 — Repeatable | CURRENT | Clean-build and two consecutive full-suite runs not yet verified |
+| G8 — Repeatable | PASS | After `git clean -fdx -e ref/` and a fresh Augustus submodule checkout, `scripts/build.sh && scripts/test.sh` passed twice consecutively; `ref/` remained ignored with all 609 files; `artifacts/g8/repeat-1.log`; `artifacts/g8/repeat-2.log` |
 
 ## Pinned inputs
 
@@ -33,5 +33,4 @@ Last updated: 2026-07-26
 
 ## Current blocker
 
-None. Current work is G8: prove the documented clean checkout path, then pass
-`scripts/build.sh && scripts/test.sh` twice consecutively.
+None. All gates G0–G8 are complete.

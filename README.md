@@ -1,13 +1,12 @@
 # CaesarPad
 
-**A feasibility study and engineering PRD for bringing Caesar III to iPadOS as a polished,
-native experience, built on the open-source [Julius](https://github.com/bvschaik/julius) and
-[Augustus](https://github.com/Keriew/augustus) engines.**
+**Caesar III on iPadOS, powered by the open-source
+[Augustus](https://github.com/Keriew/augustus) engine.**
 
-> **Verdict: GO.** Both upstream engines already contain merged, CI-tested iOS build
-> support (January 2025). What's missing is the last mile — importer UX, iPad-native
-> controls, lifecycle hardening, packaging, and distribution. That last mile is this
-> project. Read the [feasibility report](docs/feasibility-report.md).
+CaesarPad is a focused Simulator-tested port layer: it pins Augustus, applies four small
+iPad patches, and automates the complete build, data-load, gameplay, touch, and lifecycle
+flow. Read the [feasibility report](docs/feasibility-report.md) for the original
+investigation.
 
 ## Documents
 
@@ -41,20 +40,39 @@ native experience, built on the open-source [Julius](https://github.com/bvschaik
 
 ## The one-paragraph version
 
-Julius and Augustus are mature AGPL-3.0 re-implementations of Caesar III that run on eight
-platforms and, since January 2025, build for iOS in upstream CI — but no installable iPad
-build has ever shipped: the AGPL rules out the App Store, upstream won't distribute
-unsigned IPAs, and the merged iOS support stops at "it compiles and boots." CaesarPad is a
-wrapper project (pinned submodules + upstream-first patches + a native Swift UX kit) that
-ships what's missing: a validating first-launch asset importer for user-owned GOG/Steam/CD
-copies, Files-app-visible saves, background autosave, iPad-tuned touch controls with
-pinch-zoom, and automated unsigned-IPA releases installable via AltStore/SideStore — with
-an AltStore PAL lane as the stretch goal.
+Augustus is a mature AGPL-3.0 reimplementation of Caesar III with an upstream iOS target.
+CaesarPad pins that engine, applies a small reviewed patch queue, and proves the iPad last
+mile in Simulator: user-owned data import, landscape rendering, direct touch controls,
+pinch zoom, one native pause button, and background autosave/resume. The repository never
+contains Caesar III assets.
 
 ## Status
 
-Phase 0 (research validation) is specified and ready to execute — see the
-[roadmap](docs/prd/04-roadmap.md).
+The Augustus Simulator build, landscape gameplay, minimal touch controls, lifecycle
+autosave/resume, and automated end-to-end suite are implemented. See [STATE.md](STATE.md)
+for gate evidence.
+
+## Build and test
+
+Prerequisites:
+
+- macOS with Xcode 26.6, an iPad Simulator runtime, CMake 3.25+, Git, and `curl`
+- the Augustus submodule initialized with `git submodule update --init --recursive`
+- network access on the first build for the pinned SDL2 and SDL2_mixer source releases
+- your legally purchased Caesar III data at `ref/Caesar 3/C3` (or set
+  `C3_SOURCE_DIR`); `ref/` is ignored and must never be committed
+- the recorded iPad Simulator is used by default; set `SIMULATOR_UDID` to another
+  available iPad Simulator when needed
+
+From the repository root, the exact commands are:
+
+```sh
+scripts/build.sh
+scripts/test.sh
+```
+
+`scripts/test.sh` builds, boots the Simulator, injects local game data, and verifies
+playable interactions, touch mappings, and background autosave/resume.
 
 ## Legal notes
 
@@ -64,4 +82,4 @@ Phase 0 (research validation) is specified and ready to execute — see the
 - CaesarPad is not affiliated with or endorsed by Activision, Microsoft, or the owners of
   the Caesar trademark. "CaesarPad" is a working title used descriptively; see risk R2 in
   the [risk register](docs/prd/07-risk-register.md) regarding renaming before distribution.
-- Engine code is AGPL-3.0 (Julius, Augustus); this project's code will be AGPL-3.0.
+- Engine code is AGPL-3.0 (Augustus); this project's code is AGPL-3.0.

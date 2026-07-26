@@ -110,7 +110,8 @@ index 3fb85eb4f..33bc984c2 100644
 -        return;
 +        return 0;
      }
-     if (touch_was_click(first) || touch_was_click(last)) {
+-    if (touch_was_click(last)) {
++    if (touch_was_click(first) || touch_was_click(last)) {
 -        building_construction_cancel();
 -        window_request_refresh();
 +        touch_consume_current_gesture();
