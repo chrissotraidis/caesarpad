@@ -3,3 +3,4 @@ ref/
 build/
 ext/SDL2/
 artifacts/*.xcresult/
+artifacts/g[3-8]/*.png

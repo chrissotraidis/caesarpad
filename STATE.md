@@ -9,8 +9,8 @@ Last updated: 2026-07-26
 | G0 — Toolchain | PASS | Xcode 26.6 (17F113); iOS 18.5 and 26.5 Simulator runtimes; booted iPad Pro 11-inch (M4), iOS 18.5, UDID `08636791-2675-4675-8335-EF72EF954DCF`; `artifacts/g0/` |
 | G1 — Engine builds | PASS | `scripts/build.sh`; arm64 Simulator app; `** BUILD SUCCEEDED **`; `artifacts/g1/build.log` |
 | G2 — Boots | PASS | Fresh install launched as PID 47408 and displayed the “Game Data Required” alert; `artifacts/g2/game-data-required.png`; `artifacts/g2/launch.log` |
-| G3 — Data loads | CURRENT | Not yet run |
-| G4 — Playable | PENDING | — |
+| G3 — Data loads | PASS | 601 files injected by `scripts/inject-data.sh`; main menu reached; PID 47855 remained live; CoreAudio created and started a 2-channel 22050 Hz playback queue; `artifacts/g3/` |
+| G4 — Playable | CURRENT | Not yet run |
 | G5 — Touch controls | PENDING | — |
 | G6 — Lifecycle safe | PENDING | — |
 | G7 — Test suite | PENDING | — |
@@ -31,4 +31,4 @@ Last updated: 2026-07-26
 
 ## Current blocker
 
-None. Current work is G3: copy the user-owned `ref/` game files into the installed app’s `Documents/C3` directory, relaunch, verify the main menu and initialized audio without a crash, and save evidence.
+None. Current work is G4: start a mission and automate tap selection, map drag, building placement, and keyboard-free pause/speed access with screenshots at each step.

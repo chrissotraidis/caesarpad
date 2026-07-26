@@ -1,0 +1,366 @@
+getpwuid_r did not find a match for uid 502
+Filtering the log data using "process == "augustus""
+Timestamp               Ty Process[PID:TID]
+2026-07-26 14:04:13.462 I  augustus[47855:1925d84] [com.apple.Accessibility:AXCommon] AX Start server
+2026-07-26 14:04:13.462 I  augustus[47855:1925d84] [com.apple.Accessibility:AXCommon] AX Begin loading server
+2026-07-26 14:04:13.464 A  augustus[47855:1925d9b] (CoreFoundation) Updating Key-Value Observers Of Preferences
+2026-07-26 14:04:13.478 I  augustus[47855:1925d84] [com.apple.Accessibility:AXAppAccessibility] Started AXRuntime server. SystemApp=0
+2026-07-26 14:04:13.479 Df augustus[47855:1925d84] [com.apple.dt.xctest:Default] Registering for test daemon availability notify post.
+2026-07-26 14:04:13.479 Df augustus[47855:1925d84] [com.apple.dt.xctest:Default] notify_get_state check indicated test daemon not ready.
+2026-07-26 14:04:13.479 Df augustus[47855:1925d84] [com.apple.dt.xctest:Default] notify_get_state check indicated test daemon not ready.
+2026-07-26 14:04:13.479 Df augustus[47855:1925d84] [com.apple.dt.xctest:Default] notify_get_state check indicated test daemon not ready.
+2026-07-26 14:04:13.481 Df augustus[47855:1925d84] [com.apple.UIKit:UpdateScheduler] Selected display: name=LCD (PurpleMain), id=1
+2026-07-26 14:04:13.485 Df augustus[47855:1925d84] [com.apple.UIKit:Application] Deactivation reason added: 5; deactivation reasons: 1024 -> 1056; animating application lifecycle event: 1
+2026-07-26 14:04:13.485 Df augustus[47855:1925d84] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x106518f70> (6B998C8F-D615-41A1-8FB6-9888D48CF770)
+2026-07-26 14:04:13.485 Df augustus[47855:1925d84] [com.apple.UIKit:InterfaceStyle] Should send trait collection or coordinate space update, interface style 1 -> 1, <UIWindowScene: 0x106518f70> (6B998C8F-D615-41A1-8FB6-9888D48CF770)
+2026-07-26 14:04:13.486 Df augustus[47855:1925d84] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x106518f70> (6B998C8F-D615-41A1-8FB6-9888D48CF770)
+2026-07-26 14:04:13.486 Df augustus[47855:1925d84] [com.apple.UIKit:HomeAffordanceObservation] Initializing: <_UIHomeAffordanceSceneNotifier: 0x6000029215e0>; with scene: <UIWindowScene: 0x106518f70>
+2026-07-26 14:04:13.513 Df augustus[47855:1925d84] [com.apple.BacklightServices:scenes] 0x600000d0f4e0 setDelegate:<0x600000d1bcc0 _UIBacklightEnvironment> hasDelegate:YES for environment:sceneID:com.github.keriew.augustus-default
+2026-07-26 14:04:13.513 Df augustus[47855:1925d84] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x106518f70> (6B998C8F-D615-41A1-8FB6-9888D48CF770)
+2026-07-26 14:04:13.513 Df augustus[47855:1925d84] [com.apple.UIKit:EventDeferring] [0x60000292ca80] Initialized with scene: <UIWindowScene: 0x106518f70>; behavior: <_UIEventDeferringBehavior_iOS: 0x60000023d940>; availableForProcess: 1, systemShellManagesKeyboardFocus: 1
+2026-07-26 14:04:13.514 Df augustus[47855:1925d84] [com.apple.xpc:connection] [0x106528be0] activating connection: mach=false listener=false peer=false name=(anonymous)
+2026-07-26 14:04:13.517 Df augustus[47855:1925d84] [com.apple.BackBoard:EventDelivery] policyStatus:<BKSHIDEventDeliveryPolicyObserver: 0x60000214a3a0; process scope; status: target> was:none
+2026-07-26 14:04:13.517 Df augustus[47855:1925d84] [com.apple.UIKit:KeyWindow] Setting default evaluation strategy for UIUserInterfaceIdiomPad to LastOneWins
+2026-07-26 14:04:13.517 Df augustus[47855:1925d84] [com.apple.UIKit:KeyWindow] Scene target of keyboard event deferring environment did change: 1; scene: UIWindowScene: 0x106518f70; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.github.keriew.augustus-default
+2026-07-26 14:04:13.517 Df augustus[47855:1925d84] [com.apple.UIKit:UIFocus] Focus system enabled
+2026-07-26 14:04:13.517 Df augustus[47855:1925d84] [com.apple.UIKit:UIFocus] Failed to update focus with context <UIFocusUpdateContext: 0x6000033050e0: previouslyFocusedItem=(null), nextFocusedItem=(null), focusHeading=None>. No additional info available.
+2026-07-26 14:04:13.517 Df augustus[47855:1925d84] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x106518f70> (6B998C8F-D615-41A1-8FB6-9888D48CF770)
+2026-07-26 14:04:13.517 Df augustus[47855:1925d84] [com.apple.UIKit:EventDeferring] [0x60000292ca80] Scene target of event deferring environments did update: scene: 0x106518f70; current systemShellManagesKeyboardFocus: 1; systemShellManagesKeyboardFocusForScene: 1; eligibleForRecordRemoval: 1;
+2026-07-26 14:04:13.517 Df augustus[47855:1925d84] [com.apple.UIKit:KeyWindow] Scene became target of keyboard event deferring environment: UIWindowScene: 0x106518f70; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.github.keriew.augustus-default
+2026-07-26 14:04:13.517 Df augustus[47855:1925d84] [com.apple.UIKit:KeyWindow] Setting default evaluation strategy for UIUserInterfaceIdiomPad to SystemShellManaged
+2026-07-26 14:04:13.517 Df augustus[47855:1925d84] [com.apple.UIKit:KeyWindow] Key window needs update: 0; currentKeyWindowScene: 0x0; evaluatedKeyWindowScene: 0x106518f70; currentApplicationKeyWindow: 0x0; evaluatedApplicationKeyWindow: 0x0; reason: UIWindowScene: 0x106518f70: Window scene became target of keyboard environment
+2026-07-26 14:04:13.518 Df augustus[47855:1925d84] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x106518f70> (6B998C8F-D615-41A1-8FB6-9888D48CF770)
+2026-07-26 14:04:13.518 Df augustus[47855:1925d84] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x106518f70> (6B998C8F-D615-41A1-8FB6-9888D48CF770)
+2026-07-26 14:04:13.520 Df augustus[47855:1925d84] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x106518f70> (6B998C8F-D615-41A1-8FB6-9888D48CF770)
+2026-07-26 14:04:13.521 Df augustus[47855:1925d84] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x106518f70> (6B998C8F-D615-41A1-8FB6-9888D48CF770)
+2026-07-26 14:04:13.522 Df augustus[47855:1925d84] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.github.keriew.augustus-default  persistentID: 6B998C8F-D615-41A1-8FB6-9888D48CF770
+2026-07-26 14:04:13.522 Df augustus[47855:1925d84] [com.apple.UIKit:Application] Ignoring already applied deactivation reason: 5; deactivation reasons: 1056
+2026-07-26 14:04:13.522 Df augustus[47855:1925d84] [com.apple.UIKit:Application] Deactivation reason added: 11; deactivation reasons: 1056 -> 3104; animating application lifecycle event: 1
+2026-07-26 14:04:13.522 Df augustus[47855:1925d84] [com.apple.KeyboardArbiter:Client] startConnection
+2026-07-26 14:04:13.523 Df augustus[47855:1925d84] [com.apple.xpc:connection] [0x1064072e0] activating connection: mach=true listener=false peer=false name=com.apple.UIKit.KeyboardManagement.hosted
+2026-07-26 14:04:13.524 Df augustus[47855:1925d84] [com.apple.UIKit:ViewServices] Launching as view service: NO
+2026-07-26 14:04:13.526 Df augustus[47855:1925d84] [com.apple.UIKit:Application] Deactivation reason removed: 10; deactivation reasons: 3104 -> 2080; animating application lifecycle event: 1
+2026-07-26 14:04:13.526 Df augustus[47855:1925d84] [com.apple.UIKit:Application] Deactivation reason added: 12; deactivation reasons: 2080 -> 6176; animating application lifecycle event: 1
+2026-07-26 14:04:13.526 Df augustus[47855:1925d84] [com.apple.UIKit:Application] Deactivation reason removed: 11; deactivation reasons: 6176 -> 4128; animating application lifecycle event: 1
+2026-07-26 14:04:13.526 Df augustus[47855:1925d9b] [com.apple.UIIntelligenceSupport:xpc] establishing connection to agent
+2026-07-26 14:04:13.527 Df augustus[47855:1925d84] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x106518f70> (6B998C8F-D615-41A1-8FB6-9888D48CF770)
+2026-07-26 14:04:13.527 Df augustus[47855:1925d9b] [com.apple.xpc:session] [0x600002144e10] Session created.
+2026-07-26 14:04:13.527 Df augustus[47855:1925d9b] [com.apple.xpc:session] [0x600002144e10] Session created from connection [0x600003d01fe0]
+2026-07-26 14:04:13.527 Df augustus[47855:1925d9b] [com.apple.xpc:connection] [0x600003d01fe0] activating connection: mach=true listener=false peer=false name=com.apple.uiintelligencesupport.agent
+2026-07-26 14:04:13.527 Df augustus[47855:1925d9b] [com.apple.xpc:session] [0x600002144e10] Session activated
+2026-07-26 14:04:13.530 A  augustus[47855:1925d94] (RunningBoardServices) didChangeInheritances
+2026-07-26 14:04:13.533 A  augustus[47855:1925d98] (RunningBoardServices) didChangeInheritances
+2026-07-26 14:04:13.534 Df augustus[47855:1925d95] [com.apple.CoreAnalytics:client] No XPC connection in Simulator
+2026-07-26 14:04:13.534 E  augustus[47855:1925d95] [com.apple.app_launch_measurement:General] Failed to send CA Event for app launch measurements for ca_event_type: 0 event_name: com.apple.app_launch_measurement.FirstFramePresentationMetric
+2026-07-26 14:04:13.534 Df augustus[47855:1925d84] [com.apple.network:activity] Create activity from XPC object <nw_activity 50:1 [6AB687E3-C365-47B6-9482-2FB425852F1A] (reporting strategy default)>
+2026-07-26 14:04:13.534 Df augustus[47855:1925d84] [com.apple.network:activity] Create activity from XPC object <nw_activity 50:2 [AE799C82-EB7F-4D62-A0BC-B4FACAA28D30] (reporting strategy default)>
+2026-07-26 14:04:13.534 Df augustus[47855:1925d84] [com.apple.network:activity] Set activity <nw_activity 50:1 [6AB687E3-C365-47B6-9482-2FB425852F1A] (reporting strategy default)> as the global parent
+2026-07-26 14:04:13.534 Df augustus[47855:1925d84] [com.apple.UIKit:BackgroundTask] Ending background task with UIBackgroundTaskIdentifier: 1
+2026-07-26 14:04:13.534 Df augustus[47855:1925d84] [com.apple.UIKit:BackgroundTask] Ending task with identifier 1 and description: <_UIBackgroundTaskInfo: 0x60000170dfc0>: taskID = 1, taskName = Launch Background Task for Coalescing, creationTime = 1471273 (elapsed = 1), _expireHandler: (null)
+2026-07-26 14:04:13.534 Df augustus[47855:1925d84] [com.apple.UIKit:BackgroundTask] Decrementing reference count for assertion <BKSProcessAssertion: 0x600002105b30> (used by background task with identifier 1: <_UIBackgroundTaskInfo: 0x60000170dfc0>: taskID = 1, taskName = Launch Background Task for Coalescing, creationTime = 1471273 (elapsed = 1))
+2026-07-26 14:04:13.534 Df augustus[47855:1925d84] [com.apple.UIKit:BackgroundTask] Will invalidate assertion: <BKSProcessAssertion: 0x600002105b30> for task identifier: 1
+2026-07-26 14:04:13.534 Df augustus[47855:1925d84] [com.apple.UIKit:EventBus] Event Timing Profile for Touch: not found, path="/System/Library/EventTimingProfiles/Sim.Touch.plist"
+2026-07-26 14:04:13.534 Df augustus[47855:1925d84] [com.apple.UIKit:EventBus] Event Timing Profile for Pencil: not found, path="/System/Library/EventTimingProfiles/Sim.Pencil.plist"
+2026-07-26 14:04:13.535 Df augustus[47855:1925d84] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.github.keriew.augustus-default  persistentID: 6B998C8F-D615-41A1-8FB6-9888D48CF770
+2026-07-26 14:04:13.535 A  augustus[47855:1925d84] (CoreFoundation) Updating Key-Value Observers Of Preferences
+2026-07-26 14:04:13.536 I  augustus[47855:1925d84] [com.apple.Accessibility:AXAppAccessibility] Loading settings loader: (system: 0)
+2026-07-26 14:04:13.569 Df augustus[47855:1925d84] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.github.keriew.augustus-default  persistentID: 6B998C8F-D615-41A1-8FB6-9888D48CF770
+2026-07-26 14:04:13.570 Df augustus[47855:1925d84] [com.apple.gamecontroller:Session] Creating global game controller session...
+2026-07-26 14:04:13.571 Df augustus[47855:1925d84] [com.apple.BackBoard:EventDelivery] policyStatus:<BKSHIDEventDeliveryPolicyObserver: 0x600002103bb0; process scope; status: target> was:none
+2026-07-26 14:04:13.571 Df augustus[47855:1925d84] You need UIApplicationSupportsIndirectInputEvents in your Info.plist for mouse support
+2026-07-26 14:04:13.580 Df augustus[47855:1925d9a] [com.apple.xpc:connection] [0x10631bea0] activating connection: mach=true listener=false peer=false name=com.apple.fontservicesd
+2026-07-26 14:04:13.585 Df augustus[47855:1925d9c] [com.apple.xpc:connection] [0x1063243e0] activating connection: mach=false listener=false peer=false name=(anonymous)
+2026-07-26 14:04:13.588 I  augustus[47855:1925d84] [com.apple.Accessibility:AXAppAccessibility] Presentation controller doesn't modalize: <_UIRootPresentationController: 0x106468780>
+2026-07-26 14:04:13.597 Df augustus[47855:1925d84] [com.apple.runningboard:connection] Creating side-channel connection to com.apple.runningboard
+2026-07-26 14:04:13.597 Df augustus[47855:1925d84] [com.apple.xpc:connection] [0x600003d07480] activating connection: mach=true listener=false peer=false name=com.apple.runningboard
+2026-07-26 14:04:13.598 Df augustus[47855:1925d84] [com.apple.runningboard:process] Hit the server for a process handle 1a648d130000baef that resolved to: [app<com.github.keriew.augustus((null))>:47855]
+2026-07-26 14:04:13.598 I  augustus[47855:1925d9a] [com.apple.runningboard:assertion] Acquiring assertion: <RBSAssertionDescriptor| "systemAnimationFence" ID:(null) target:47855>
+2026-07-26 14:04:13.598 Df augustus[47855:1925d84] [com.apple.UIKit:PointerLockState] preferredPointerLockStatus updated: scene: <UIWindowScene: 0x106518f70; role: UIWindowSceneSessionRoleApplication; persistentIdentifier: 6B998C8F-D615-41A1-8FB6-9888D48CF770; activationState: UISceneActivationStateForegroundInactive>; viewController: <SDL_uikitviewcontroller: 0x10782ac00>; preferredPointerLockStatus: _UIPointerLockStatusUnlocked
+2026-07-26 14:04:13.598 Df augustus[47855:1925d84] [com.apple.UIKit:KeyWindow] Key window API is scene-level: YES
+2026-07-26 14:04:13.598 Df augustus[47855:1925d84] [com.apple.UIKit:KeyWindow] UIWindowScene: 0x106518f70: Window became key in scene: SDL_uikitwindow: 0x106425ed0; contextId: 0x8DB3F895: reason: UIWindowScene: 0x106518f70: Window requested to become key in scene: 0x106425ed0
+2026-07-26 14:04:13.598 Df augustus[47855:1925d84] [com.apple.UIKit:KeyWindow] Key window needs update: 1; currentKeyWindowScene: 0x0; evaluatedKeyWindowScene: 0x106518f70; currentApplicationKeyWindow: 0x0; evaluatedApplicationKeyWindow: 0x106425ed0; reason: UIWindowScene: 0x106518f70: Window requested to become key in scene: 0x106425ed0
+2026-07-26 14:04:13.598 Df augustus[47855:1925d84] [com.apple.UIKit:KeyWindow] Window did become application key: SDL_uikitwindow: 0x106425ed0; contextId: 0x8DB3F895; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.github.keriew.augustus-default
+2026-07-26 14:04:13.598 Df augustus[47855:1925d84] [com.apple.UIKit:EventDeferring] [0x60000292ca80] Begin local event deferring requested for token: 0x6000026244e0; environments: 1; reason: UIWindowScene: 0x106518f70: Begin event deferring in keyboardFocus for window: 0x106425ed0
+2026-07-26 14:04:13.600 Df augustus[47855:1925d9a] [com.apple.BackBoard:EventDelivery] policyStatus:<BKSHIDEventDeliveryPolicyObserver: 0x60000214a3a0; token: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.github.keriew.augustus-default; status: ancestor> was:target
+2026-07-26 14:04:13.600 Df augustus[47855:1925d9a] [com.apple.BackBoard:EventDelivery] observerPolicyDidChange: 0x60000214a3a0 -> <_UIKeyWindowSceneObserver: 0x600000d1b060>
+2026-07-26 14:04:13.612 Df augustus[47855:1925d84] [com.apple.xpc:connection] [0x106207bf0] activating connection: mach=true listener=false peer=false name=com.apple.metal.simulator
+2026-07-26 14:04:13.613 Df augustus[47855:1925d84] [com.apple.xpc:connection] [0x106541dc0] activating connection: mach=true listener=false peer=false name=com.apple.metal.simulator
+2026-07-26 14:04:13.613 Df augustus[47855:1925d84] [com.apple.xpc:connection] [0x10620dfa0] activating connection: mach=true listener=false peer=false name=com.apple.metal.simulator
+2026-07-26 14:04:13.615 I  augustus[47855:1925d84] [com.apple.Accessibility:AXAppAccessibility] Presentation controller doesn't modalize: <_UIRootPresentationController: 0x1063426e0>
+2026-07-26 14:04:13.615 I  augustus[47855:1925d84] [com.apple.Accessibility:AXAppAccessibility] Presentation controller doesn't modalize: <_UIRootPresentationController: 0x106343350>
+2026-07-26 14:04:13.616 Df augustus[47855:1925d84] [com.apple.UIKit:PointerLockState] preferredPointerLockStatus updated: scene: <UIWindowScene: 0x106518f70; role: UIWindowSceneSessionRoleApplication; persistentIdentifier: 6B998C8F-D615-41A1-8FB6-9888D48CF770; activationState: UISceneActivationStateForegroundInactive>; viewController: <SDL_uikitviewcontroller: 0x10782ac00>; preferredPointerLockStatus: _UIPointerLockStatusUnlocked
+2026-07-26 14:04:13.618 E  augustus[47855:1925d84] (libCoreFSCache.dylib) fopen failed for data file: errno = 2 (No such file or directory)
+2026-07-26 14:04:13.618 E  augustus[47855:1925d84] (libCoreFSCache.dylib) Errors found! Invalidating cache...
+2026-07-26 14:04:13.618 Df augustus[47855:1925d84] [com.apple.xpc:connection] [0x600003d493b0] activating connection: mach=false listener=false peer=false name=com.apple.MTLCompilerService
+2026-07-26 14:04:13.639 A  augustus[47855:1925d9c] (RunningBoardServices) didChangeInheritances
+2026-07-26 14:04:13.697 A  augustus[47855:1925d84] (Metal) compiling shader
+2026-07-26 14:04:13.971 A  augustus[47855:1925d84] (Metal) compiling shader
+2026-07-26 14:04:13.981 A  augustus[47855:1925d84] (Metal) compiling shader
+2026-07-26 14:04:13.991 A  augustus[47855:1925d84] (Metal) compiling shader
+2026-07-26 14:04:13.993 A  augustus[47855:1925d84] (Metal) compiling shader
+2026-07-26 14:04:13.998 A  augustus[47855:1925d84] (Metal) compiling shader
+2026-07-26 14:04:14.000 A  augustus[47855:1925d84] (Metal) compiling shader
+2026-07-26 14:04:14.208 A  augustus[47855:1925d98] (RunningBoardServices) didChangeInheritances
+2026-07-26 14:04:14.315 A  augustus[47855:1925d9c] (RunningBoardServices) didChangeInheritances
+2026-07-26 14:04:15.499 I  augustus[47855:1925d84] [com.apple.coreaudio:as_client]     AVAudioSession_iOS.mm:310   Registering to CFNotificationCenter to notify of Observers of MicrophoneInjectionCapabilityChangeNotification
+2026-07-26 14:04:15.540 Df augustus[47855:1925d84] (CoreAudio)   HALPlugInManagement.cpp:442    HALPlugInManagement::RegisterPlugIns: loading in-process plug-ins
+2026-07-26 14:04:15.541 E  augustus[47855:1925d84] [com.apple.CFBundle:plugin] AddInstanceForFactory: No factory registered for id <CFUUID 0x6000002c5a20> F8BB1C28-BAE8-11D6-9C31-00039315CD46
+2026-07-26 14:04:15.559 Df augustus[47855:1925d9c] (CoreAudio)      HALC_ProxyObject.cpp:1456   HALC_Object_PropertyListener: not initialized
+2026-07-26 14:04:15.561 Df augustus[47855:1925d84] [com.apple.audio.caulk:alloc] Registered notify signal com.apple.caulk.alloc.rtdump (0)
+2026-07-26 14:04:15.561 I  augustus[47855:1925d84] [com.apple.coreaudio:AMCP]    259                Configuration.cpp:569   Do not allow Client IO Timeout on macOS
+2026-07-26 14:04:15.581 Df augustus[47855:1925d9c] (CoreAudio)      HALC_ProxyObject.cpp:1456   HALC_Object_PropertyListener: not initialized
+2026-07-26 14:04:15.587 Df augustus[47855:1925d84] [com.apple.coreaudio:ddagg]        AggregateDevice.mm:857   Creating DefaultDeviceAggregate
+2026-07-26 14:04:15.588 I  augustus[47855:1925d84] [com.apple.coreaudio:ddagg]        AggregateDevice.mm:188   device 58 scope 'inpt': streamChannelCounts 8, totalChannelCount 8, defaultPair (1, 2)
+2026-07-26 14:04:15.590 I  augustus[47855:1925d84] [com.apple.coreaudio:ddagg]        AggregateDevice.mm:188   device 58 scope 'outp': streamChannelCounts 8, totalChannelCount 8, defaultPair (1, 2)
+2026-07-26 14:04:15.592 I  augustus[47855:1925d84] [com.apple.coreaudio:ddagg]        AggregateDevice.mm:754   New aggregate device dictionary (58):
+{
+    master = "com.p5sys.jump.audio.driver_v001";
+    name = "iOSSimulatorAudioDevice-47855-0";
+    private = 1;
+    subdevices =     (
+                {
+            "channels-in" = 8;
+            "channels-out" = 8;
+            drift = 1;
+            name = "Jump Desktop Audio";
+            uid = "com.p5sys.jump.audio.driver_v001";
+        }
+    );
+    uid = "iOSSimulatorAudioDevice-47855-0";
+}
+2026-07-26 14:04:15.609 I  augustus[47855:1925d84] [com.apple.coreaudio:ddagg]        AggregateDevice.mm:188   device 165 scope 'inpt': streamChannelCounts 8, totalChannelCount 8, defaultPair (1, 2)
+2026-07-26 14:04:15.610 I  augustus[47855:1925d84] [com.apple.coreaudio:ddagg]        AggregateDevice.mm:188   device 165 scope 'outp': streamChannelCounts 8, totalChannelCount 8, defaultPair (1, 2)
+2026-07-26 14:04:15.611 I  augustus[47855:1925d84] [com.apple.coreaudio:ddagg]        AggregateDevice.mm:188   device 58 scope 'inpt': streamChannelCounts 8, totalChannelCount 8, defaultPair (1, 2)
+2026-07-26 14:04:15.612 I  augustus[47855:1925d84] [com.apple.coreaudio:ddagg]        AggregateDevice.mm:188   device 58 scope 'outp': streamChannelCounts 8, totalChannelCount 8, defaultPair (1, 2)
+2026-07-26 14:04:15.615 Df augustus[47855:1925d84] [com.apple.coreaudio:ddagg]        AggregateDevice.mm:644   Built valid aggregate 165
+2026-07-26 14:04:15.615 Df augustus[47855:1925d84] [com.apple.coreaudio:ddagg]        AggregateDevice.mm:978   PrimarySessionActiveWithInputEnabled 0 -> 0
+2026-07-26 14:04:15.615 Df augustus[47855:1925d84] [com.apple.coreaudio:as_client] AVAudioSessionImpl_Simulator.mm:109   Set volume on device 58 to 0.60
+2026-07-26 14:04:15.616 Df augustus[47855:1925d84] [com.apple.coreaudio:as_client] AVAudioSessionImpl_Simulator.mm:109   Set volume on device 58 to 0.60
+2026-07-26 14:04:15.616 Df augustus[47855:1925d84] [com.apple.coreaudio:ddagg]        AggregateDevice.mm:978   PrimarySessionActiveWithInputEnabled 0 -> 0
+2026-07-26 14:04:15.624 Df augustus[47855:1925f20] [com.apple.coreaudio:AudioConverter]        ACv2Workarounds.mm:51    com.github.keriew.augustus: fix84702776_86723525_86479548_89800354_SinglePacketDesc: false
+2026-07-26 14:04:15.625 Df augustus[47855:1925f20] [com.apple.audio.caulk:alloc] Registered notify signal com.apple.caulk.alloc.audiodump (0)
+2026-07-26 14:04:15.625 Df augustus[47855:1925f20] [com.apple.coreaudio:AudioConverter]        AudioConverter.cpp:1007  Created a new in process converter -> 0x600000cd75a0, from  2 ch,  22050 Hz, Int16, interleaved to  2 ch,  22050 Hz, Float32, deinterleaved
+2026-07-26 14:04:15.625 Df augustus[47855:1925f20] [com.apple.coreaudio:AQ]      AudioQueueObject.cpp:440   AudioQueueObject: aq@0x110b51000: New output; format  2 ch,  22050 Hz, Int16, interleaved
+2026-07-26 14:04:15.635 I  augustus[47855:1925d9c] [com.apple.coreaudio:aqme]           AQMixEngine.cpp:703   * * * * * AdaptToDevice Default-InputOutput: mDeviceSampleRate=48000 * * * * *
+2026-07-26 14:04:15.635 Df augustus[47855:1925d9c] [com.apple.coreaudio:aqme]           AQMixEngine.cpp:709   AQMEDevice (0x10646f978) has neither a defaultOutStreamClient nor a defaultInStreamClient
+2026-07-26 14:04:15.659 Df augustus[47855:1925f20] [com.apple.extensionkit:NSExtension] Class EXGetExtensionClass(void) returning EXConcreteExtension
+2026-07-26 14:04:15.660 Df augustus[47855:1925f20] [com.apple.xpc:connection] [0x600003d49590] activating connection: mach=true listener=false peer=false name=com.apple.pluginkit.pkd
+2026-07-26 14:04:15.660 A  augustus[47855:1925f20] (PlugInKit) continuous-discovery
+2026-07-26 14:04:15.660 Df augustus[47855:1925f20] [com.apple.PlugInKit:discovery] <PKDiscoveryDriver:0x60000260d440> created discovery driver
+2026-07-26 14:04:15.660 Df augustus[47855:1925f20] [com.apple.PlugInKit:discovery] [d 9A1B2D76-8BBD-4427-B3B1-48F560FFAE9A] <PKHost:0x60000173b180> Beginning discovery for flags: 0, point: com.apple.AudioUnit
+2026-07-26 14:04:15.660 I  augustus[47855:1925f20] [com.apple.PlugInKit:discovery] [d 9A1B2D76-8BBD-4427-B3B1-48F560FFAE9A] <PKHost:0x60000173b180> Query: {
+    NSExtensionPointName = "com.apple.AudioUnit";
+}
+2026-07-26 14:04:15.663 Df augustus[47855:1925d95] [com.apple.PlugInKit:discovery] [d 9A1B2D76-8BBD-4427-B3B1-48F560FFAE9A] <PKHost:0x60000173b180> Completed discovery. Final # of matches: 0
+2026-07-26 14:04:15.663 Df augustus[47855:1925d95] [com.apple.PlugInKit:discovery] <PKDiscoveryDriver:0x60000260d440> delivering update to host (0 plugins)
+2026-07-26 14:04:15.663 A  augustus[47855:1925d95] (ExtensionFoundation) discovering extensions
+2026-07-26 14:04:15.663 Df augustus[47855:1925d95] [com.apple.extensionkit:NSExtension] discovered extensions: attributes {
+    NSExtensionPointName = "com.apple.AudioUnit";
+}, extensionSet {(
+)}
+2026-07-26 14:04:15.663 Df augustus[47855:1925d95] [com.apple.PlugInKit:discovery] <PKDiscoveryDriver:0x60000260d440> installing watchers for continuous discovery
+2026-07-26 14:04:15.663 A  augustus[47855:1925f20] (PlugInKit) continuous-discovery
+2026-07-26 14:04:15.663 I  augustus[47855:1925d95] [com.apple.launchservices:default] LSApplicationWorkspace: adding observer PKDiscoveryLSWatcher @ 0x60000022e320
+2026-07-26 14:04:15.663 Df augustus[47855:1925f20] [com.apple.PlugInKit:discovery] <PKDiscoveryDriver:0x6000026110e0> created discovery driver
+2026-07-26 14:04:15.663 Df augustus[47855:1925d95] [com.apple.launchservices:appinstallation] registering for distributed notification com.apple.LaunchServices.pluginsregistered in this process
+2026-07-26 14:04:15.663 Df augustus[47855:1925d95] [com.apple.xpc:connection] [0x600003d07750] activating connection: mach=true listener=false peer=false name=com.apple.distributed_notifications@1v3
+2026-07-26 14:04:15.663 Df augustus[47855:1925f20] [com.apple.PlugInKit:discovery] [d 9ECAD676-8AAE-4DA2-B376-E1B89F9EB278] <PKHost:0x60000173b180> Beginning discovery for flags: 0, point: com.apple.AudioUnit-UI
+2026-07-26 14:04:15.663 I  augustus[47855:1925f20] [com.apple.PlugInKit:discovery] [d 9ECAD676-8AAE-4DA2-B376-E1B89F9EB278] <PKHost:0x60000173b180> Query: {
+    NSExtensionPointName = "com.apple.AudioUnit-UI";
+}
+2026-07-26 14:04:15.663 Df augustus[47855:1925d95] [com.apple.launchservices:appinstallation] registering for distributed notification com.apple.LaunchServices.pluginsunregistered in this process
+2026-07-26 14:04:15.664 Df augustus[47855:1925d98] [com.apple.PlugInKit:discovery] [d 9ECAD676-8AAE-4DA2-B376-E1B89F9EB278] <PKHost:0x60000173b180> Completed discovery. Final # of matches: 0
+2026-07-26 14:04:15.664 Df augustus[47855:1925d98] [com.apple.PlugInKit:discovery] <PKDiscoveryDriver:0x6000026110e0> delivering update to host (0 plugins)
+2026-07-26 14:04:15.664 A  augustus[47855:1925d98] (ExtensionFoundation) discovering extensions
+2026-07-26 14:04:15.664 Df augustus[47855:1925d98] [com.apple.extensionkit:NSExtension] discovered extensions: attributes {
+    NSExtensionPointName = "com.apple.AudioUnit-UI";
+}, extensionSet {(
+)}
+2026-07-26 14:04:15.664 Df augustus[47855:1925d98] [com.apple.PlugInKit:discovery] <PKDiscoveryDriver:0x6000026110e0> installing watchers for continuous discovery
+2026-07-26 14:04:15.664 Df augustus[47855:1925d95] [com.apple.launchservices:progress] Establishing xpc connection to lsd
+2026-07-26 14:04:15.664 I  augustus[47855:1925d98] [com.apple.launchservices:default] LSApplicationWorkspace: adding observer PKDiscoveryLSWatcher @ 0x6000002c6d60
+2026-07-26 14:04:15.664 A  augustus[47855:1925f20] (PlugInKit) continuous-discovery
+2026-07-26 14:04:15.664 Df augustus[47855:1925d95] [com.apple.xpc:connection] [0x106333560] activating connection: mach=true listener=false peer=false name=com.apple.lsd.xpc
+2026-07-26 14:04:15.665 Df augustus[47855:1925f20] [com.apple.PlugInKit:discovery] <PKDiscoveryDriver:0x600002614480> created discovery driver
+2026-07-26 14:04:15.665 Df augustus[47855:1925f20] [com.apple.PlugInKit:discovery] [d FC10F4F6-6D7D-41F1-862C-C36AA62F6D2C] <PKHost:0x60000173b180> Beginning discovery for flags: 0, point: com.apple.AudioUnit-Speech
+2026-07-26 14:04:15.665 I  augustus[47855:1925f20] [com.apple.PlugInKit:discovery] [d FC10F4F6-6D7D-41F1-862C-C36AA62F6D2C] <PKHost:0x60000173b180> Query: {
+    NSExtensionPointName = "com.apple.AudioUnit-Speech";
+}
+2026-07-26 14:04:15.665 Df augustus[47855:1925d9a] [com.apple.launchservices:progress] Received LSWorkspaceObserverPing, xpc connection established
+2026-07-26 14:04:15.667 I  augustus[47855:1925d9a] [com.apple.PlugInKit:discovery] com.apple.ax.KonaTTSSupport.KonaSynthesizer: annotations = {
+}
+2026-07-26 14:04:15.667 I  augustus[47855:1925d9a] [com.apple.PlugInKit:discovery] com.apple.ax.KonaTTSSupport.KonaSynthesizer: will be managed by runningboard
+2026-07-26 14:04:15.667 I  augustus[47855:1925d9a] [com.apple.PlugInKit:discovery] com.apple.ax.MauiTTSSupport.MauiAUSP: annotations = {
+}
+2026-07-26 14:04:15.667 I  augustus[47855:1925d9a] [com.apple.PlugInKit:discovery] com.apple.ax.MauiTTSSupport.MauiAUSP: will be managed by runningboard
+2026-07-26 14:04:15.667 I  augustus[47855:1925d9a] [com.apple.PlugInKit:discovery] com.apple.texttospeech.SiriAUSP: annotations = {
+}
+2026-07-26 14:04:15.667 I  augustus[47855:1925d9a] [com.apple.PlugInKit:discovery] com.apple.texttospeech.SiriAUSP: will be managed by runningboard
+2026-07-26 14:04:15.667 I  augustus[47855:1925d9a] [com.apple.PlugInKit:discovery] com.apple.speech.MacinTalkFramework.MacinTalkAUSP: annotations = {
+}
+2026-07-26 14:04:15.667 I  augustus[47855:1925d9a] [com.apple.PlugInKit:discovery] com.apple.speech.MacinTalkFramework.MacinTalkAUSP: will be managed by runningboard
+2026-07-26 14:04:15.667 Df augustus[47855:1925d9a] [com.apple.PlugInKit:discovery] [d FC10F4F6-6D7D-41F1-862C-C36AA62F6D2C] <PKHost:0x60000173b180> Completed discovery. Final # of matches: 4
+2026-07-26 14:04:15.667 Df augustus[47855:1925d9a] [com.apple.PlugInKit:discovery] <PKDiscoveryDriver:0x600002614480> delivering update to host (4 plugins)
+2026-07-26 14:04:15.667 A  augustus[47855:1925d9a] (ExtensionFoundation) discovering extensions
+2026-07-26 14:04:15.668 Df augustus[47855:1925d9a] [com.apple.xpc:connection] [0x106332b30] activating connection: mach=true listener=false peer=false name=com.apple.lsd.mapdb
+2026-07-26 14:04:15.668 I  augustus[47855:1925d9a] [com.apple.launchservices:db] LaunchServices database schema version: 6291460
+2026-07-26 14:04:15.669 I  augustus[47855:1925d9a] [com.apple.PlugInKit:ls] [u 5260E364-178D-43BA-B8FE-FDA2FD40A58F] [com.apple.ax.KonaTTSSupport.KonaSynthesizer(1.0)] got localized name: KonaSynthesizer
+2026-07-26 14:04:15.669 I  augustus[47855:1925d9a] [com.apple.PlugInKit:ls] [u 5260E364-178D-43BA-B8FE-FDA2FD40A58F] [com.apple.ax.KonaTTSSupport.KonaSynthesizer(1.0)] got localized short name: KonaSynthesizer
+2026-07-26 14:04:15.669 I  augustus[47855:1925d9a] [com.apple.PlugInKit:ls] [u 82EC7859-DE27-4722-8F75-616CA3B27F45] [com.apple.ax.MauiTTSSupport.MauiAUSP(1.0)] got localized name: MauiAUSP
+2026-07-26 14:04:15.669 I  augustus[47855:1925d9a] [com.apple.PlugInKit:ls] [u 82EC7859-DE27-4722-8F75-616CA3B27F45] [com.apple.ax.MauiTTSSupport.MauiAUSP(1.0)] got localized short name: MauiAUSP
+2026-07-26 14:04:15.669 I  augustus[47855:1925d9a] [com.apple.PlugInKit:ls] [u 3EDE626C-43F8-445D-8B92-4574987D3792] [com.apple.texttospeech.SiriAUSP(1.0)] got localized name: SiriAUSP
+2026-07-26 14:04:15.669 I  augustus[47855:1925d9a] [com.apple.PlugInKit:ls] [u 3EDE626C-43F8-445D-8B92-4574987D3792] [com.apple.texttospeech.SiriAUSP(1.0)] got localized short name: SiriAUSP
+2026-07-26 14:04:15.669 I  augustus[47855:1925d9a] [com.apple.PlugInKit:ls] [u FA4C50DF-A416-419B-B524-FE228EFB60DB] [com.apple.speech.MacinTalkFramework.MacinTalkAUSP(1.0)] got localized name: MacinTalkAUSP
+2026-07-26 14:04:15.669 I  augustus[47855:1925d9a] [com.apple.PlugInKit:ls] [u FA4C50DF-A416-419B-B524-FE228EFB60DB] [com.apple.speech.MacinTalkFramework.MacinTalkAUSP(1.0)] got localized short name: MacinTalkAUSP
+2026-07-26 14:04:15.669 Df augustus[47855:1925d9a] [com.apple.extensionkit:NSExtension] discovered extensions: attributes {
+    NSExtensionPointName = "com.apple.AudioUnit-Speech";
+}, extensionSet {(
+    <EXConcreteExtension: 0x60000371cb40> {id = com.apple.ax.KonaTTSSupport.KonaSynthesizer},
+    <EXConcreteExtension: 0x600003764180> {id = com.apple.ax.MauiTTSSupport.MauiAUSP},
+    <EXConcreteExtension: 0x600003764240> {id = com.apple.texttospeech.SiriAUSP},
+    <EXConcreteExtension: 0x60000371ccc0> {id = com.apple.speech.MacinTalkFramework.MacinTalkAUSP}
+)}
+2026-07-26 14:04:15.669 Df augustus[47855:1925d9a] [com.apple.PlugInKit:discovery] <PKDiscoveryDriver:0x600002614480> installing watchers for continuous discovery
+2026-07-26 14:04:15.669 I  augustus[47855:1925d9a] [com.apple.launchservices:default] LSApplicationWorkspace: adding observer PKDiscoveryLSWatcher @ 0x6000002ce400
+2026-07-26 14:04:15.669 I  augustus[47855:1925f20] [com.apple.coreaudio:audiocomp]     AUExtensionScanner.mm:109   <EXConcreteExtension: 0x60000371cb40> {id = com.apple.ax.KonaTTSSupport.KonaSynthesizer} com.apple.AudioUnit-Speech {
+    AudioComponents =     (
+                {
+            description = KonaSynthesizer;
+            manufacturer = appl;
+            name = "Eloquence: KonaSynthesizer";
+            sandboxSafe = 1;
+            subtype = kona;
+            tags =             (
+                Effects
+            );
+            type = ausp;
+            version = 67073;
+        }
+    );
+    NSExtensionPointName = "com.apple.AudioUnit-Speech";
+    NSExtensionPointVersion = "1.0";
+    NSExtensionVersion = "1.0";
+}
+2026-07-26 14:04:15.670 I  augustus[47855:1925f20] [com.apple.coreaudio:audiocomp]     AUExtensionScanner.mm:109   <EXConcreteExtension: 0x600003764180> {id = com.apple.ax.MauiTTSSupport.MauiAUSP} com.apple.AudioUnit-Speech {
+    AudioComponents =     (
+                {
+            description = MauiAUSP;
+            manufacturer = appl;
+            name = "Apple: MauiAUSP";
+            sandboxSafe = 1;
+            subtype = crnc;
+            tags =             (
+                "Speech Synthesizer"
+            );
+            type = ausp;
+            version = 67072;
+        }
+    );
+    NSExtensionPointName = "com.apple.AudioUnit-Speech";
+    NSExtensionPointVersion = "1.0";
+    NSExtensionVersion = "1.0";
+}
+2026-07-26 14:04:15.670 I  augustus[47855:1925f20] [com.apple.coreaudio:audiocomp]     AUExtensionScanner.mm:109   <EXConcreteExtension: 0x600003764240> {id = com.apple.texttospeech.SiriAUSP} com.apple.AudioUnit-Speech {
+    AudioComponents =     (
+                {
+            description = "Apple: SiriAUSP";
+            manufacturer = appl;
+            name = "Apple: SiriAUSP";
+            sandboxSafe = 1;
+            subtype = axsr;
+            tags =             (
+                "Speech Synthesis"
+            );
+            type = ausp;
+            version = 67073;
+        }
+    );
+    NSExtensionPointName = "com.apple.AudioUnit-Speech";
+    NSExtensionPointVersion = "1.0";
+    NSExtensionVersion = "1.0";
+}
+2026-07-26 14:04:15.670 I  augustus[47855:1925f20] [com.apple.coreaudio:audiocomp]     AUExtensionScanner.mm:109   <EXConcreteExtension: 0x60000371ccc0> {id = com.apple.speech.MacinTalkFramework.MacinTalkAUSP} com.apple.AudioUnit-Speech {
+    AudioComponents =     (
+                {
+            description = MacinTalkAUSP;
+            manufacturer = appl;
+            name = "MacinTalk: MacinTalkAUSP";
+            sandboxSafe = 1;
+            subtype = mctk;
+            tags =             (
+                Synthesizer
+            );
+            type = ausp;
+            version = 67072;
+        }
+    );
+    NSExtensionPointName = "com.apple.AudioUnit-Speech";
+    NSExtensionPointVersion = "1.0";
+    NSExtensionVersion = "1.0";
+}
+2026-07-26 14:04:15.670 I  augustus[47855:1925f20] [com.apple.coreaudio:audiocomp]     AUExtensionScanner.mm:171   0.012404s
+2026-07-26 14:04:15.672 Df augustus[47855:1925d9c] [com.apple.coreaudio:aqme] EnhanceDialogueProcessor.cpp:192   Product does not support Enhance Dialogue
+2026-07-26 14:04:15.672 Df augustus[47855:1925d9c] [com.apple.coreaudio:AudioConverter]        AudioConverter.cpp:1007  Created a new in process converter -> 0x600000cd6c10, from  8 ch,  48000 Hz, Float32, deinterleaved to  8 ch,  48000 Hz, Float32, interleaved
+2026-07-26 14:04:15.673 I  augustus[47855:1925f20] [com.apple.coreaudio:AQ]        AudioQueueObject.h:2021  LatencyChanged: Latency changed from -1.000000 to 0.000000
+2026-07-26 14:04:15.673 Df augustus[47855:1925f20] [com.apple.coreaudio:aqme]              AQIONode.cpp:625   client <AudioQueueObject@0x110b51000; [47855]; play> is NOT Now Playing eligible
+2026-07-26 14:04:15.673 Df augustus[47855:1925f20] [com.apple.coreaudio:AQ]      AudioQueueObject.cpp:3081  CheckSpatialization: aq@0x110b51000 automatic spatialization check: spatialize=0
+2026-07-26 14:04:15.673 Df augustus[47855:1925f20] [com.apple.coreaudio:AQ]      AudioQueueObject.cpp:3094  CheckSpatialization: aq@0x110b51000 CheckSpatialization mAutomaticSpatialization=1, mSpatializationEnabled=0 mContentRequiresAUSpatialMixer=0 mHasMetadata=0 mIsOffline=0 STSLabel valid:0 is stereo: 1
+2026-07-26 14:04:15.673 Df augustus[47855:1925d98] [com.apple.coreaudio:SpatialMgr] SpatializationManager.cpp:1433  Could not load preset file, invalid model/product name!
+2026-07-26 14:04:15.673 Df augustus[47855:1925d98] [com.apple.coreaudio:aqme]        MEMixerChannel.cpp:2969  2-channel audiovisual content is NOT eligible for spatialization
+2026-07-26 14:04:15.673 Df augustus[47855:1925d98] [com.apple.coreaudio:aqme]  MEDeviceStreamClient.cpp:227   AQME Default-InputOutput: client starting: <CA_UISoundClientBase@0x10653dcd0>; running count now 1
+2026-07-26 14:04:15.673 Df augustus[47855:1925d98] [com.apple.coreaudio:aqme]            AQMEIO_HAL.cpp:2738  FetchAndLogFrameSize starting IO deviceID=165, frame size is 512
+2026-07-26 14:04:15.674 Df augustus[47855:1925d98] [com.apple.coreaudio:aqme]            AQMEIO_HAL.cpp:2543  aqmeio@0x10682b218: set input stream usage to 0 on device 165, err = 0
+2026-07-26 14:04:15.682 Df augustus[47855:1925d98] [com.apple.coreaudio:aqme]            AQMEIO_HAL.cpp:2706  aqmeio@0x10682b218, device 165 (iOSSimulatorAudioDevice-47855-0), AudioDeviceStart (err 0)
+2026-07-26 14:04:15.693 Df augustus[47855:1925f20] [com.apple.coreaudio:AudioConverter]        AudioConverter.cpp:1007  Created a new in process converter -> 0x600000cd66d0, from  2 ch,  22050 Hz, Int16, interleaved to  2 ch,  22050 Hz, Float32, deinterleaved
+2026-07-26 14:04:15.700 Df augustus[47855:1925f20] [com.apple.coreaudio:aqme]              AQIONode.cpp:625   client <AudioQueueObject@0x110b51000; [47855]; play> is NOT Now Playing eligible
+2026-07-26 14:04:15.701 Df augustus[47855:1925f20] [com.apple.coreaudio:AQ]      AudioQueueObject.cpp:5401  ApplyParameters: aq@0x110b51000 volume 1.000 1.000 1.000 1.000 1.000 1.000, 1.000
+2026-07-26 14:04:15.701 Df augustus[47855:1925f20] [com.apple.coreaudio:aqme]  MEDeviceStreamClient.cpp:227   AQME Default-InputOutput: client starting: <AudioQueueObject@0x110b51000; [47855]; play>; running count now 2
+2026-07-26 14:04:15.708 A  augustus[47855:1925d84] (Metal) compiling shader
+2026-07-26 14:04:15.917 A  augustus[47855:1925d84] (Metal) compiling shader
+2026-07-26 14:04:15.943 A  augustus[47855:1925d84] (Metal) compiling shader
+2026-07-26 14:04:15.964 A  augustus[47855:1925d84] (Metal) compiling shader
+2026-07-26 14:04:15.982 A  augustus[47855:1925d84] (Metal) compiling shader
+2026-07-26 14:04:16.001 Df augustus[47855:1925d84] [com.apple.xpc:connection] [0x600003d14000] activating connection: mach=true listener=false peer=false name=com.apple.IOSurface.Remote
+2026-07-26 14:04:16.004 Df augustus[47855:1925d84] [com.apple.UIKit:UpdateScheduler] Target list changed: <CADisplay:LCD PurpleMain>
+2026-07-26 14:04:16.026 Df augustus[47855:1925d84] [com.apple.UIKit:UIFocus] Failed to update focus with context <UIFocusUpdateContext: 0x60000330a800: previouslyFocusedItem=(null), nextFocusedItem=(null), focusHeading=None>. No additional info available.
+2026-07-26 14:04:16.028 Df augustus[47855:1925d84] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.github.keriew.augustus-default  persistentID: 6B998C8F-D615-41A1-8FB6-9888D48CF770
+2026-07-26 14:04:16.032 Df augustus[47855:1925d84] [com.apple.KeyboardArbiter:Client] startConnection
+2026-07-26 14:04:16.033 Df augustus[47855:1925d84] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.github.keriew.augustus-default  persistentID: 6B998C8F-D615-41A1-8FB6-9888D48CF770
+2026-07-26 14:04:16.033 Df augustus[47855:1925d84] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.github.keriew.augustus-default  persistentID: 6B998C8F-D615-41A1-8FB6-9888D48CF770
+2026-07-26 14:04:16.033 Df augustus[47855:1925d84] [com.apple.KeyboardArbiter:Client] handleKeyboardChange: set currentKeyboard:N (wasKeyboard:N)
+2026-07-26 14:04:16.033 Df augustus[47855:1925d84] [com.apple.UIKit:KeyboardSceneDelegate] forceReloadInputViews
+2026-07-26 14:04:16.034 Df augustus[47855:1925d84] [com.apple.UIKit:KeyboardSceneDelegate] Reloading input views for: <(null): 0x0; > force: 1
+2026-07-26 14:04:16.035 Df augustus[47855:1925d84] [com.apple.UIKit:KeyboardArbiterClientLog] isWritingToolsHandlingKeyboardTracking:Y (WT ready:Y, Arbiter ready:Y)
+2026-07-26 14:04:16.036 Df augustus[47855:1925d84] [com.apple.UIKit:InterfaceStyle] Not push traits update to screen for new style 1, <UIWindowScene: 0x106518f70> (6B998C8F-D615-41A1-8FB6-9888D48CF770)
+2026-07-26 14:04:16.036 Df augustus[47855:1925d84] [com.apple.UIKit:AppLifecycle] sceneOfRecord: sceneID: sceneID:com.github.keriew.augustus-default  persistentID: 6B998C8F-D615-41A1-8FB6-9888D48CF770
+2026-07-26 14:04:16.037 Df augustus[47855:1925d84] [com.apple.UIKit:Application] Deactivation reason removed: 12; deactivation reasons: 4128 -> 32; animating application lifecycle event: 1
+2026-07-26 14:04:16.037 Df augustus[47855:1925d84] [com.apple.KeyboardArbiter:Client] Send setDeactivating: N (-DeactivationReason:SuspendedEventsOnly)
+2026-07-26 14:04:16.037 Df augustus[47855:1925d84] [com.apple.UIKit:Application] Deactivation reason removed: 5; deactivation reasons: 32 -> 0; animating application lifecycle event: 0
+2026-07-26 14:04:16.037 A  augustus[47855:1925d84] (GameController) Notify ApplicationDidBecomeActive
+2026-07-26 14:04:16.040 A  augustus[47855:1925d84] (GameController) [GCDeviceSession] Activate
+2026-07-26 14:04:16.041 A  augustus[47855:1925d84] (GameControllerFoundation) [HID Event System Client] Notify HID Service Matched
+2026-07-26 14:04:16.041 I  augustus[47855:1925d84] [com.apple.gamecontroller.hid:Common] HID Service Matched: serviceID='0xacefade00000000'
+2026-07-26 14:04:16.041 A  augustus[47855:1925d84] (GameControllerFoundation) [HID Event System Client] Notify HID Service Matched
+2026-07-26 14:04:16.041 I  augustus[47855:1925d84] [com.apple.gamecontroller.hid:Common] HID Service Matched: serviceID='0xacefade00000003'
+2026-07-26 14:04:16.044 I  augustus[47855:1925d84] [com.apple.gamecontroller:Keyboard+Mouse] Now tracking <GCHIDServiceInfo registryID='0xacefade00000003'>. Is Keyboard(YES), Mouse(NO)
+2026-07-26 14:04:16.045 A  augustus[47855:1925d84] (GameControllerFoundation) [HID Event System Client] Activate
+2026-07-26 14:04:16.046 I  augustus[47855:1925d84] [com.apple.PointerUI:Common] Activating Connection: <(null):0x600002107cf0>
+2026-07-26 14:04:16.046 Df augustus[47855:1925d84] [com.apple.UIKit:EventDeferring] [0x60000292ca80] Scene target of event deferring environments did update: scene: 0x106518f70; current systemShellManagesKeyboardFocus: 1; systemShellManagesKeyboardFocusForScene: 1; eligibleForRecordRemoval: 1;
+2026-07-26 14:04:16.046 Df augustus[47855:1925d84] [com.apple.UIKit:KeyWindow] Scene became target of keyboard event deferring environment: UIWindowScene: 0x106518f70; scene identity: com.apple.frontboard.systemappservices/FBSceneManager:sceneID%3Acom.github.keriew.augustus-default
+2026-07-26 14:04:16.059 I  augustus[47855:1925d84] [com.apple.runningboard:assertion] Acquiring assertion: <RBSAssertionDescriptor| "AudioRecording" ID:(null) target:47855>
+2026-07-26 14:04:16.060 I  augustus[47855:1925d84] [com.apple.runningboard:assertion] Acquiring assertion: <RBSAssertionDescriptor| "MediaPlayback" ID:(null) target:47855>
+2026-07-26 14:04:16.062 Df augustus[47855:1925d84] (UIKitCore) Unbalanced calls to begin/end appearance transitions for <SDL_uikitviewcontroller: 0x10782ac00>.
+2026-07-26 14:04:16.063 Df augustus[47855:1925d84] (UIKitCore) Unbalanced calls to begin/end appearance transitions for <SDL_uikitviewcontroller: 0x10782ac00>.
+2026-07-26 14:04:16.203 Df augustus[47855:1925d84] [com.apple.network:activity] <nw_activity 50:1 [6AB687E3-C365-47B6-9482-2FB425852F1A] (global parent) (reporting strategy default) complete (reason success)> complete with reason 2 (success), duration 3274ms
+2026-07-26 14:04:16.204 Df augustus[47855:1925d84] [com.apple.network:activity] <nw_activity 50:2 [AE799C82-EB7F-4D62-A0BC-B4FACAA28D30] (reporting strategy default) complete (reason success)> complete with reason 2 (success), duration 3275ms
+2026-07-26 14:04:16.205 Df augustus[47855:1925d84] [com.apple.network:activity] Unsetting the global parent activity <nw_activity 50:1 [6AB687E3-C365-47B6-9482-2FB425852F1A] (global parent) (reporting strategy default) complete (reason success)>
+2026-07-26 14:04:16.205 Df augustus[47855:1925d84] [com.apple.network:activity] Unset the global parent activity
+2026-07-26 14:04:16.205 E  augustus[47855:1925d94] [com.apple.app_launch_measurement:General] Failed to send CA Event for app launch measurements for ca_event_type: 1 event_name: com.apple.app_launch_measurement.ExtendedLaunchMetrics
+2026-07-26 14:04:16.710 I  augustus[47855:1925d95] [com.apple.Accessibility:AXLoading] Initial load did occur augustus
+2026-07-26 14:04:16.714 I  augustus[47855:1925d84] [com.apple.Accessibility:AXLoading] UIApp ax initialize
+2026-07-26 14:04:16.714 I  augustus[47855:1925d84] [com.apple.Accessibility:AXLoading] Load system app 0
+2026-07-26 14:04:16.714 I  augustus[47855:1925d84] [com.apple.Accessibility:AXRuntimeNotifications] Attempting to send notification:  (3031) <private>
+2026-07-26 14:04:16.715 Df augustus[47855:1925d84] [com.apple.BackBoard:Display] [FBSDisplaySource 1-1] silently connecting raw configuration: <FBSDisplayConfiguration: 0x600003d4cc30; Main; mode: "834x1210@2x 60Hz p3 SDR">
+2026-07-26 14:04:16.715 I  augustus[47855:1925d84] [com.apple.Accessibility:AXRuntimeNotifications] Did post notification. notification:  (3031) error:0 data:<private>
+2026-07-26 14:04:17.541 I  augustus[47855:1925d84] [com.apple.Accessibility:AXAppAccessibility] Presentation controller doesn't modalize: <_UIRootPresentationController: 0x106343350>
+Child process terminated with signal 15: Terminated
