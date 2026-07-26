@@ -13,8 +13,8 @@ Last updated: 2026-07-26
 | G4 — Playable | PASS | Clean XCUITest reached a landscape mission, selected housing, placed it, dismissed the build tool, panned the map, changed speed, and paused without a keyboard; 1 test, 0 failures in 93.858 s; `artifacts/g4/playable-flow-pass-2.log`; screenshots in ignored `artifacts/g4/playable-flow-pass-2.xcresult` |
 | G5 — Touch controls | PASS | Focused Simulator UI test passed tap, two-finger right-click, drag pan, pinch zoom, and native `Running` → `Paused` control state in 75.813 s; engine interaction test passed 350 ms long-press timing, movement rejection, release timing, and two-finger consumption; `artifacts/g5/touch-controls-pass-8.log`; `artifacts/g5/long-press-engine-test-final.log`; screenshots in ignored xcresult |
 | G6 — Lifecycle safe | PASS | `simctl` backgrounding created `Documents/caesarpad-autosave.svx` (58,320 bytes); after terminate + cold launch, XCUITest observed the engine-marked resumed state and the save was consumed; `artifacts/g6/build-final.log`; `artifacts/g6/lifecycle-pass-2.log`; screenshots in ignored xcresults |
-| G7 — Test suite | CURRENT | One-command full-suite runner not yet implemented |
-| G8 — Repeatable | PENDING | — |
+| G7 — Test suite | PASS | One `scripts/test.sh` run built the app, booted/installed/injected data, passed the engine touch test, playable UI flow, minimal-touch UI flow, and lifecycle cycle; final line `PASS: CaesarPad build, boot, data, gameplay, touch, and lifecycle suite`; `artifacts/g7/full-suite.log` |
+| G8 — Repeatable | CURRENT | Clean-build and two consecutive full-suite runs not yet verified |
 
 ## Pinned inputs
 
@@ -33,5 +33,5 @@ Last updated: 2026-07-26
 
 ## Current blocker
 
-None. Current work is G7: make one `scripts/test.sh` command run the complete build,
-boot, data, gameplay, touch, and lifecycle suite.
+None. Current work is G8: prove the documented clean checkout path, then pass
+`scripts/build.sh && scripts/test.sh` twice consecutively.
