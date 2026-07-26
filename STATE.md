@@ -10,8 +10,8 @@ Last updated: 2026-07-26
 | G1 — Engine builds | PASS | `scripts/build.sh`; arm64 Simulator app; `** BUILD SUCCEEDED **`; `artifacts/g1/build.log` |
 | G2 — Boots | PASS | Fresh install launched as PID 47408 and displayed the “Game Data Required” alert; `artifacts/g2/game-data-required.png`; `artifacts/g2/launch.log` |
 | G3 — Data loads | PASS | 601 files injected by `scripts/inject-data.sh`; main menu reached; PID 47855 remained live; CoreAudio created and started a 2-channel 22050 Hz playback queue; `artifacts/g3/` |
-| G4 — Playable | CURRENT | Not yet run |
-| G5 — Touch controls | PENDING | — |
+| G4 — Playable | PASS | Clean XCUITest reached a landscape mission, selected housing, placed it, dismissed the build tool, panned the map, changed speed, and paused without a keyboard; 1 test, 0 failures in 93.858 s; `artifacts/g4/playable-flow-pass-2.log`; screenshots in ignored `artifacts/g4/playable-flow-pass-2.xcresult` |
+| G5 — Touch controls | CURRENT | Tap and drag covered by G4; long-press, pinch, two-finger tap, and native pause affordance remain |
 | G6 — Lifecycle safe | PENDING | — |
 | G7 — Test suite | PENDING | — |
 | G8 — Repeatable | PENDING | — |
@@ -28,7 +28,9 @@ Last updated: 2026-07-26
 - The iOS 18.5 iPad Pro 11-inch (M4) Simulator is the primary automated target.
 - `ref/` is ignored and reserved for user-owned Caesar III data. Its contents must never be staged or committed.
 - Engine changes, if a gate requires them, live as small patches under `patches/`; the engine remains a submodule.
+- The app supports landscape left and right only; portrait orientations are removed by the smallest upstream patch.
 
 ## Current blocker
 
-None. Current work is G4: start a mission and automate tap selection, map drag, building placement, and keyboard-free pause/speed access with screenshots at each step.
+None. Current work is G5: verify every core touch mapping and add the single native
+pause affordance.

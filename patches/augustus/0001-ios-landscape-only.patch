@@ -1,0 +1,18 @@
+From: CaesarPad <caesarpad@local>
+Subject: [PATCH] iOS: restrict the app to landscape
+Upstream-status: Not submitted
+Reason: Caesar III needs a landscape iPad canvas; allowing portrait launched the engine sideways.
+
+diff --git a/res/ios/Info.plist b/res/ios/Info.plist
+index 0c2b35300..786b6f4fa 100644
+--- a/res/ios/Info.plist
++++ b/res/ios/Info.plist
+@@ -37,8 +37,6 @@
+   </dict>
+   <key>UISupportedInterfaceOrientations</key>
+   <array>
+-    <string>UIInterfaceOrientationPortrait</string>
+-    <string>UIInterfaceOrientationPortraitUpsideDown</string>
+     <string>UIInterfaceOrientationLandscapeLeft</string>
+     <string>UIInterfaceOrientationLandscapeRight</string>
+   </array>

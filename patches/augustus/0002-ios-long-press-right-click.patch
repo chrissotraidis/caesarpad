@@ -1,0 +1,98 @@
+From: CaesarPad <caesarpad@local>
+Subject: [PATCH] Map long press to city right click
+
+Upstream-status: Not submitted
+Reason: iPad users need a keyboard-free right click for tool cancel and building info.
+
+diff --git a/src/input/touch.c b/src/input/touch.c
+index 91cae459b..4f0f03d24 100644
+--- a/src/input/touch.c
++++ b/src/input/touch.c
+@@ -6,6 +6,7 @@
+ #include <stdlib.h>
+
+ #define CLICK_TIME 300
++#define LONG_PRESS_TIME 350
+ #define NOT_MOVING_RANGE 5
+ #define SCROLL_FINGER_RADIUS 25
+ #define MILLIS_TOLERANCE_BETWEEN_LAST_MOVE_AND_TOUCH_END 60
+@@ -89,6 +90,20 @@ int touch_was_double_click(const touch *t)
+         (t->start_time - data.old_touch.last_change_time) < CLICK_TIME);
+ }
+
++int touch_poll_long_press(void)
++{
++    touch *t = (touch *) touch_get_earliest();
++    time_millis end_time = t->has_ended ? t->last_change_time : time_get_millis();
++    if (!t->in_use || t->long_press_handled ||
++        abs(t->current_point.x - t->start_point.x) > 12 ||
++        abs(t->current_point.y - t->start_point.y) > 12 ||
++        end_time - t->start_time < LONG_PRESS_TIME) {
++        return 0;
++    }
++    t->long_press_handled = 1;
++    return 1;
++}
++
+ int touch_is_scroll(void)
+ {
+     int num_touches = get_total_active_touches();
+@@ -146,6 +161,7 @@ int touch_create(touch_coords start_coords, time_millis start_time)
+         t->in_use = 1;
+         t->has_started = 1;
+         t->has_ended = 0;
++        t->long_press_handled = 0;
+         t->start_point = start_coords;
+         t->current_point = start_coords;
+         t->previous_frame_point = start_coords;
+@@ -188,6 +204,7 @@ void touch_end(int index, time_millis current_time)
+     if (current_time - t->last_change_time < MILLIS_TOLERANCE_BETWEEN_LAST_MOVE_AND_TOUCH_END) {
+         t->frame_movement = t->last_movement;
+     }
++    t->last_change_time = current_time;
+ }
+
+ void reset_touches(int reset_old_touch)
+diff --git a/src/input/touch.h b/src/input/touch.h
+index abb451533..646555dff 100644
+--- a/src/input/touch.h
++++ b/src/input/touch.h
+@@ -22,6 +22,7 @@ typedef struct {
+     int has_started;
+     int has_moved;
+     int has_ended;
++    int long_press_handled;
+     touch_coords start_point;
+     touch_coords current_point;
+     touch_coords previous_frame_point;
+@@ -37,6 +38,7 @@ const touch *touch_get_latest(void);
+ int touch_not_click(const touch *t);
+ int touch_was_click(const touch *t);
+ int touch_was_double_click(const touch *t);
++int touch_poll_long_press(void);
+
+ int touch_is_scroll(void);
+ int touch_get_scroll(void);
+diff --git a/src/widget/city/city.c b/src/widget/city/city.c
+index 3fb85eb4f..7e5c05bd4 100644
+--- a/src/widget/city/city.c
++++ b/src/widget/city/city.c
+@@ -502,6 +502,18 @@ static void handle_first_touch(map_tile *tile)
+     const touch *first = touch_get_earliest();
+     building_type type = building_construction_type();
+
++    if (touch_poll_long_press()) {
++        scroll_drag_end();
++        data.capture_input = 0;
++        if (type != BUILDING_NONE) {
++            building_construction_cancel();
++            window_request_refresh();
++        } else if (handle_right_click_allow_building_info(tile)) {
++            window_building_info_show(tile->grid_offset);
++        }
++        return;
++    }
++
+     if (touch_was_click(first)) {
+         if (handle_play_pause_button(first) ||
+             handle_construction_buttons(first->current_point.x, first->current_point.y, 1) ||

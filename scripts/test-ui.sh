@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+BUILD_DIR="${UI_TEST_BUILD_DIR:-$ROOT_DIR/build/ui-tests}"
+PROJECT_PATH="$BUILD_DIR/CaesarPadUITestHarness.xcodeproj"
+SCHEME_PATH="$PROJECT_PATH/xcshareddata/xcschemes/CaesarPadUITests.xcscheme"
+SIMULATOR_UDID="${SIMULATOR_UDID:-08636791-2675-4675-8335-EF72EF954DCF}"
+RESULT_BUNDLE_PATH="${RESULT_BUNDLE_PATH:-$ROOT_DIR/artifacts/g4/ui-tests-$(date +%Y%m%d-%H%M%S).xcresult}"
+
+cmake \
+    -S "$ROOT_DIR/tests/ui" \
+    -B "$BUILD_DIR" \
+    -G Xcode \
+    -DCMAKE_SYSTEM_NAME=iOS \
+    -DCMAKE_OSX_SYSROOT=iphonesimulator
+
+sed "s|@PROJECT_PATH@|$PROJECT_PATH|g" \
+    "$ROOT_DIR/tests/ui/CaesarPadUITests.xcscheme.in" > "$SCHEME_PATH"
+
+mkdir -p "$(dirname "$RESULT_BUNDLE_PATH")"
+
+xcodebuild \
+    -project "$PROJECT_PATH" \
+    -scheme CaesarPadUITests \
+    -configuration Debug \
+    -sdk iphonesimulator \
+    -derivedDataPath "$BUILD_DIR/DerivedData" \
+    clean
+
+xcodebuild \
+    -project "$PROJECT_PATH" \
+    -scheme CaesarPadUITests \
+    -configuration Debug \
+    -sdk iphonesimulator \
+    -destination "platform=iOS Simulator,id=$SIMULATOR_UDID" \
+    -derivedDataPath "$BUILD_DIR/DerivedData" \
+    -resultBundlePath "$RESULT_BUNDLE_PATH" \
+    CODE_SIGN_IDENTITY="" \
+    CODE_SIGNING_REQUIRED=NO \
+    CODE_SIGNING_ALLOWED=NO \
+    test
+
+echo "Saved UI-test results to $RESULT_BUNDLE_PATH"

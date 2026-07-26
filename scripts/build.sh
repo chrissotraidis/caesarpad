@@ -8,6 +8,7 @@ BUILD_DIR="${BUILD_DIR:-$ROOT_DIR/build/ios}"
 SIMULATOR_UDID="${SIMULATOR_UDID:-08636791-2675-4675-8335-EF72EF954DCF}"
 
 "$ROOT_DIR/scripts/fetch-deps.sh"
+"$ROOT_DIR/scripts/apply-patches.sh"
 
 cmake \
     -S "$ENGINE_DIR" \
