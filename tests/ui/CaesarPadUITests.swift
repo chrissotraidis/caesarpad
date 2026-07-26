@@ -310,4 +310,37 @@ final class CaesarPadUITests: XCTestCase {
         capture("31-native-pause-after")
         XCTAssertEqual(nativePause.value as? String, "Paused")
     }
+
+    func testPrepareLifecycleMission() {
+        app.launch()
+
+        XCTAssertTrue(app.wait(for: .runningForeground, timeout: 15))
+        point(0.527, 0.453).tap()
+        settle(0.5)
+        point(0.501, 0.523).tap()
+        settle(3)
+        point(0.503, 0.529).tap()
+        settle(2)
+        point(0.501, 0.380).tap()
+        settle()
+        point(0.681, 0.748).tap()
+        settle(2)
+        point(0.673, 0.853).tap()
+        settle(4)
+        point(0.610, 0.565).tap()
+        settle(2)
+
+        XCTAssertTrue(app.buttons["caesarpad.pause"].exists)
+        capture("40-lifecycle-city-ready")
+    }
+
+    func testVerifyLifecycleResume() {
+        app.activate()
+
+        XCTAssertTrue(app.wait(for: .runningForeground, timeout: 15))
+        let nativePause = app.buttons["caesarpad.pause"]
+        XCTAssertTrue(nativePause.waitForExistence(timeout: 5))
+        XCTAssertEqual(nativePause.value as? String, "Running, lifecycle autosave resumed")
+        capture("41-lifecycle-city-resumed")
+    }
 }

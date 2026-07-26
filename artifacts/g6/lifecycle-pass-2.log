@@ -1,0 +1,987 @@
+Monitoring boot status for iPad Pro 11-inch (M4) (08636791-2675-4675-8335-EF72EF954DCF).
+Device already booted, nothing to do.
+
+Injected 602 files into /Users/chrissotraidis/Library/Developer/CoreSimulator/Devices/08636791-2675-4675-8335-EF72EF954DCF/data/Containers/Data/Application/3F4BA4EE-1E49-4CFA-A44B-26D3E835B3A9/Documents/C3
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CaesarPadUITestHarness.xcodeproj -scheme CaesarPadUITests -configuration Debug -sdk iphonesimulator -derivedDataPath /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData clean
+
+Build settings from command line:
+    SDKROOT = iphonesimulator26.5
+
+--- xcodebuild: WARNING: Using the first of multiple matching destinations:
+{ platform:iOS Simulator, id:dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder, name:Any iOS Simulator Device }
+{ platform:iOS Simulator, arch:arm64, id:4B500075-51AB-45B2-BF38-F325507BB905, OS:26.5, name:DaggerPad iPad Pro M2 }
+{ platform:iOS Simulator, arch:arm64, id:48B29BDF-DA77-48A2-85F0-5AADFBC4B563, OS:26.5, name:DaggerPad iPad Pro M2 Clean }
+{ platform:iOS Simulator, arch:arm64, id:99B296D5-8819-4637-8C62-347E1F49B85F, OS:18.5, name:DaggerPad iPad Pro M2 iOS 18.5 }
+{ platform:iOS Simulator, arch:x86_64, id:99B296D5-8819-4637-8C62-347E1F49B85F, OS:18.5, name:DaggerPad iPad Pro M2 iOS 18.5 }
+{ platform:iOS Simulator, arch:arm64, id:0309932A-BD06-4561-B889-B4576C42BC22, OS:18.5, name:iPad (A16) }
+{ platform:iOS Simulator, arch:x86_64, id:0309932A-BD06-4561-B889-B4576C42BC22, OS:18.5, name:iPad (A16) }
+{ platform:iOS Simulator, arch:arm64, id:5C2FD444-A69E-4EF0-83A5-5EDB579015C8, OS:26.5, name:iPad (A16) }
+{ platform:iOS Simulator, arch:arm64, id:9C4B6D74-7B8D-4DBC-93E7-5590E45539A8, OS:18.5, name:iPad Air 11-inch (M3) }
+{ platform:iOS Simulator, arch:x86_64, id:9C4B6D74-7B8D-4DBC-93E7-5590E45539A8, OS:18.5, name:iPad Air 11-inch (M3) }
+{ platform:iOS Simulator, arch:arm64, id:D5BFE5D2-C276-4F9A-B3C1-305C256BED0D, OS:26.5, name:iPad Air 11-inch (M4) }
+{ platform:iOS Simulator, arch:arm64, id:EEF37AFD-88A6-44DB-9631-57E00476704F, OS:18.5, name:iPad Air 13-inch (M3) }
+{ platform:iOS Simulator, arch:x86_64, id:EEF37AFD-88A6-44DB-9631-57E00476704F, OS:18.5, name:iPad Air 13-inch (M3) }
+{ platform:iOS Simulator, arch:arm64, id:151160FE-3DA5-4725-A719-79CCC50EB4AA, OS:26.5, name:iPad Air 13-inch (M4) }
+{ platform:iOS Simulator, arch:arm64, id:08636791-2675-4675-8335-EF72EF954DCF, OS:18.5, name:iPad Pro 11-inch (M4) }
+{ platform:iOS Simulator, arch:x86_64, id:08636791-2675-4675-8335-EF72EF954DCF, OS:18.5, name:iPad Pro 11-inch (M4) }
+{ platform:iOS Simulator, arch:arm64, id:DE8E956F-6B29-4FF3-AF4A-77034CE8588A, OS:26.5, name:iPad Pro 11-inch (M5) }
+{ platform:iOS Simulator, arch:arm64, id:02BFE363-AA20-48BD-BBE0-7DBEB4AD8713, OS:18.5, name:iPad Pro 13-inch (M4) }
+{ platform:iOS Simulator, arch:x86_64, id:02BFE363-AA20-48BD-BBE0-7DBEB4AD8713, OS:18.5, name:iPad Pro 13-inch (M4) }
+{ platform:iOS Simulator, arch:arm64, id:68016FEA-1887-4E05-A7F4-B26EC8572B8A, OS:26.5, name:iPad Pro 13-inch (M5) }
+{ platform:iOS Simulator, arch:arm64, id:7D8C148F-3B11-43B3-A032-0D6DBE40C366, OS:18.5, name:iPad mini (A17 Pro) }
+{ platform:iOS Simulator, arch:x86_64, id:7D8C148F-3B11-43B3-A032-0D6DBE40C366, OS:18.5, name:iPad mini (A17 Pro) }
+{ platform:iOS Simulator, arch:arm64, id:6F31C8CB-2FEE-4258-AD75-C672BB4AB3BA, OS:26.5, name:iPad mini (A17 Pro) }
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+** CLEAN SUCCEEDED **
+
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CaesarPadUITestHarness.xcodeproj -scheme CaesarPadUITests -configuration Debug -sdk iphonesimulator -destination "platform=iOS Simulator,id=08636791-2675-4675-8335-EF72EF954DCF" -derivedDataPath /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData -resultBundlePath /Users/chrissotraidis/GitHub/caesarpad/artifacts/g6/lifecycle-prepare-20260726-172358.xcresult CODE_SIGN_IDENTITY= CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO "-only-testing:CaesarPadUITests/CaesarPadUITests/testPrepareLifecycleMission" test
+
+Build settings from command line:
+    CODE_SIGN_IDENTITY =
+    CODE_SIGNING_ALLOWED = NO
+    CODE_SIGNING_REQUIRED = NO
+    SDKROOT = iphonesimulator26.5
+
+Writing result bundle at path:
+	/Users/chrissotraidis/GitHub/caesarpad/artifacts/g6/lifecycle-prepare-20260726-172358.xcresult
+
+--- xcodebuild: WARNING: Using the first of multiple matching destinations:
+{ platform:iOS Simulator, arch:arm64, id:08636791-2675-4675-8335-EF72EF954DCF, OS:18.5, name:iPad Pro 11-inch (M4) }
+{ platform:iOS Simulator, arch:x86_64, id:08636791-2675-4675-8335-EF72EF954DCF, OS:18.5, name:iPad Pro 11-inch (M4) }
+note: Using codesigning identity override:
+ComputePackagePrebuildTargetDependencyGraph
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (3 targets)
+    Target 'CaesarPadUITests' in project 'CaesarPadUITestHarness'
+        ➜ Explicit dependency on target 'CaesarPadTestHost' in project 'CaesarPadUITestHarness'
+        ➜ Explicit dependency on target 'ZERO_CHECK' in project 'CaesarPadUITestHarness'
+    Target 'CaesarPadTestHost' in project 'CaesarPadUITestHarness'
+        ➜ Explicit dependency on target 'ZERO_CHECK' in project 'CaesarPadUITestHarness'
+    Target 'ZERO_CHECK' in project 'CaesarPadUITestHarness' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 70600fae3146fb7b565f9477d5539d5d
+Build description path: /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/XCBuildData/70600fae3146fb7b565f9477d5539d5d.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+    cd /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CaesarPadUITestHarness.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -o /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+
+CreateBuildDirectory /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator
+    cd /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CaesarPadUITestHarness.xcodeproj
+    builtin-create-build-directory /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator
+
+CreateBuildDirectory /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build
+    cd /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CaesarPadUITestHarness.xcodeproj
+    builtin-create-build-directory /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build
+
+CreateBuildDirectory /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/ExplicitPrecompiledModules
+    cd /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CaesarPadUITestHarness.xcodeproj
+    builtin-create-build-directory /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/ExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/SwiftExplicitPrecompiledModules
+    cd /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CaesarPadUITestHarness.xcodeproj
+    builtin-create-build-directory /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/Debug-iphonesimulator
+    cd /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CaesarPadUITestHarness.xcodeproj
+    builtin-create-build-directory /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/Debug-iphonesimulator
+
+CreateBuildDirectory /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/EagerLinkingTBDs/Debug-iphonesimulator
+    cd /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CaesarPadUITestHarness.xcodeproj
+    builtin-create-build-directory /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/EagerLinkingTBDs/Debug-iphonesimulator
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITestHarness.build/Debug-iphonesimulator/ZERO_CHECK.build/Script-CF01EF5532D6E2A1461A5E05.sh (in target 'ZERO_CHECK' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITestHarness.build/Debug-iphonesimulator/ZERO_CHECK.build/Script-CF01EF5532D6E2A1461A5E05.sh
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/ProductTypeInfoPlistAdditions.plist (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/ProductTypeInfoPlistAdditions.plist
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.SwiftFileList (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.SwiftFileList
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost-OutputFileMap.json (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.SwiftConstValuesFileList (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.LinkFileList (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.LinkFileList
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost_const_extract_protocols.json (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests_const_extract_protocols.json (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests_const_extract_protocols.json
+
+PhaseScriptExecution Generate\ CMakeFiles/ZERO_CHECK /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITestHarness.build/Debug-iphonesimulator/ZERO_CHECK.build/Script-CF01EF5532D6E2A1461A5E05.sh (in target 'ZERO_CHECK' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /bin/sh -c /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITestHarness.build/Debug-iphonesimulator/ZERO_CHECK.build/Script-CF01EF5532D6E2A1461A5E05.sh
+make: `/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CMakeFiles/cmake.check_cache' is up to date.
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.SwiftFileList (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.SwiftFileList
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.SwiftConstValuesFileList (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.LinkFileList (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.LinkFileList
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests-OutputFileMap.json (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/CaesarPadUITests.DependencyStaticMetadataFileList (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/CaesarPadUITests.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/CaesarPadUITests.DependencyMetadataFileList (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/CaesarPadUITests.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/CaesarPadTestHost.DependencyStaticMetadataFileList (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/CaesarPadTestHost.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/CaesarPadTestHost.DependencyMetadataFileList (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/CaesarPadTestHost.DependencyMetadataFileList
+
+MkDir /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /bin/mkdir -p /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest
+
+MkDir /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /bin/mkdir -p /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app
+
+SwiftDriver CaesarPadTestHost normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CaesarPadTestHost -O @/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.SwiftFileList -Onone -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios15.0-simulator -g -module-cache-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 4 -I /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -F /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost_const_extract_protocols.json -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/include -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/DerivedSources-normal/arm64 -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/DerivedSources/arm64 -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/DerivedSources -Xcc -DCMAKE_INTDIR\=\"Debug-iphonesimulator\" -emit-objc-header -emit-objc-header-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost-Swift.h -working-directory /Users/chrissotraidis/GitHub/caesarpad/tests/ui -experimental-emit-module-separately -disable-cmo
+
+ProcessInfoPlistFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/Info.plist /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CMakeFiles/CaesarPadTestHost.dir/Info.plist (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-infoPlistUtility /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CMakeFiles/CaesarPadTestHost.dir/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/Info.plist
+
+SwiftCompile normal arm64 Compiling\ HostApp.swift /Users/chrissotraidis/GitHub/caesarpad/tests/ui/HostApp.swift (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+
+SwiftCompile normal arm64 /Users/chrissotraidis/GitHub/caesarpad/tests/ui/HostApp.swift (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ CaesarPadTestHost (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+
+SwiftCompile normal arm64 /Users/chrissotraidis/GitHub/caesarpad/tests/ui/HostApp.swift (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for CaesarPadTestHost (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+
+SwiftDriver\ Compilation\ Requirements CaesarPadTestHost normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CaesarPadTestHost -O @/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.SwiftFileList -Onone -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios15.0-simulator -g -module-cache-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 4 -I /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -F /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost_const_extract_protocols.json -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/include -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/DerivedSources-normal/arm64 -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/DerivedSources/arm64 -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/DerivedSources -Xcc -DCMAKE_INTDIR\=\"Debug-iphonesimulator\" -emit-objc-header -emit-objc-header-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost-Swift.h -working-directory /Users/chrissotraidis/GitHub/caesarpad/tests/ui -experimental-emit-module-separately -disable-cmo
+
+SwiftMergeGeneratedHeaders /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/DerivedSources/CaesarPadTestHost-Swift.h /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost-Swift.h (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-swiftHeaderTool -arch arm64 /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost-Swift.h -o /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/DerivedSources/CaesarPadTestHost-Swift.h
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.swiftmodule/arm64-apple-ios-simulator.swiftdoc /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.swiftdoc (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.swiftdoc /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.abi.json (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.abi.json /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.swiftmodule (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.swiftmodule /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.swiftsourceinfo (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.swiftsourceinfo /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftDriver CaesarPadUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CaesarPadUITests -O @/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.SwiftFileList -Onone -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios15.0-simulator -g -module-cache-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 4 -I /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests_const_extract_protocols.json -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/include -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/DerivedSources-normal/arm64 -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/DerivedSources/arm64 -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/DerivedSources -Xcc -DCMAKE_INTDIR\=\"Debug-iphonesimulator\" -Xcc -DCaesarPadUITests_EXPORTS -emit-objc-header -emit-objc-header-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests-Swift.h -working-directory /Users/chrissotraidis/GitHub/caesarpad/tests/ui -experimental-emit-module-separately -disable-cmo
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ CaesarPadUITests (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+SwiftCompile normal arm64 /Users/chrissotraidis/GitHub/caesarpad/tests/ui/CaesarPadUITests.swift (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+
+
+SwiftCompile normal arm64 Compiling\ CaesarPadUITests.swift /Users/chrissotraidis/GitHub/caesarpad/tests/ui/CaesarPadUITests.swift (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+SwiftCompile normal arm64 /Users/chrissotraidis/GitHub/caesarpad/tests/ui/CaesarPadUITests.swift (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+
+
+SwiftDriverJobDiscovery normal arm64 Compiling HostApp.swift (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+
+SwiftDriver\ Compilation CaesarPadTestHost normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CaesarPadTestHost -O @/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.SwiftFileList -Onone -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios15.0-simulator -g -module-cache-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 4 -I /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -F /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost_const_extract_protocols.json -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/include -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/DerivedSources-normal/arm64 -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/DerivedSources/arm64 -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/DerivedSources -Xcc -DCMAKE_INTDIR\=\"Debug-iphonesimulator\" -emit-objc-header -emit-objc-header-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost-Swift.h -working-directory /Users/chrissotraidis/GitHub/caesarpad/tests/ui -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/CaesarPadTestHost normal (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios15.0-simulator -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -F/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -filelist /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost_lto.o -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.swiftmodule @/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost-linker-args.resp -o /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/CaesarPadTestHost
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for CaesarPadUITests (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+
+SwiftDriver\ Compilation\ Requirements CaesarPadUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CaesarPadUITests -O @/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.SwiftFileList -Onone -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios15.0-simulator -g -module-cache-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 4 -I /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests_const_extract_protocols.json -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/include -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/DerivedSources-normal/arm64 -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/DerivedSources/arm64 -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/DerivedSources -Xcc -DCMAKE_INTDIR\=\"Debug-iphonesimulator\" -Xcc -DCaesarPadUITests_EXPORTS -emit-objc-header -emit-objc-header-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests-Swift.h -working-directory /Users/chrissotraidis/GitHub/caesarpad/tests/ui -experimental-emit-module-separately -disable-cmo
+
+SwiftMergeGeneratedHeaders /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/DerivedSources/CaesarPadUITests-Swift.h /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests-Swift.h (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-swiftHeaderTool -arch arm64 /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests-Swift.h -o /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/DerivedSources/CaesarPadUITests-Swift.h
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.swiftmodule (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.swiftmodule /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.abi.json (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.abi.json /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests.swiftmodule/arm64-apple-ios-simulator.swiftdoc /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.swiftdoc (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.swiftdoc /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.swiftsourceinfo (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.swiftsourceinfo /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+CopySwiftLibs /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/CaesarPadTestHost --scan-folder /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/Frameworks --scan-folder /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/PlugIns --scan-folder /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/SystemExtensions --scan-folder /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os --back-deploy-swift-span
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name CaesarPadTestHost --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 15.0 --bundle-identifier dev.caesarpad.testhost --output /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app --target-triple arm64-apple-ios15.0-simulator --binary-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/CaesarPadTestHost --dependency-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost_dependency_info.dat --stringsdata-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.SwiftFileList --metadata-file-list /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/CaesarPadTestHost.DependencyMetadataFileList --static-metadata-file-list /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/CaesarPadTestHost.DependencyStaticMetadataFileList --swift-const-vals-list /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-07-26 17:24:34.441 appintentsmetadataprocessor[88398:26748520] Starting appintentsmetadataprocessor export
+2026-07-26 17:24:34.455 appintentsmetadataprocessor[88398:26748520] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+GenerateDSYMFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app.dSYM /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/CaesarPadTestHost (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/CaesarPadTestHost -o /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app.dSYM
+
+AppIntentsSSUTraining (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/Info.plist --temp-dir-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/ssu --bundle-id dev.caesarpad.testhost --product-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app --extracted-metadata-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/Metadata.appintents --metadata-file-list /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/CaesarPadTestHost.DependencyMetadataFileList --source-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/Info.plist --archive-ssu-assets
+2026-07-26 17:24:34.524 appintentsnltrainingprocessor[88400:26748523] Parsing options for appintentsnltrainingprocessor
+2026-07-26 17:24:34.526 appintentsnltrainingprocessor[88400:26748523] Starting AppIntents SSU YAML Generation
+2026-07-26 17:24:34.531 appintentsnltrainingprocessor[88400:26748523] No AppShortcuts found - Skipping.
+
+RegisterExecutionPolicyException /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-RegisterExecutionPolicyException /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app
+
+Validate /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-validationUtility /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app -shallow-bundle -infoplist-subpath Info.plist
+
+Touch /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /usr/bin/touch -c /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app
+
+ProcessInfoPlistFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/Info.plist /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CMakeFiles/CaesarPadUITests.dir/Info.plist (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-infoPlistUtility /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CMakeFiles/CaesarPadUITests.dir/Info.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/ProductTypeInfoPlistAdditions.plist -o /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/Info.plist
+
+SwiftDriverJobDiscovery normal arm64 Compiling CaesarPadUITests.swift (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+
+SwiftDriver\ Compilation CaesarPadUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CaesarPadUITests -O @/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.SwiftFileList -Onone -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios15.0-simulator -g -module-cache-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 4 -I /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests_const_extract_protocols.json -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/include -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/DerivedSources-normal/arm64 -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/DerivedSources/arm64 -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/DerivedSources -Xcc -DCMAKE_INTDIR\=\"Debug-iphonesimulator\" -Xcc -DCaesarPadUITests_EXPORTS -emit-objc-header -emit-objc-header-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests-Swift.h -working-directory /Users/chrissotraidis/GitHub/caesarpad/tests/ui -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/CaesarPadUITests normal (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios15.0-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -filelist /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests_lto.o -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.swiftmodule @/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests-linker-args.resp -framework XCTest -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -o /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/CaesarPadUITests
+
+CopySwiftLibs /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/CaesarPadUITests --scan-folder /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/Frameworks --scan-folder /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/PlugIns --scan-folder /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/SystemExtensions --scan-folder /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os --back-deploy-swift-span
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name CaesarPadUITests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 15.0 --bundle-identifier dev.caesarpad.uitests --output /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest --target-triple arm64-apple-ios15.0-simulator --binary-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/CaesarPadUITests --dependency-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests_dependency_info.dat --stringsdata-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.SwiftFileList --metadata-file-list /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/CaesarPadUITests.DependencyMetadataFileList --static-metadata-file-list /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/CaesarPadUITests.DependencyStaticMetadataFileList --swift-const-vals-list /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-07-26 17:24:35.876 appintentsmetadataprocessor[88406:26748558] Starting appintentsmetadataprocessor export
+2026-07-26 17:24:35.880 appintentsmetadataprocessor[88406:26748558] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+GenerateDSYMFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest.dSYM /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/CaesarPadUITests (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/CaesarPadUITests -o /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest.dSYM
+
+AppIntentsSSUTraining (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/Info.plist --temp-dir-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/ssu --bundle-id dev.caesarpad.uitests --product-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest --extracted-metadata-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/Metadata.appintents --metadata-file-list /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/CaesarPadUITests.DependencyMetadataFileList --source-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/Info.plist --archive-ssu-assets
+2026-07-26 17:24:35.944 appintentsnltrainingprocessor[88408:26748562] Parsing options for appintentsnltrainingprocessor
+2026-07-26 17:24:35.946 appintentsnltrainingprocessor[88408:26748562] Starting AppIntents SSU YAML Generation
+2026-07-26 17:24:35.947 appintentsnltrainingprocessor[88408:26748562] No AppShortcuts found - Skipping.
+
+CopyPlistFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Info.plist /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/Info.plist (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copyPlist --validate --convert xml1 --macro-expansion WRAPPEDPRODUCTNAME CaesarPadUITests-Runner --macro-expansion WRAPPEDPRODUCTBUNDLEIDENTIFIER dev.caesarpad.uitests.xctrunner --macro-expansion TESTPRODUCTNAME CaesarPadUITests --macro-expansion TESTPRODUCTBUNDLEIDENTIFIER dev.caesarpad.uitests --copy-value UIDeviceFamily /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/Info.plist --outdir /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app -- /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/Info.plist
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PkgInfo /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/PkgInfo (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/PkgInfo /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks/XCUIAutomation.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCUIAutomation.framework (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCUIAutomation.framework /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks
+warning: not stripping binary because it is signed: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCUIAutomation.framework/XCUIAutomation (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks/XCTestSupport.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTestSupport.framework (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTestSupport.framework /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks
+warning: not stripping binary because it is signed: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTestSupport.framework/XCTestSupport (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks/libXCTestSwiftSupport.dylib /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks
+warning: not stripping binary because it is signed: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+
+MkDir /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /bin/mkdir -p /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks/XCUnit.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCUnit.framework (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCUnit.framework /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks
+warning: not stripping binary because it is signed: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCUnit.framework/XCUnit (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+
+CopyAndPreserveArchs /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/CaesarPadUITests-Runner (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/XCTRunner -output /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/CaesarPadUITests-Runner -extract arm64
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks/XCTestCore.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTestCore.framework (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTestCore.framework /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks
+warning: not stripping binary because it is signed: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTestCore.framework/XCTestCore (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks/XCTest.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks
+warning: not stripping binary because it is signed: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/XCTest (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks/XCTAutomationSupport.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTAutomationSupport.framework (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTAutomationSupport.framework /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks
+warning: not stripping binary because it is signed: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTAutomationSupport.framework/XCTAutomationSupport (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks/Testing.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/Testing.framework (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/Testing.framework /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks
+warning: not stripping binary because it is signed: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/Testing.framework/Testing (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+
+RegisterExecutionPolicyException /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-RegisterExecutionPolicyException /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest
+
+Touch /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /usr/bin/touch -c /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest
+
+note: Run script build phase 'Generate CMakeFiles/ZERO_CHECK' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'ZERO_CHECK' from project 'CaesarPadUITestHarness')
+2026-07-26 17:24:41.906092-0500 CaesarPadUITests-Runner[88416:26748783] [Default] Running tests...
+    t =      nans Interface orientation changed to Landscape Right
+Test Suite 'Selected tests' started at 2026-07-26 17:24:44.123.
+Test Suite 'CaesarPadUITests.xctest' started at 2026-07-26 17:24:44.125.
+Test Suite 'CaesarPadUITests' started at 2026-07-26 17:24:44.125.
+Test Case '-[CaesarPadUITests.CaesarPadUITests testPrepareLifecycleMission]' started.
+    t =     0.00s Start Test at 2026-07-26 17:24:44.129
+    t =     0.12s Set Up
+    t =     0.12s Open com.github.keriew.augustus
+    t =     0.12s     Launch com.github.keriew.augustus
+    t =     0.60s         Setting up automation session
+    t =     2.77s         Wait for com.github.keriew.augustus to idle
+    t =    11.55s Wait for com.github.keriew.augustus to become Running Foreground
+    t =    11.56s Tap Application 'com.github.keriew.augustus'[0.53, 0.45]
+    t =    11.57s     Wait for com.github.keriew.augustus to idle
+    t =    11.59s     Find the Application 'com.github.keriew.augustus'
+    t =    11.92s     Check for interrupting elements affecting "Augustus" Application
+    t =    12.04s     Synthesize event
+    t =    12.06s         Find the Application 'com.github.keriew.augustus'
+    t =    12.11s         Find the Application 'com.github.keriew.augustus'
+    t =    12.18s         Find the Application 'com.github.keriew.augustus'
+    t =    12.54s     Wait for com.github.keriew.augustus to idle
+    t =    13.08s Tap Application 'com.github.keriew.augustus'[0.50, 0.52]
+    t =    13.08s     Wait for com.github.keriew.augustus to idle
+    t =    13.09s     Find the Application 'com.github.keriew.augustus'
+    t =    13.14s     Check for interrupting elements affecting "Augustus" Application
+    t =    13.21s     Synthesize event
+    t =    13.24s         Find the Application 'com.github.keriew.augustus'
+    t =    13.28s         Find the Application 'com.github.keriew.augustus'
+    t =    13.40s         Find the Application 'com.github.keriew.augustus'
+    t =    13.79s     Wait for com.github.keriew.augustus to idle
+    t =    16.81s Tap Application 'com.github.keriew.augustus'[0.50, 0.53]
+    t =    16.84s     Wait for com.github.keriew.augustus to idle
+    t =    16.93s     Find the Application 'com.github.keriew.augustus'
+    t =    17.37s     Check for interrupting elements affecting "Augustus" Application
+    t =    17.53s     Synthesize event
+    t =    17.60s         Find the Application 'com.github.keriew.augustus'
+    t =    17.63s         Find the Application 'com.github.keriew.augustus'
+    t =    17.71s         Find the Application 'com.github.keriew.augustus'
+    t =    18.10s     Wait for com.github.keriew.augustus to idle
+    t =    20.15s Tap Application 'com.github.keriew.augustus'[0.50, 0.38]
+    t =    20.15s     Wait for com.github.keriew.augustus to idle
+    t =    20.19s     Find the Application 'com.github.keriew.augustus'
+    t =    20.26s     Check for interrupting elements affecting "Augustus" Application
+    t =    20.34s     Synthesize event
+    t =    20.36s         Find the Application 'com.github.keriew.augustus'
+    t =    20.39s         Find the Application 'com.github.keriew.augustus'
+    t =    20.47s         Find the Application 'com.github.keriew.augustus'
+    t =    20.96s     Wait for com.github.keriew.augustus to idle
+    t =    23.61s Tap Application 'com.github.keriew.augustus'[0.68, 0.75]
+    t =    23.61s     Wait for com.github.keriew.augustus to idle
+    t =    23.64s     Find the Application 'com.github.keriew.augustus'
+    t =    23.78s     Check for interrupting elements affecting "Augustus" Application
+    t =    23.85s     Synthesize event
+    t =    23.86s         Find the Application 'com.github.keriew.augustus'
+    t =    23.92s         Find the Application 'com.github.keriew.augustus'
+    t =    24.01s         Find the Application 'com.github.keriew.augustus'
+    t =    24.40s     Wait for com.github.keriew.augustus to idle
+    t =    26.90s Tap Application 'com.github.keriew.augustus'[0.67, 0.85]
+    t =    26.90s     Wait for com.github.keriew.augustus to idle
+    t =    26.93s     Find the Application 'com.github.keriew.augustus'
+    t =    27.10s     Check for interrupting elements affecting "Augustus" Application
+    t =    27.30s     Synthesize event
+    t =    27.42s         Find the Application 'com.github.keriew.augustus'
+    t =    27.51s         Find the Application 'com.github.keriew.augustus'
+    t =    27.67s         Find the Application 'com.github.keriew.augustus'
+    t =    28.05s     Wait for com.github.keriew.augustus to idle
+    t =    32.09s Tap Application 'com.github.keriew.augustus'[0.61, 0.56]
+    t =    32.09s     Wait for com.github.keriew.augustus to idle
+    t =    32.10s     Find the Application 'com.github.keriew.augustus'
+    t =    32.19s     Check for interrupting elements affecting "Augustus" Application
+    t =    32.26s     Synthesize event
+    t =    32.28s         Find the Application 'com.github.keriew.augustus'
+    t =    32.32s         Find the Application 'com.github.keriew.augustus'
+    t =    32.41s         Find the Application 'com.github.keriew.augustus'
+    t =    32.75s     Wait for com.github.keriew.augustus to idle
+    t =    34.79s Checking existence of `"caesarpad.pause" Button`
+    t =    36.04s Added attachment named '40-lifecycle-city-ready'
+    t =    36.05s Tear Down
+Test Case '-[CaesarPadUITests.CaesarPadUITests testPrepareLifecycleMission]' passed (36.424 seconds).
+Test Suite 'CaesarPadUITests' passed at 2026-07-26 17:25:20.555.
+	 Executed 1 test, with 0 failures (0 unexpected) in 36.424 (36.430) seconds
+Test Suite 'CaesarPadUITests.xctest' passed at 2026-07-26 17:25:20.559.
+	 Executed 1 test, with 0 failures (0 unexpected) in 36.424 (36.434) seconds
+Test Suite 'Selected tests' passed at 2026-07-26 17:25:20.561.
+	 Executed 1 test, with 0 failures (0 unexpected) in 36.424 (36.438) seconds
+2026-07-26 17:25:21.429 xcodebuild[88320:26748186] [MT] IDETestOperationsObserverDebug: 45.338 elapsed -- Testing started completed.
+2026-07-26 17:25:21.429 xcodebuild[88320:26748186] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-07-26 17:25:21.430 xcodebuild[88320:26748186] [MT] IDETestOperationsObserverDebug: 45.338 sec, +45.338 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/chrissotraidis/GitHub/caesarpad/artifacts/g6/lifecycle-prepare-20260726-172358.xcresult
+
+** TEST SUCCEEDED **
+
+Testing started
+Saved UI-test results to /Users/chrissotraidis/GitHub/caesarpad/artifacts/g6/lifecycle-prepare-20260726-172358.xcresult
+com.apple.Preferences: 88494
+Lifecycle autosave: /Users/chrissotraidis/Library/Developer/CoreSimulator/Devices/08636791-2675-4675-8335-EF72EF954DCF/data/Containers/Data/Application/3F4BA4EE-1E49-4CFA-A44B-26D3E835B3A9/Documents/caesarpad-autosave.svx (58320 bytes)
+com.github.keriew.augustus: 88505
+-- Configuring done (0.4s)
+-- Generating done (0.1s)
+-- Build files have been written to: /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CaesarPadUITestHarness.xcodeproj -scheme CaesarPadUITests -configuration Debug -sdk iphonesimulator -derivedDataPath /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData clean
+
+Build settings from command line:
+    SDKROOT = iphonesimulator26.5
+
+--- xcodebuild: WARNING: Using the first of multiple matching destinations:
+{ platform:iOS Simulator, id:dvtdevice-DVTiOSDeviceSimulatorPlaceholder-iphonesimulator:placeholder, name:Any iOS Simulator Device }
+{ platform:iOS Simulator, arch:arm64, id:4B500075-51AB-45B2-BF38-F325507BB905, OS:26.5, name:DaggerPad iPad Pro M2 }
+{ platform:iOS Simulator, arch:arm64, id:48B29BDF-DA77-48A2-85F0-5AADFBC4B563, OS:26.5, name:DaggerPad iPad Pro M2 Clean }
+{ platform:iOS Simulator, arch:arm64, id:99B296D5-8819-4637-8C62-347E1F49B85F, OS:18.5, name:DaggerPad iPad Pro M2 iOS 18.5 }
+{ platform:iOS Simulator, arch:x86_64, id:99B296D5-8819-4637-8C62-347E1F49B85F, OS:18.5, name:DaggerPad iPad Pro M2 iOS 18.5 }
+{ platform:iOS Simulator, arch:arm64, id:0309932A-BD06-4561-B889-B4576C42BC22, OS:18.5, name:iPad (A16) }
+{ platform:iOS Simulator, arch:x86_64, id:0309932A-BD06-4561-B889-B4576C42BC22, OS:18.5, name:iPad (A16) }
+{ platform:iOS Simulator, arch:arm64, id:5C2FD444-A69E-4EF0-83A5-5EDB579015C8, OS:26.5, name:iPad (A16) }
+{ platform:iOS Simulator, arch:arm64, id:9C4B6D74-7B8D-4DBC-93E7-5590E45539A8, OS:18.5, name:iPad Air 11-inch (M3) }
+{ platform:iOS Simulator, arch:x86_64, id:9C4B6D74-7B8D-4DBC-93E7-5590E45539A8, OS:18.5, name:iPad Air 11-inch (M3) }
+{ platform:iOS Simulator, arch:arm64, id:D5BFE5D2-C276-4F9A-B3C1-305C256BED0D, OS:26.5, name:iPad Air 11-inch (M4) }
+{ platform:iOS Simulator, arch:arm64, id:EEF37AFD-88A6-44DB-9631-57E00476704F, OS:18.5, name:iPad Air 13-inch (M3) }
+{ platform:iOS Simulator, arch:x86_64, id:EEF37AFD-88A6-44DB-9631-57E00476704F, OS:18.5, name:iPad Air 13-inch (M3) }
+{ platform:iOS Simulator, arch:arm64, id:151160FE-3DA5-4725-A719-79CCC50EB4AA, OS:26.5, name:iPad Air 13-inch (M4) }
+{ platform:iOS Simulator, arch:arm64, id:08636791-2675-4675-8335-EF72EF954DCF, OS:18.5, name:iPad Pro 11-inch (M4) }
+{ platform:iOS Simulator, arch:x86_64, id:08636791-2675-4675-8335-EF72EF954DCF, OS:18.5, name:iPad Pro 11-inch (M4) }
+{ platform:iOS Simulator, arch:arm64, id:DE8E956F-6B29-4FF3-AF4A-77034CE8588A, OS:26.5, name:iPad Pro 11-inch (M5) }
+{ platform:iOS Simulator, arch:arm64, id:02BFE363-AA20-48BD-BBE0-7DBEB4AD8713, OS:18.5, name:iPad Pro 13-inch (M4) }
+{ platform:iOS Simulator, arch:x86_64, id:02BFE363-AA20-48BD-BBE0-7DBEB4AD8713, OS:18.5, name:iPad Pro 13-inch (M4) }
+{ platform:iOS Simulator, arch:arm64, id:68016FEA-1887-4E05-A7F4-B26EC8572B8A, OS:26.5, name:iPad Pro 13-inch (M5) }
+{ platform:iOS Simulator, arch:arm64, id:7D8C148F-3B11-43B3-A032-0D6DBE40C366, OS:18.5, name:iPad mini (A17 Pro) }
+{ platform:iOS Simulator, arch:x86_64, id:7D8C148F-3B11-43B3-A032-0D6DBE40C366, OS:18.5, name:iPad mini (A17 Pro) }
+{ platform:iOS Simulator, arch:arm64, id:6F31C8CB-2FEE-4258-AD75-C672BB4AB3BA, OS:26.5, name:iPad mini (A17 Pro) }
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+** CLEAN SUCCEEDED **
+
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CaesarPadUITestHarness.xcodeproj -scheme CaesarPadUITests -configuration Debug -sdk iphonesimulator -destination "platform=iOS Simulator,id=08636791-2675-4675-8335-EF72EF954DCF" -derivedDataPath /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData -resultBundlePath /Users/chrissotraidis/GitHub/caesarpad/artifacts/g6/lifecycle-resume-20260726-172358.xcresult CODE_SIGN_IDENTITY= CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO "-only-testing:CaesarPadUITests/CaesarPadUITests/testVerifyLifecycleResume" test
+
+Build settings from command line:
+    CODE_SIGN_IDENTITY =
+    CODE_SIGNING_ALLOWED = NO
+    CODE_SIGNING_REQUIRED = NO
+    SDKROOT = iphonesimulator26.5
+
+Writing result bundle at path:
+	/Users/chrissotraidis/GitHub/caesarpad/artifacts/g6/lifecycle-resume-20260726-172358.xcresult
+
+--- xcodebuild: WARNING: Using the first of multiple matching destinations:
+{ platform:iOS Simulator, arch:arm64, id:08636791-2675-4675-8335-EF72EF954DCF, OS:18.5, name:iPad Pro 11-inch (M4) }
+{ platform:iOS Simulator, arch:x86_64, id:08636791-2675-4675-8335-EF72EF954DCF, OS:18.5, name:iPad Pro 11-inch (M4) }
+note: Using codesigning identity override:
+ComputePackagePrebuildTargetDependencyGraph
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (3 targets)
+    Target 'CaesarPadUITests' in project 'CaesarPadUITestHarness'
+        ➜ Explicit dependency on target 'CaesarPadTestHost' in project 'CaesarPadUITestHarness'
+        ➜ Explicit dependency on target 'ZERO_CHECK' in project 'CaesarPadUITestHarness'
+    Target 'CaesarPadTestHost' in project 'CaesarPadUITestHarness'
+        ➜ Explicit dependency on target 'ZERO_CHECK' in project 'CaesarPadUITestHarness'
+    Target 'ZERO_CHECK' in project 'CaesarPadUITestHarness' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 80ef0b496653b9e642eac15f0d891b0f
+Build description path: /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/XCBuildData/80ef0b496653b9e642eac15f0d891b0f.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+    cd /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CaesarPadUITestHarness.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -o /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+
+CreateBuildDirectory /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build
+    cd /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CaesarPadUITestHarness.xcodeproj
+    builtin-create-build-directory /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build
+
+CreateBuildDirectory /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator
+    cd /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CaesarPadUITestHarness.xcodeproj
+    builtin-create-build-directory /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator
+
+CreateBuildDirectory /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/SwiftExplicitPrecompiledModules
+    cd /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CaesarPadUITestHarness.xcodeproj
+    builtin-create-build-directory /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/ExplicitPrecompiledModules
+    cd /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CaesarPadUITestHarness.xcodeproj
+    builtin-create-build-directory /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/ExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/EagerLinkingTBDs/Debug-iphonesimulator
+    cd /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CaesarPadUITestHarness.xcodeproj
+    builtin-create-build-directory /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/EagerLinkingTBDs/Debug-iphonesimulator
+
+CreateBuildDirectory /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/Debug-iphonesimulator
+    cd /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CaesarPadUITestHarness.xcodeproj
+    builtin-create-build-directory /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/Debug-iphonesimulator
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITestHarness.build/Debug-iphonesimulator/ZERO_CHECK.build/Script-CF01EF5532D6E2A1461A5E05.sh (in target 'ZERO_CHECK' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITestHarness.build/Debug-iphonesimulator/ZERO_CHECK.build/Script-CF01EF5532D6E2A1461A5E05.sh
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/ProductTypeInfoPlistAdditions.plist (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/ProductTypeInfoPlistAdditions.plist
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost_const_extract_protocols.json (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.SwiftConstValuesFileList (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.SwiftFileList (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.SwiftFileList
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.LinkFileList (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.LinkFileList
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost-OutputFileMap.json (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests_const_extract_protocols.json (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests_const_extract_protocols.json
+
+PhaseScriptExecution Generate\ CMakeFiles/ZERO_CHECK /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITestHarness.build/Debug-iphonesimulator/ZERO_CHECK.build/Script-CF01EF5532D6E2A1461A5E05.sh (in target 'ZERO_CHECK' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /bin/sh -c /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITestHarness.build/Debug-iphonesimulator/ZERO_CHECK.build/Script-CF01EF5532D6E2A1461A5E05.sh
+make: `/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CMakeFiles/cmake.check_cache' is up to date.
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.SwiftFileList (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.SwiftFileList
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.SwiftConstValuesFileList (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.LinkFileList (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.LinkFileList
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests-OutputFileMap.json (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/CaesarPadUITests.DependencyStaticMetadataFileList (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/CaesarPadUITests.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/CaesarPadUITests.DependencyMetadataFileList (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/CaesarPadUITests.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/CaesarPadTestHost.DependencyStaticMetadataFileList (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/CaesarPadTestHost.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/CaesarPadTestHost.DependencyMetadataFileList (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/CaesarPadTestHost.DependencyMetadataFileList
+
+MkDir /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /bin/mkdir -p /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app
+
+MkDir /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /bin/mkdir -p /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest
+
+SwiftDriver CaesarPadTestHost normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CaesarPadTestHost -O @/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.SwiftFileList -Onone -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios15.0-simulator -g -module-cache-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 4 -I /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -F /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost_const_extract_protocols.json -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/include -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/DerivedSources-normal/arm64 -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/DerivedSources/arm64 -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/DerivedSources -Xcc -DCMAKE_INTDIR\=\"Debug-iphonesimulator\" -emit-objc-header -emit-objc-header-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost-Swift.h -working-directory /Users/chrissotraidis/GitHub/caesarpad/tests/ui -experimental-emit-module-separately -disable-cmo
+
+ProcessInfoPlistFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/Info.plist /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CMakeFiles/CaesarPadTestHost.dir/Info.plist (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-infoPlistUtility /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CMakeFiles/CaesarPadTestHost.dir/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/Info.plist
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ CaesarPadTestHost (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+
+SwiftCompile normal arm64 /Users/chrissotraidis/GitHub/caesarpad/tests/ui/HostApp.swift (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+
+
+SwiftCompile normal arm64 Compiling\ HostApp.swift /Users/chrissotraidis/GitHub/caesarpad/tests/ui/HostApp.swift (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+SwiftCompile normal arm64 /Users/chrissotraidis/GitHub/caesarpad/tests/ui/HostApp.swift (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for CaesarPadTestHost (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+
+SwiftDriver\ Compilation\ Requirements CaesarPadTestHost normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CaesarPadTestHost -O @/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.SwiftFileList -Onone -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios15.0-simulator -g -module-cache-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 4 -I /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -F /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost_const_extract_protocols.json -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/include -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/DerivedSources-normal/arm64 -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/DerivedSources/arm64 -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/DerivedSources -Xcc -DCMAKE_INTDIR\=\"Debug-iphonesimulator\" -emit-objc-header -emit-objc-header-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost-Swift.h -working-directory /Users/chrissotraidis/GitHub/caesarpad/tests/ui -experimental-emit-module-separately -disable-cmo
+
+SwiftMergeGeneratedHeaders /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/DerivedSources/CaesarPadTestHost-Swift.h /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost-Swift.h (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-swiftHeaderTool -arch arm64 /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost-Swift.h -o /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/DerivedSources/CaesarPadTestHost-Swift.h
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.swiftmodule (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.swiftmodule /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.swiftmodule/arm64-apple-ios-simulator.swiftdoc /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.swiftdoc (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.swiftdoc /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.abi.json (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.abi.json /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.swiftsourceinfo (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.swiftsourceinfo /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftDriver CaesarPadUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CaesarPadUITests -O @/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.SwiftFileList -Onone -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios15.0-simulator -g -module-cache-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 4 -I /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests_const_extract_protocols.json -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/include -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/DerivedSources-normal/arm64 -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/DerivedSources/arm64 -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/DerivedSources -Xcc -DCMAKE_INTDIR\=\"Debug-iphonesimulator\" -Xcc -DCaesarPadUITests_EXPORTS -emit-objc-header -emit-objc-header-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests-Swift.h -working-directory /Users/chrissotraidis/GitHub/caesarpad/tests/ui -experimental-emit-module-separately -disable-cmo
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ CaesarPadUITests (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+
+SwiftCompile normal arm64 /Users/chrissotraidis/GitHub/caesarpad/tests/ui/CaesarPadUITests.swift (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+
+
+SwiftCompile normal arm64 Compiling\ CaesarPadUITests.swift /Users/chrissotraidis/GitHub/caesarpad/tests/ui/CaesarPadUITests.swift (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+SwiftCompile normal arm64 /Users/chrissotraidis/GitHub/caesarpad/tests/ui/CaesarPadUITests.swift (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+
+
+SwiftDriverJobDiscovery normal arm64 Compiling HostApp.swift (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+
+SwiftDriver\ Compilation CaesarPadTestHost normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CaesarPadTestHost -O @/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.SwiftFileList -Onone -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios15.0-simulator -g -module-cache-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 4 -I /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -F /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost_const_extract_protocols.json -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/include -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/DerivedSources-normal/arm64 -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/DerivedSources/arm64 -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/DerivedSources -Xcc -DCMAKE_INTDIR\=\"Debug-iphonesimulator\" -emit-objc-header -emit-objc-header-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost-Swift.h -working-directory /Users/chrissotraidis/GitHub/caesarpad/tests/ui -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/CaesarPadTestHost normal (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios15.0-simulator -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -F/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -filelist /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost_lto.o -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.swiftmodule @/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost-linker-args.resp -o /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/CaesarPadTestHost
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for CaesarPadUITests (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+
+SwiftDriver\ Compilation\ Requirements CaesarPadUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CaesarPadUITests -O @/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.SwiftFileList -Onone -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios15.0-simulator -g -module-cache-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 4 -I /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests_const_extract_protocols.json -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/include -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/DerivedSources-normal/arm64 -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/DerivedSources/arm64 -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/DerivedSources -Xcc -DCMAKE_INTDIR\=\"Debug-iphonesimulator\" -Xcc -DCaesarPadUITests_EXPORTS -emit-objc-header -emit-objc-header-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests-Swift.h -working-directory /Users/chrissotraidis/GitHub/caesarpad/tests/ui -experimental-emit-module-separately -disable-cmo
+
+SwiftMergeGeneratedHeaders /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/DerivedSources/CaesarPadUITests-Swift.h /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests-Swift.h (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-swiftHeaderTool -arch arm64 /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests-Swift.h -o /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/DerivedSources/CaesarPadUITests-Swift.h
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.swiftmodule (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.swiftmodule /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests.swiftmodule/arm64-apple-ios-simulator.swiftdoc /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.swiftdoc (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.swiftdoc /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.abi.json (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.abi.json /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.swiftsourceinfo (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.swiftsourceinfo /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+GenerateDSYMFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app.dSYM /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/CaesarPadTestHost (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/CaesarPadTestHost -o /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app.dSYM
+
+CopySwiftLibs /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/CaesarPadTestHost --scan-folder /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/Frameworks --scan-folder /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/PlugIns --scan-folder /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/SystemExtensions --scan-folder /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os --back-deploy-swift-span
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name CaesarPadTestHost --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 15.0 --bundle-identifier dev.caesarpad.testhost --output /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app --target-triple arm64-apple-ios15.0-simulator --binary-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/CaesarPadTestHost --dependency-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost_dependency_info.dat --stringsdata-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.SwiftFileList --metadata-file-list /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/CaesarPadTestHost.DependencyMetadataFileList --static-metadata-file-list /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/CaesarPadTestHost.DependencyStaticMetadataFileList --swift-const-vals-list /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadTestHost.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-07-26 17:26:03.252 appintentsmetadataprocessor[88640:26751314] Starting appintentsmetadataprocessor export
+2026-07-26 17:26:03.296 appintentsmetadataprocessor[88640:26751314] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+AppIntentsSSUTraining (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/Info.plist --temp-dir-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/ssu --bundle-id dev.caesarpad.testhost --product-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app --extracted-metadata-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/Metadata.appintents --metadata-file-list /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadTestHost.build/Debug-iphonesimulator/CaesarPadTestHost.DependencyMetadataFileList --source-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app/Info.plist --archive-ssu-assets
+2026-07-26 17:26:03.431 appintentsnltrainingprocessor[88641:26751329] Parsing options for appintentsnltrainingprocessor
+2026-07-26 17:26:03.433 appintentsnltrainingprocessor[88641:26751329] Starting AppIntents SSU YAML Generation
+2026-07-26 17:26:03.439 appintentsnltrainingprocessor[88641:26751329] No AppShortcuts found - Skipping.
+
+RegisterExecutionPolicyException /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-RegisterExecutionPolicyException /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app
+
+Validate /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-validationUtility /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app -shallow-bundle -infoplist-subpath Info.plist
+
+Touch /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app (in target 'CaesarPadTestHost' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /usr/bin/touch -c /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadTestHost.app
+
+ProcessInfoPlistFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/Info.plist /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CMakeFiles/CaesarPadUITests.dir/Info.plist (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-infoPlistUtility /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/CMakeFiles/CaesarPadUITests.dir/Info.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/ProductTypeInfoPlistAdditions.plist -o /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/Info.plist
+
+SwiftDriverJobDiscovery normal arm64 Compiling CaesarPadUITests.swift (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+
+SwiftDriver\ Compilation CaesarPadUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CaesarPadUITests -O @/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.SwiftFileList -Onone -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios15.0-simulator -g -module-cache-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 4 -I /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests_const_extract_protocols.json -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/include -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/DerivedSources-normal/arm64 -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/DerivedSources/arm64 -Xcc -I/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/DerivedSources -Xcc -DCMAKE_INTDIR\=\"Debug-iphonesimulator\" -Xcc -DCaesarPadUITests_EXPORTS -emit-objc-header -emit-objc-header-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests-Swift.h -working-directory /Users/chrissotraidis/GitHub/caesarpad/tests/ui -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/CaesarPadUITests normal (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios15.0-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -filelist /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests_lto.o -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.swiftmodule @/Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests-linker-args.resp -framework XCTest -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -o /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/CaesarPadUITests
+
+GenerateDSYMFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest.dSYM /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/CaesarPadUITests (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/CaesarPadUITests -o /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest.dSYM
+
+CopySwiftLibs /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/CaesarPadUITests --scan-folder /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/Frameworks --scan-folder /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/PlugIns --scan-folder /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/SystemExtensions --scan-folder /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os --back-deploy-swift-span
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name CaesarPadUITests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 15.0 --bundle-identifier dev.caesarpad.uitests --output /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest --target-triple arm64-apple-ios15.0-simulator --binary-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/CaesarPadUITests --dependency-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests_dependency_info.dat --stringsdata-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.SwiftFileList --metadata-file-list /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/CaesarPadUITests.DependencyMetadataFileList --static-metadata-file-list /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/CaesarPadUITests.DependencyStaticMetadataFileList --swift-const-vals-list /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/Objects-normal/arm64/CaesarPadUITests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-07-26 17:26:06.850 appintentsmetadataprocessor[88649:26751433] Starting appintentsmetadataprocessor export
+2026-07-26 17:26:06.865 appintentsmetadataprocessor[88649:26751433] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+AppIntentsSSUTraining (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/Info.plist --temp-dir-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/ssu --bundle-id dev.caesarpad.uitests --product-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest --extracted-metadata-path /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/Metadata.appintents --metadata-file-list /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/build/CaesarPadUITests.build/Debug-iphonesimulator/CaesarPadUITests.DependencyMetadataFileList --source-file /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/Info.plist --archive-ssu-assets
+2026-07-26 17:26:06.996 appintentsnltrainingprocessor[88650:26751438] Parsing options for appintentsnltrainingprocessor
+2026-07-26 17:26:06.999 appintentsnltrainingprocessor[88650:26751438] Starting AppIntents SSU YAML Generation
+2026-07-26 17:26:06.999 appintentsnltrainingprocessor[88650:26751438] No AppShortcuts found - Skipping.
+
+MkDir /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /bin/mkdir -p /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app
+
+CopyPlistFile /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Info.plist /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/Info.plist (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copyPlist --validate --convert xml1 --macro-expansion WRAPPEDPRODUCTNAME CaesarPadUITests-Runner --macro-expansion WRAPPEDPRODUCTBUNDLEIDENTIFIER dev.caesarpad.uitests.xctrunner --macro-expansion TESTPRODUCTNAME CaesarPadUITests --macro-expansion TESTPRODUCTBUNDLEIDENTIFIER dev.caesarpad.uitests --copy-value UIDeviceFamily /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest/Info.plist --outdir /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app -- /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/Info.plist
+
+CopyAndPreserveArchs /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/CaesarPadUITests-Runner (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/XCTRunner -output /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/CaesarPadUITests-Runner -extract arm64
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PkgInfo /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/PkgInfo (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/PkgInfo /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks/XCUnit.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCUnit.framework (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCUnit.framework /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks
+warning: not stripping binary because it is signed: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCUnit.framework/XCUnit (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks/libXCTestSwiftSupport.dylib /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks
+warning: not stripping binary because it is signed: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks/XCUIAutomation.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCUIAutomation.framework (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCUIAutomation.framework /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks
+warning: not stripping binary because it is signed: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCUIAutomation.framework/XCUIAutomation (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks/XCTestSupport.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTestSupport.framework (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTestSupport.framework /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks
+warning: not stripping binary because it is signed: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTestSupport.framework/XCTestSupport (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks/XCTestCore.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTestCore.framework (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTestCore.framework /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks
+warning: not stripping binary because it is signed: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTestCore.framework/XCTestCore (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks/XCTest.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks
+warning: not stripping binary because it is signed: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/XCTest (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks/XCTAutomationSupport.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTAutomationSupport.framework (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTAutomationSupport.framework /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks
+warning: not stripping binary because it is signed: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTAutomationSupport.framework/XCTAutomationSupport (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+
+Copy /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks/Testing.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/Testing.framework (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/Testing.framework /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/Frameworks
+warning: not stripping binary because it is signed: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/Testing.framework/Testing (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+
+RegisterExecutionPolicyException /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    builtin-RegisterExecutionPolicyException /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest
+
+Touch /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest (in target 'CaesarPadUITests' from project 'CaesarPadUITestHarness')
+    cd /Users/chrissotraidis/GitHub/caesarpad/tests/ui
+    /usr/bin/touch -c /Users/chrissotraidis/GitHub/caesarpad/build/ui-tests/Debug-iphonesimulator/CaesarPadUITests-Runner.app/PlugIns/CaesarPadUITests.xctest
+
+note: Run script build phase 'Generate CMakeFiles/ZERO_CHECK' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'ZERO_CHECK' from project 'CaesarPadUITestHarness')
+2026-07-26 17:26:23.221827-0500 CaesarPadUITests-Runner[88697:26751779] [Default] Running tests...
+    t =      nans Interface orientation changed to Landscape Right
+Test Suite 'Selected tests' started at 2026-07-26 17:26:28.722.
+Test Suite 'CaesarPadUITests.xctest' started at 2026-07-26 17:26:28.726.
+Test Suite 'CaesarPadUITests' started at 2026-07-26 17:26:28.727.
+Test Case '-[CaesarPadUITests.CaesarPadUITests testVerifyLifecycleResume]' started.
+    t =     0.07s Start Test at 2026-07-26 17:26:28.808
+    t =     0.29s Set Up
+    t =     0.36s Open com.github.keriew.augustus
+    t =     0.39s     Activate com.github.keriew.augustus
+    t =     0.54s         Wait for com.github.keriew.augustus to idle
+    t =     1.06s Wait for com.github.keriew.augustus to become Running Foreground
+    t =     1.06s Waiting 5.0s for "caesarpad.pause" Button to exist
+    t =     2.14s     Checking `Expect predicate `existsNoRetry == 1` for object "caesarpad.pause" Button`
+    t =     2.14s         Checking existence of `"caesarpad.pause" Button`
+    t =     2.38s Find the "caesarpad.pause" Button
+    t =     4.34s Added attachment named '41-lifecycle-city-resumed'
+    t =     4.39s Tear Down
+Test Case '-[CaesarPadUITests.CaesarPadUITests testVerifyLifecycleResume]' passed (4.656 seconds).
+Test Suite 'CaesarPadUITests' passed at 2026-07-26 17:26:33.459.
+	 Executed 1 test, with 0 failures (0 unexpected) in 4.656 (4.732) seconds
+Test Suite 'CaesarPadUITests.xctest' passed at 2026-07-26 17:26:33.469.
+	 Executed 1 test, with 0 failures (0 unexpected) in 4.656 (4.743) seconds
+Test Suite 'Selected tests' passed at 2026-07-26 17:26:33.472.
+	 Executed 1 test, with 0 failures (0 unexpected) in 4.656 (4.749) seconds
+2026-07-26 17:26:35.955 xcodebuild[88587:26750793] [MT] IDETestOperationsObserverDebug: 28.561 elapsed -- Testing started completed.
+2026-07-26 17:26:35.955 xcodebuild[88587:26750793] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-07-26 17:26:35.955 xcodebuild[88587:26750793] [MT] IDETestOperationsObserverDebug: 28.561 sec, +28.561 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/chrissotraidis/GitHub/caesarpad/artifacts/g6/lifecycle-resume-20260726-172358.xcresult
+
+** TEST SUCCEEDED **
+
+Testing started
+Saved UI-test results to /Users/chrissotraidis/GitHub/caesarpad/artifacts/g6/lifecycle-resume-20260726-172358.xcresult
+PASS: background autosave was created, cold-launched, resumed, and consumed

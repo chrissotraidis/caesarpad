@@ -12,8 +12,8 @@ Last updated: 2026-07-26
 | G3 — Data loads | PASS | 601 files injected by `scripts/inject-data.sh`; main menu reached; PID 47855 remained live; CoreAudio created and started a 2-channel 22050 Hz playback queue; `artifacts/g3/` |
 | G4 — Playable | PASS | Clean XCUITest reached a landscape mission, selected housing, placed it, dismissed the build tool, panned the map, changed speed, and paused without a keyboard; 1 test, 0 failures in 93.858 s; `artifacts/g4/playable-flow-pass-2.log`; screenshots in ignored `artifacts/g4/playable-flow-pass-2.xcresult` |
 | G5 — Touch controls | PASS | Focused Simulator UI test passed tap, two-finger right-click, drag pan, pinch zoom, and native `Running` → `Paused` control state in 75.813 s; engine interaction test passed 350 ms long-press timing, movement rejection, release timing, and two-finger consumption; `artifacts/g5/touch-controls-pass-8.log`; `artifacts/g5/long-press-engine-test-final.log`; screenshots in ignored xcresult |
-| G6 — Lifecycle safe | CURRENT | Background autosave and kill/relaunch resume not yet implemented |
-| G7 — Test suite | PENDING | — |
+| G6 — Lifecycle safe | PASS | `simctl` backgrounding created `Documents/caesarpad-autosave.svx` (58,320 bytes); after terminate + cold launch, XCUITest observed the engine-marked resumed state and the save was consumed; `artifacts/g6/build-final.log`; `artifacts/g6/lifecycle-pass-2.log`; screenshots in ignored xcresults |
+| G7 — Test suite | CURRENT | One-command full-suite runner not yet implemented |
 | G8 — Repeatable | PENDING | — |
 
 ## Pinned inputs
@@ -29,8 +29,9 @@ Last updated: 2026-07-26
 - `ref/` is ignored and reserved for user-owned Caesar III data. Its contents must never be staged or committed.
 - Engine changes, if a gate requires them, live as small patches under `patches/`; the engine remains a submodule.
 - The app supports landscape left and right only; portrait orientations are removed by the smallest upstream patch.
+- iOS lifecycle autosaves use Augustus's normal `.svx` format at `Documents/caesarpad-autosave.svx`; a successful cold-start resume consumes the file to avoid stale-session launches.
 
 ## Current blocker
 
-None. Current work is G6: save automatically on background and resume that save after a
-kill/relaunch cycle.
+None. Current work is G7: make one `scripts/test.sh` command run the complete build,
+boot, data, gameplay, touch, and lifecycle suite.

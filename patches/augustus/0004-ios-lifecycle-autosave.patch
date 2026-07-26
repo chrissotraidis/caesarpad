@@ -1,0 +1,114 @@
+Reason: persist the active city on iPad backgrounding and resume it after a cold launch.
+
+--- a/src/platform/SDL2/augustus.c
++++ b/src/platform/SDL2/augustus.c
+@@ -1,12 +1,13 @@
+ #include "SDL.h"
+ 
+ #include "core/config.h"
+ #include "core/encoding.h"
+ #include "core/file.h"
+ #include "core/lang.h"
+ #include "core/log.h"
+ #include "core/time.h"
+ #include "game/game.h"
++#include "game/file.h"
+ #include "game/settings.h"
+ #include "game/system.h"
+ #include "graphics/screen.h"
+@@ -31,6 +34,7 @@
+ #include "platform/switch/switch.h"
+ #include "platform/vita/vita.h"
+ #include "window/asset_previewer.h"
++#include "window/city.h"
+ 
+ #include "tinyfiledialogs/tinyfiledialogs.h"
+ 
+@@ -252,6 +256,13 @@
+ {
+     switch (event->type) {
+         case SDL_APP_WILLENTERBACKGROUND:
++#ifdef __IOS__
++            if (window_get_id() >= WINDOW_CITY && window_get_id() <= WINDOW_SPEED_OPTIONS) {
++                const char *autosave = ios_get_lifecycle_autosave_path();
++                int saved = game_file_write_saved_game(autosave);
++                SDL_Log("CaesarPad lifecycle autosave %s: %s", saved ? "written" : "failed", autosave);
++            }
++#endif
+             platform_renderer_pause();
+             return 0;
+         default:
+@@ -692,6 +703,15 @@
+         SDL_Log("Exiting: game init failed");
+         exit_with_status(2);
+     }
++#ifdef __IOS__
++    const char *autosave = ios_get_lifecycle_autosave_path();
++    if (game_file_load_saved_game(autosave) == 1) {
++        file_remove(autosave);
++        window_city_show();
++        ios_mark_lifecycle_resumed();
++        SDL_Log("CaesarPad resumed lifecycle autosave: %s", autosave);
++    }
++#endif
+ 
+     data.quit = 0;
+     data.active = 1;
+--- a/src/platform/ios/ios.h
++++ b/src/platform/ios/ios.h
+@@ -6,6 +6,8 @@
+ const char *ios_show_c3_path_dialog(int again);
+ void c3_path_chosen(char *new_path);
+ const char *ios_get_base_path(void);
++const char *ios_get_lifecycle_autosave_path(void);
+ void ios_install_pause_button(void);
++void ios_mark_lifecycle_resumed(void);
+ 
+ #endif // defined(__IOS__)
+--- a/src/platform/ios/ios.m
++++ b/src/platform/ios/ios.m
+@@ -43,6 +43,7 @@
+ 
+ static CaesarPadPauseTarget *pauseTarget = nil;
+ static UIAccessibilityElement *canvasAccessibility = nil;
++static BOOL lifecycleResumed = NO;
+ 
+ void ios_install_pause_button(void) {
+     dispatch_async(dispatch_get_main_queue(), ^{
+@@ -75,6 +76,6 @@
+         pauseButton.accessibilityIdentifier = @"caesarpad.pause";
+         pauseButton.accessibilityLabel = @"Pause or resume game";
+-        pauseButton.accessibilityValue = @"Running";
++        pauseButton.accessibilityValue = lifecycleResumed ? @"Running, lifecycle autosave resumed" : @"Running";
+         pauseButton.tintColor = UIColor.whiteColor;
+         pauseButton.backgroundColor = [UIColor.blackColor colorWithAlphaComponent:0.65];
+         pauseButton.layer.cornerRadius = 10;
+@@ -96,6 +98,13 @@
+     });
+ }
+ 
++void ios_mark_lifecycle_resumed(void) {
++    lifecycleResumed = YES;
++    dispatch_async(dispatch_get_main_queue(), ^{
++        pauseButton.accessibilityValue = @"Running, lifecycle autosave resumed";
++    });
++}
++
+ void c3_path_chosen(char *new_path) {
+     unsigned long len = strlen(new_path);
+     snprintf(path, GAME_PATH_MAX, "%s", new_path);
+@@ -110,6 +119,14 @@
+     return path;
+ }
+ 
++const char *ios_get_lifecycle_autosave_path(void) {
++    static char autosavePath[GAME_PATH_MAX];
++    NSURL *documentsDirectory = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
++    NSURL *autosaveURL = [documentsDirectory URLByAppendingPathComponent:@"caesarpad-autosave.svx"];
++    [autosaveURL.path getFileSystemRepresentation:autosavePath maxLength:GAME_PATH_MAX];
++    return autosavePath;
++}
++
+ const char *ios_show_c3_path_dialog(int again)
+ {
+     if (window == nil) {
