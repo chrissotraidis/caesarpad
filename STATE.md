@@ -7,8 +7,8 @@ Last updated: 2026-07-26
 | Gate | Status | Evidence |
 |---|---|---|
 | G0 — Toolchain | PASS | Xcode 26.6 (17F113); iOS 18.5 and 26.5 Simulator runtimes; booted iPad Pro 11-inch (M4), iOS 18.5, UDID `08636791-2675-4675-8335-EF72EF954DCF`; `artifacts/g0/` |
-| G1 — Engine builds | CURRENT | Not yet run |
-| G2 — Boots | PENDING | — |
+| G1 — Engine builds | PASS | `scripts/build.sh`; arm64 Simulator app; `** BUILD SUCCEEDED **`; `artifacts/g1/build.log` |
+| G2 — Boots | CURRENT | Not yet run |
 | G3 — Data loads | PENDING | — |
 | G4 — Playable | PENDING | — |
 | G5 — Touch controls | PENDING | — |
@@ -18,9 +18,9 @@ Last updated: 2026-07-26
 
 ## Pinned inputs
 
-- Augustus: pending G1 checkout and SHA pin.
-- SDL2: pending G1 fetch.
-- SDL2_mixer: pending G1 fetch.
+- Augustus: `69c69827682a11eaaa400c5a77198131249bfe2a` (`Keriew/augustus`, submodule).
+- SDL2: 2.32.10 source release, SHA-256 `5f5993c530f084535c65a6879e9b26ad441169b3e25d789d83287040a9ca5165`.
+- SDL2_mixer: 2.8.2 source release, SHA-256 `938dff531d00ace2296557a6599abe6f34599e2f34f0a4a08a397e2ccac8b8f7`.
 
 ## Decisions
 
@@ -31,4 +31,4 @@ Last updated: 2026-07-26
 
 ## Current blocker
 
-None. Current work is G1: pin Augustus, fetch the exact SDL releases used by upstream iOS documentation, generate the Xcode project, and make the Simulator build reproducible through `scripts/build.sh`.
+None. Current work is G2: install and launch the built app on the recorded Simulator, verify the first-run game-data UI, and save a screenshot.

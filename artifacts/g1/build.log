@@ -1,0 +1,256 @@
+Using SDL2 2.32.10
+Using SDL2_mixer 2.8.2
+CMake Warning (deprecated) at ext/SDL2/SDL2/CMakeLists.txt:3300 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+--
+-- SDL2 was configured with the following options:
+--
+-- Platform: iOS
+-- 64-bit:   TRUE
+-- Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
+-- Revision: SDL-release-2.32.10-0-g5d2495703
+--
+-- Subsystems:
+--   Atomic:	ON
+--   Audio:	ON
+--   Video:	ON
+--   Render:	ON
+--   Events:	ON
+--   Joystick:	ON
+--   Haptic:	ON
+--   Hidapi:	ON
+--   Power:	ON
+--   Threads:	ON
+--   Timers:	ON
+--   File:	ON
+--   Loadso:	ON
+--   CPUinfo:	ON
+--   Filesystem:	ON
+--   Sensor:	ON
+--   Locale:	ON
+--   Misc:	ON
+--
+-- Options:
+--   SDL2_DISABLE_INSTALL        (Wanted: ON): OFF
+--   SDL2_DISABLE_SDL2MAIN       (Wanted: OFF): OFF
+--   SDL2_DISABLE_UNINSTALL      (Wanted: OFF): OFF
+--   SDL_3DNOW                   (Wanted: OFF): OFF
+--   SDL_ALSA                    (Wanted: OFF): OFF
+--   SDL_ALSA_SHARED             (Wanted: OFF): OFF
+--   SDL_ALTIVEC                 (Wanted: ON): OFF
+--   SDL_ARMNEON                 (Wanted: OFF): OFF
+--   SDL_ARMSIMD                 (Wanted: OFF): OFF
+--   SDL_ARTS                    (Wanted: OFF): OFF
+--   SDL_ARTS_SHARED             (Wanted: OFF): OFF
+--   SDL_ASAN                    (Wanted: OFF): OFF
+--   SDL_ASSEMBLY                (Wanted: ON): ON
+--   SDL_ASSERTIONS              (Wanted: auto): auto
+--   SDL_BACKGROUNDING_SIGNAL    (Wanted: OFF): OFF
+--   SDL_CCACHE                  (Wanted: ON): OFF
+--   SDL_CLOCK_GETTIME           (Wanted: OFF): OFF
+--   SDL_COCOA                   (Wanted: ON): OFF
+--   SDL_DBUS                    (Wanted: OFF): OFF
+--   SDL_DIRECTFB                (Wanted: OFF): OFF
+--   SDL_DIRECTFB_SHARED         (Wanted: OFF): OFF
+--   SDL_DIRECTX                 (Wanted: OFF): OFF
+--   SDL_DISKAUDIO               (Wanted: ON): ON
+--   SDL_DUMMYAUDIO              (Wanted: ON): ON
+--   SDL_DUMMYVIDEO              (Wanted: ON): ON
+--   SDL_ESD                     (Wanted: OFF): OFF
+--   SDL_ESD_SHARED              (Wanted: OFF): OFF
+--   SDL_FOREGROUNDING_SIGNAL    (Wanted: OFF): OFF
+--   SDL_FUSIONSOUND             (Wanted: OFF): OFF
+--   SDL_FUSIONSOUND_SHARED      (Wanted: OFF): OFF
+--   SDL_GCC_ATOMICS             (Wanted: ON): ON
+--   SDL_HIDAPI                  (Wanted: ON): ON
+--   SDL_HIDAPI_JOYSTICK         (Wanted: ON): ON
+--   SDL_HIDAPI_LIBUSB           (Wanted: OFF): OFF
+--   SDL_IBUS                    (Wanted: OFF): OFF
+--   SDL_INSTALL_TESTS           (Wanted: OFF): OFF
+--   SDL_JACK                    (Wanted: OFF): OFF
+--   SDL_JACK_SHARED             (Wanted: OFF): OFF
+--   SDL_KMSDRM                  (Wanted: OFF): OFF
+--   SDL_KMSDRM_SHARED           (Wanted: OFF): OFF
+--   SDL_LASX                    (Wanted: OFF): OFF
+--   SDL_LIBC                    (Wanted: ON): ON
+--   SDL_LIBICONV                (Wanted: OFF): OFF
+--   SDL_LIBSAMPLERATE           (Wanted: OFF): OFF
+--   SDL_LIBSAMPLERATE_SHARED    (Wanted: OFF): OFF
+--   SDL_LIBUDEV                 (Wanted: ON): OFF
+--   SDL_LSX                     (Wanted: OFF): OFF
+--   SDL_METAL                   (Wanted: ON): ON
+--   SDL_MMX                     (Wanted: OFF): OFF
+--   SDL_NAS                     (Wanted: OFF): OFF
+--   SDL_NAS_SHARED              (Wanted: OFF): OFF
+--   SDL_OFFSCREEN               (Wanted: ON): ON
+--   SDL_OPENGL                  (Wanted: ON): OFF
+--   SDL_OPENGLES                (Wanted: ON): ON
+--   SDL_OSS                     (Wanted: OFF): OFF
+--   SDL_PIPEWIRE                (Wanted: OFF): OFF
+--   SDL_PIPEWIRE_SHARED         (Wanted: OFF): OFF
+--   SDL_PTHREADS                (Wanted: ON): ON
+--   SDL_PTHREADS_SEM            (Wanted: ON): ON
+--   SDL_PULSEAUDIO              (Wanted: OFF): OFF
+--   SDL_PULSEAUDIO_SHARED       (Wanted: OFF): OFF
+--   SDL_RENDER_D3D              (Wanted: OFF): OFF
+--   SDL_RENDER_METAL            (Wanted: ON): ON
+--   SDL_RPATH                   (Wanted: OFF): OFF
+--   SDL_RPI                     (Wanted: OFF): OFF
+--   SDL_SNDIO                   (Wanted: OFF): OFF
+--   SDL_SNDIO_SHARED            (Wanted: OFF): OFF
+--   SDL_SSE                     (Wanted: OFF): OFF
+--   SDL_SSE2                    (Wanted: OFF): OFF
+--   SDL_SSE3                    (Wanted: OFF): OFF
+--   SDL_SSEMATH                 (Wanted: OFF): OFF
+--   SDL_STATIC_PIC              (Wanted: OFF): OFF
+--   SDL_SYSTEM_ICONV            (Wanted: OFF): OFF
+--   SDL_TESTS                   (Wanted: OFF): OFF
+--   SDL_VENDOR_INFO             (Wanted: ): OFF
+--   SDL_VIRTUAL_JOYSTICK        (Wanted: ON): ON
+--   SDL_VIVANTE                 (Wanted: OFF): OFF
+--   SDL_VULKAN                  (Wanted: ON): ON
+--   SDL_WASAPI                  (Wanted: OFF): OFF
+--   SDL_WAYLAND                 (Wanted: OFF): OFF
+--   SDL_WAYLAND_LIBDECOR        (Wanted: OFF): OFF
+--   SDL_WAYLAND_LIBDECOR_SHARED (Wanted: OFF): OFF
+--   SDL_WAYLAND_QT_TOUCH        (Wanted: OFF): OFF
+--   SDL_WAYLAND_SHARED          (Wanted: OFF): OFF
+--   SDL_X11                     (Wanted: OFF): OFF
+--   SDL_X11_SHARED              (Wanted: OFF): OFF
+--   SDL_X11_XCURSOR             (Wanted: OFF): OFF
+--   SDL_X11_XDBE                (Wanted: OFF): OFF
+--   SDL_X11_XFIXES              (Wanted: OFF): OFF
+--   SDL_X11_XINPUT              (Wanted: OFF): OFF
+--   SDL_X11_XRANDR              (Wanted: OFF): OFF
+--   SDL_X11_XSCRNSAVER          (Wanted: OFF): OFF
+--   SDL_X11_XSHAPE              (Wanted: OFF): OFF
+--   SDL_XINPUT                  (Wanted: OFF): OFF
+--
+--  CFLAGS:         -idirafter "/Users/chrissotraidis/GitHub/caesarpad/engines/augustus/ext/SDL2/SDL2/src/video/khronos"
+--  EXTRA_CFLAGS:   -Wall -Wundef -fno-strict-aliasing -Wdocumentation -Wdocumentation-unknown-command -fcomment-block-commands=threadsafety -fcomment-block-commands=deprecated -Wdeclaration-after-statement -fvisibility=hidden -Wshadow -Wno-unused-local-typedefs -D_REENTRANT
+--  EXTRA_LDFLAGS: -lpthread -Wl,-compatibility_version,3201.0.0;-Wl,-current_version,3201.10.0
+--  EXTRA_LIBS:    m
+--
+--  Build Shared Library: OFF
+--  Build Static Library: ON
+--  Build Static Library with Position Independent Code: OFF
+--
+-- If something was not detected, although the libraries
+-- were installed, then make sure you have set the
+-- CFLAGS and LDFLAGS environment variables correctly.
+--
+-- Configuring SDL2_mixer 2.8.2
+-- Enabled ogg music: using stb_vorbis
+-- Configuring done (0.7s)
+-- Generating done (0.9s)
+-- Build files have been written to: /Users/chrissotraidis/GitHub/caesarpad/build/ios
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project /Users/chrissotraidis/GitHub/caesarpad/build/ios/augustus.xcodeproj -scheme augustus -configuration Release -sdk iphonesimulator -destination "platform=iOS Simulator,id=08636791-2675-4675-8335-EF72EF954DCF" -derivedDataPath /Users/chrissotraidis/GitHub/caesarpad/build/ios/DerivedData CODE_SIGN_IDENTITY= CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO ONLY_ACTIVE_ARCH=YES build
+
+Build settings from command line:
+    CODE_SIGN_IDENTITY =
+    CODE_SIGNING_ALLOWED = NO
+    CODE_SIGNING_REQUIRED = NO
+    ONLY_ACTIVE_ARCH = YES
+    SDKROOT = iphonesimulator26.5
+
+2026-07-26 14:00:59.756 xcodebuild[46683:26363992] [MT] IDERunDestination: Supported platforms for the buildables in the current scheme is empty.
+--- xcodebuild: WARNING: Using the first of multiple matching destinations:
+{ platform:iOS Simulator, arch:arm64, id:08636791-2675-4675-8335-EF72EF954DCF, OS:18.5, name:iPad Pro 11-inch (M4) }
+{ platform:iOS Simulator, arch:x86_64, id:08636791-2675-4675-8335-EF72EF954DCF, OS:18.5, name:iPad Pro 11-inch (M4) }
+note: Using codesigning identity override:
+ComputePackagePrebuildTargetDependencyGraph
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (6 targets)
+    Target 'augustus' in project 'augustus'
+        ➜ Explicit dependency on target 'SDL2main' in project 'augustus'
+        ➜ Explicit dependency on target 'SDL2-static' in project 'augustus'
+        ➜ Explicit dependency on target 'SDL2_mixer' in project 'augustus'
+        ➜ Explicit dependency on target 'ZERO_CHECK' in project 'augustus'
+    Target 'ZERO_CHECK' in project 'augustus' (no dependencies)
+    Target 'SDL2_mixer' in project 'augustus'
+        ➜ Explicit dependency on target 'SDL2-static' in project 'augustus'
+    Target 'SDL2-static' in project 'augustus'
+        ➜ Explicit dependency on target 'sdl_headers_copy' in project 'augustus'
+    Target 'SDL2main' in project 'augustus'
+        ➜ Explicit dependency on target 'sdl_headers_copy' in project 'augustus'
+    Target 'sdl_headers_copy' in project 'augustus' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -V
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/chrissotraidis/GitHub/caesarpad/engines/augustus/res/ios/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 0b2dc41ba1a3baaf82b6bea9c788a6d4
+Build description path: /Users/chrissotraidis/GitHub/caesarpad/build/ios/build/XCBuildData/0b2dc41ba1a3baaf82b6bea9c788a6d4.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk /Users/chrissotraidis/GitHub/caesarpad/build/ios/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+    cd /Users/chrissotraidis/GitHub/caesarpad/build/ios/augustus.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -o /Users/chrissotraidis/GitHub/caesarpad/build/ios/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+
+WriteAuxiliaryFile /Users/chrissotraidis/GitHub/caesarpad/build/ios/build/SDL2main.build/Release-iphonesimulator/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp (in target 'SDL2main' from project 'augustus')
+    cd /Users/chrissotraidis/GitHub/caesarpad/engines/augustus
+    write-file /Users/chrissotraidis/GitHub/caesarpad/build/ios/build/SDL2main.build/Release-iphonesimulator/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
+-fpascal-strings -O3 '-DCMAKE_INTDIR="Release-iphonesimulator"' -I/Users/chrissotraidis/GitHub/caesarpad/build/ios/ext/SDL2/SDL2/Release-iphonesimulator/include -I/Users/chrissotraidis/GitHub/caesarpad/build/ios/ext/SDL2/SDL2/include-config-release/SDL2 -I/Users/chrissotraidis/GitHub/caesarpad/build/ios/ext/SDL2/SDL2/include/SDL2 -I/Users/chrissotraidis/GitHub/caesarpad/build/ios/ext/SDL2/SDL2/include -I/Users/chrissotraidis/GitHub/caesarpad/engines/augustus/augustus -isystem /Users/chrissotraidis/GitHub/caesarpad/engines/augustus/ext/easyav1_dummy -I/Users/chrissotraidis/GitHub/caesarpad/build/ios/build/SDL2main.build/Release-iphonesimulator/DerivedSources-normal/arm64 -I/Users/chrissotraidis/GitHub/caesarpad/build/ios/build/SDL2main.build/Release-iphonesimulator/DerivedSources/arm64 -I/Users/chrissotraidis/GitHub/caesarpad/build/ios/build/SDL2main.build/Release-iphonesimulator/DerivedSources -F/Users/chrissotraidis/GitHub/caesarpad/build/ios/ext/SDL2/SDL2/Release-iphonesimulator -idirafter /Users/chrissotraidis/GitHub/caesarpad/engines/augustus/ext/SDL2/SDL2/src/video/khronos '-fcomment-block-commands=threadsafety' '-fcomment-block-commands=deprecated' '-fvisibility=hidden' -D_REENTRANT '-DSDL_BUILD_MAJOR_VERSION=2' '-DSDL_BUILD_MINOR_VERSION=32' '-DSDL_BUILD_MICRO_VERSION=10' -DNDEBUG '-std=gnu99' -fPIC
+note: Run script build phase 'Generate ext/SDL2/SDL2/CMakeFiles/sdl_headers_copy' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'sdl_headers_copy' from project 'augustus')
+PhaseScriptExecution Generate\ ext/SDL2/SDL2/CMakeFiles/sdl_headers_copy /Users/chrissotraidis/GitHub/caesarpad/build/ios/build/augustus.build/Release-iphonesimulator/sdl_headers_copy.build/Script-D5428A989ADE473CA61A7EAF.sh (in target 'sdl_headers_copy' from project 'augustus')
+    cd /Users/chrissotraidis/GitHub/caesarpad/engines/augustus
+    /bin/sh -c /Users/chrissotraidis/GitHub/caesarpad/build/ios/build/augustus.build/Release-iphonesimulator/sdl_headers_copy.build/Script-D5428A989ADE473CA61A7EAF.sh
+
+PhaseScriptExecution Generate\ CMakeFiles/ZERO_CHECK /Users/chrissotraidis/GitHub/caesarpad/build/ios/build/augustus.build/Release-iphonesimulator/ZERO_CHECK.build/Script-460650F3AB621F6DCD6E81FA.sh (in target 'ZERO_CHECK' from project 'augustus')
+    cd /Users/chrissotraidis/GitHub/caesarpad/engines/augustus
+    /bin/sh -c /Users/chrissotraidis/GitHub/caesarpad/build/ios/build/augustus.build/Release-iphonesimulator/ZERO_CHECK.build/Script-460650F3AB621F6DCD6E81FA.sh
+/opt/homebrew/bin/cmake -P /Users/chrissotraidis/GitHub/caesarpad/build/ios/CMakeFiles/VerifyGlobs.cmake
+
+CompileC /Users/chrissotraidis/GitHub/caesarpad/build/ios/build/SDL2main.build/Release-iphonesimulator/Objects-normal/arm64/SDL_uikit_main.o /Users/chrissotraidis/GitHub/caesarpad/engines/augustus/ext/SDL2/SDL2/src/main/uikit/SDL_uikit_main.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'SDL2main' from project 'augustus')
+    cd /Users/chrissotraidis/GitHub/caesarpad/engines/augustus
+
+    Using response file: /Users/chrissotraidis/GitHub/caesarpad/build/ios/build/SDL2main.build/Release-iphonesimulator/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp
+
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -ivfsstatcache /Users/chrissotraidis/GitHub/caesarpad/build/ios/DerivedData/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -target arm64-apple-ios14.0-simulator -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -fno-color-diagnostics -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-implicit-fallthrough -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -fstrict-aliasing -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wall -Wundef -fno-strict-aliasing -Wdocumentation -Wdocumentation-unknown-command -Wdeclaration-after-statement -Wshadow -Wno-unused-local-typedefs @/Users/chrissotraidis/GitHub/caesarpad/build/ios/build/SDL2main.build/Release-iphonesimulator/Objects-normal/arm64/7187679823f38a2a940e0043cdf9d637-common-args.resp -MMD -MT dependencies -MF /Users/chrissotraidis/GitHub/caesarpad/build/ios/build/SDL2main.build/Release-iphonesimulator/Objects-normal/arm64/SDL_uikit_main.d --serialize-diagnostics /Users/chrissotraidis/GitHub/caesarpad/build/ios/build/SDL2main.build/Release-iphonesimulator/Objects-normal/arm64/SDL_uikit_main.dia -c /Users/chrissotraidis/GitHub/caesarpad/engines/augustus/ext/SDL2/SDL2/src/main/uikit/SDL_uikit_main.c -o /Users/chrissotraidis/GitHub/caesarpad/build/ios/build/SDL2main.build/Release-iphonesimulator/Objects-normal/arm64/SDL_uikit_main.o
+
+Libtool /Users/chrissotraidis/GitHub/caesarpad/build/ios/ext/SDL2/SDL2/Release-iphonesimulator/libSDL2main.a normal (in target 'SDL2main' from project 'augustus')
+    cd /Users/chrissotraidis/GitHub/caesarpad/engines/augustus
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only arm64 -D -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -L/Users/chrissotraidis/GitHub/caesarpad/build/ios/ext/SDL2/SDL2/Release-iphonesimulator -filelist /Users/chrissotraidis/GitHub/caesarpad/build/ios/build/SDL2main.build/Release-iphonesimulator/Objects-normal/arm64/SDL2main.LinkFileList -dependency_info /Users/chrissotraidis/GitHub/caesarpad/build/ios/build/SDL2main.build/Release-iphonesimulator/Objects-normal/arm64/SDL2main_libtool_dependency_info.dat -o /Users/chrissotraidis/GitHub/caesarpad/build/ios/ext/SDL2/SDL2/Release-iphonesimulator/libSDL2main.a
+
+Ld /Users/chrissotraidis/GitHub/caesarpad/build/ios/Release-iphonesimulator/augustus.app/augustus normal (in target 'augustus' from project 'augustus')
+    cd /Users/chrissotraidis/GitHub/caesarpad/engines/augustus
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios14.0-simulator -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O3 -L/Users/chrissotraidis/GitHub/caesarpad/build/ios/build/EagerLinkingTBDs/Release-iphonesimulator -L/Users/chrissotraidis/GitHub/caesarpad/build/ios/Release-iphonesimulator -F/Users/chrissotraidis/GitHub/caesarpad/build/ios/build/EagerLinkingTBDs/Release-iphonesimulator -F/Users/chrissotraidis/GitHub/caesarpad/build/ios/Release-iphonesimulator -filelist /Users/chrissotraidis/GitHub/caesarpad/build/ios/build/augustus.build/Release-iphonesimulator/Objects-normal/arm64/augustus.LinkFileList -Xlinker -dead_strip -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/chrissotraidis/GitHub/caesarpad/build/ios/build/augustus.build/Release-iphonesimulator/Objects-normal/arm64/augustus_dependency_info.dat -fobjc-link-runtime -Wl,-framework,UniformTypeIdentifiers -Wl,-search_paths_first -Wl,-headerpad_max_install_names /Users/chrissotraidis/GitHub/caesarpad/build/ios/ext/SDL2/SDL2/Release-iphonesimulator/libSDL2main.a /Users/chrissotraidis/GitHub/caesarpad/build/ios/ext/SDL2/SDL2_mixer/Release-iphonesimulator/libSDL2_mixer.a /Users/chrissotraidis/GitHub/caesarpad/build/ios/ext/SDL2/SDL2/Release-iphonesimulator/libSDL2.a -lm -lpthread -framework CoreVideo -framework CoreAudio -framework AudioToolbox -framework AVFoundation -framework CoreBluetooth -framework CoreGraphics -framework Coremotion -framework Foundation -Xlinker -weak_framework -Xlinker GameController -framework Metal -framework OpenGLES -framework QuartzCore -framework UIKit -Xlinker -weak_framework -Xlinker CoreHaptics -o /Users/chrissotraidis/GitHub/caesarpad/build/ios/Release-iphonesimulator/augustus.app/augustus
+/Users/chrissotraidis/GitHub/caesarpad/build/ios/augustus.xcodeproj: augustus: ld: warning: reducing alignment of section __DATA,__common from 0x8000 to 0x4000 because it exceeds segment maximum alignment
+
+ProcessInfoPlistFile /Users/chrissotraidis/GitHub/caesarpad/build/ios/Release-iphonesimulator/augustus.app/Info.plist /Users/chrissotraidis/GitHub/caesarpad/build/ios/CMakeFiles/augustus.dir/Info.plist (in target 'augustus' from project 'augustus')
+    cd /Users/chrissotraidis/GitHub/caesarpad/engines/augustus
+    builtin-infoPlistUtility /Users/chrissotraidis/GitHub/caesarpad/build/ios/CMakeFiles/augustus.dir/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/chrissotraidis/GitHub/caesarpad/build/ios/Release-iphonesimulator/augustus.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Users/chrissotraidis/GitHub/caesarpad/build/ios/build/augustus.build/Release-iphonesimulator/assetcatalog_generated_info.plist -o /Users/chrissotraidis/GitHub/caesarpad/build/ios/Release-iphonesimulator/augustus.app/Info.plist
+
+note: Run script build phase 'Generate CMakeFiles/ZERO_CHECK' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'ZERO_CHECK' from project 'augustus')
+** BUILD SUCCEEDED **
+
+Built /Users/chrissotraidis/GitHub/caesarpad/build/ios/Release-iphonesimulator/augustus.app
