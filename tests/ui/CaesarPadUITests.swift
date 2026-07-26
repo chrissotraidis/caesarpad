@@ -212,4 +212,102 @@ final class CaesarPadUITests: XCTestCase {
         )
         XCTAssertLessThan(clockDifference, 0.01, "Game clock changed after tapping pause")
     }
+
+    func testMinimalTouchControls() {
+        app.launch()
+
+        XCTAssertTrue(app.wait(for: .runningForeground, timeout: 15))
+        XCTAssertGreaterThan(app.frame.width, app.frame.height)
+        let nativePause = app.buttons["caesarpad.pause"]
+        XCTAssertTrue(nativePause.waitForExistence(timeout: 5))
+        XCTAssertTrue(nativePause.isHittable)
+        let canvas = app.otherElements["caesarpad.canvas"]
+        XCTAssertTrue(canvas.waitForExistence(timeout: 5))
+        XCTAssertGreaterThan(canvas.frame.width, canvas.frame.height)
+        capture("20-touch-landscape")
+
+        point(0.527, 0.453).tap()
+        settle(0.5)
+        point(0.501, 0.523).tap()
+        settle(3)
+        point(0.503, 0.529).tap()
+        settle(2)
+        point(0.501, 0.380).tap()
+        settle()
+        point(0.681, 0.748).tap()
+        settle(2)
+        point(0.673, 0.853).tap()
+        settle(4)
+        point(0.610, 0.565).tap()
+        settle(2)
+        let mission = capture("21-touch-mission")
+
+        point(0.895, 0.375).tap()
+        settle()
+        let tapSelected = capture("22-tap-selected")
+        XCTAssertGreaterThan(
+            visualDifference(
+                mission,
+                tapSelected,
+                in: CGRect(x: 0.82, y: 0.18, width: 0.17, height: 0.45)
+            ),
+            0.01,
+            "Tap did not map to the housing button"
+        )
+
+        let twoFingerBefore = capture("24-two-finger-before")
+        canvas.twoFingerTap()
+        settle()
+        let twoFingerAfter = capture("25-two-finger-right-click")
+        XCTAssertGreaterThan(
+            visualDifference(
+                twoFingerBefore,
+                twoFingerAfter,
+                in: CGRect(x: 0.79, y: 0.01, width: 0.09, height: 0.12)
+            ),
+            0.02,
+            "Two-finger tap did not map to alternate right-click tool cancel"
+        )
+        capture("25-two-finger-right-click-complete")
+
+        let panBefore = capture("26-drag-before")
+        point(0.364, 0.423).press(
+            forDuration: 0.2,
+            thenDragTo: point(0.597, 0.562),
+            withVelocity: .slow,
+            thenHoldForDuration: 0.1
+        )
+        settle()
+        let panAfter = capture("27-drag-panned")
+        XCTAssertGreaterThan(
+            visualDifference(
+                panBefore,
+                panAfter,
+                in: CGRect(x: 0.05, y: 0.08, width: 0.72, height: 0.75)
+            ),
+            0.06,
+            "One-finger drag did not pan the map"
+        )
+
+        let pinchBefore = capture("28-pinch-before")
+        canvas.pinch(withScale: 1.5, velocity: 1.0)
+        settle(2)
+        let pinchAfter = capture("29-pinch-zoomed")
+        XCTAssertGreaterThan(
+            visualDifference(
+                pinchBefore,
+                pinchAfter,
+                in: CGRect(x: 0.05, y: 0.08, width: 0.72, height: 0.75)
+            ),
+            0.04,
+            "Pinch did not visibly change Augustus zoom"
+        )
+
+        capture("30-native-pause-before")
+        XCTAssertEqual(nativePause.value as? String, "Running")
+        nativePause.tap()
+        settle()
+        capture("31-native-pause-after")
+        XCTAssertEqual(nativePause.value as? String, "Paused")
+    }
 }

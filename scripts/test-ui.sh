@@ -8,6 +8,10 @@ PROJECT_PATH="$BUILD_DIR/CaesarPadUITestHarness.xcodeproj"
 SCHEME_PATH="$PROJECT_PATH/xcshareddata/xcschemes/CaesarPadUITests.xcscheme"
 SIMULATOR_UDID="${SIMULATOR_UDID:-08636791-2675-4675-8335-EF72EF954DCF}"
 RESULT_BUNDLE_PATH="${RESULT_BUNDLE_PATH:-$ROOT_DIR/artifacts/g4/ui-tests-$(date +%Y%m%d-%H%M%S).xcresult}"
+TEST_SELECTOR_ARGS=()
+if [[ -n "${ONLY_TESTING:-}" ]]; then
+    TEST_SELECTOR_ARGS+=("-only-testing:$ONLY_TESTING")
+fi
 
 cmake \
     -S "$ROOT_DIR/tests/ui" \
@@ -40,6 +44,7 @@ xcodebuild \
     CODE_SIGN_IDENTITY="" \
     CODE_SIGNING_REQUIRED=NO \
     CODE_SIGNING_ALLOWED=NO \
+    "${TEST_SELECTOR_ARGS[@]}" \
     test
 
 echo "Saved UI-test results to $RESULT_BUNDLE_PATH"

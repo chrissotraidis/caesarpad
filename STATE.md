@@ -11,8 +11,8 @@ Last updated: 2026-07-26
 | G2 — Boots | PASS | Fresh install launched as PID 47408 and displayed the “Game Data Required” alert; `artifacts/g2/game-data-required.png`; `artifacts/g2/launch.log` |
 | G3 — Data loads | PASS | 601 files injected by `scripts/inject-data.sh`; main menu reached; PID 47855 remained live; CoreAudio created and started a 2-channel 22050 Hz playback queue; `artifacts/g3/` |
 | G4 — Playable | PASS | Clean XCUITest reached a landscape mission, selected housing, placed it, dismissed the build tool, panned the map, changed speed, and paused without a keyboard; 1 test, 0 failures in 93.858 s; `artifacts/g4/playable-flow-pass-2.log`; screenshots in ignored `artifacts/g4/playable-flow-pass-2.xcresult` |
-| G5 — Touch controls | CURRENT | Tap and drag covered by G4; long-press, pinch, two-finger tap, and native pause affordance remain |
-| G6 — Lifecycle safe | PENDING | — |
+| G5 — Touch controls | PASS | Focused Simulator UI test passed tap, two-finger right-click, drag pan, pinch zoom, and native `Running` → `Paused` control state in 75.813 s; engine interaction test passed 350 ms long-press timing, movement rejection, release timing, and two-finger consumption; `artifacts/g5/touch-controls-pass-8.log`; `artifacts/g5/long-press-engine-test-final.log`; screenshots in ignored xcresult |
+| G6 — Lifecycle safe | CURRENT | Background autosave and kill/relaunch resume not yet implemented |
 | G7 — Test suite | PENDING | — |
 | G8 — Repeatable | PENDING | — |
 
@@ -32,5 +32,5 @@ Last updated: 2026-07-26
 
 ## Current blocker
 
-None. Current work is G5: verify every core touch mapping and add the single native
-pause affordance.
+None. Current work is G6: save automatically on background and resume that save after a
+kill/relaunch cycle.

@@ -1,0 +1,4 @@
+PASS: 350 ms stationary hold maps once to engine long-press right-click
+PASS: moved touch does not map to long-press right-click
+PASS: release timestamp preserves completed long-press
+PASS: consumed two-finger right-click cannot leak a later single tap

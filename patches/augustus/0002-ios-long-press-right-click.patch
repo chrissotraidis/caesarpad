@@ -1,11 +1,11 @@
 From: CaesarPad <caesarpad@local>
-Subject: [PATCH] Map long press to city right click
+Subject: [PATCH] Map iPad right-click gestures
 
 Upstream-status: Not submitted
-Reason: iPad users need a keyboard-free right click for tool cancel and building info.
+Reason: Long-press and two-finger tap must cancel tools or open building info without a mouse.
 
 diff --git a/src/input/touch.c b/src/input/touch.c
-index 91cae459b..4f0f03d24 100644
+index 91cae459b..c449cbd73 100644
 --- a/src/input/touch.c
 +++ b/src/input/touch.c
 @@ -6,6 +6,7 @@
@@ -16,7 +16,17 @@ index 91cae459b..4f0f03d24 100644
  #define NOT_MOVING_RANGE 5
  #define SCROLL_FINGER_RADIUS 25
  #define MILLIS_TOLERANCE_BETWEEN_LAST_MOVE_AND_TOUCH_END 60
-@@ -89,6 +90,20 @@ int touch_was_double_click(const touch *t)
+@@ -79,7 +80,8 @@ int touch_not_click(const touch *t)
+
+ int touch_was_click(const touch *t)
+ {
+-    return (t->has_ended && !t->has_moved && (t->last_change_time - t->start_time) < CLICK_TIME);
++    return (t->has_ended && !t->has_moved && !t->long_press_handled &&
++        (t->last_change_time - t->start_time) < CLICK_TIME);
+ }
+
+ int touch_was_double_click(const touch *t)
+@@ -89,6 +91,29 @@ int touch_was_double_click(const touch *t)
          (t->start_time - data.old_touch.last_change_time) < CLICK_TIME);
  }
 
@@ -34,10 +44,19 @@ index 91cae459b..4f0f03d24 100644
 +    return 1;
 +}
 +
++void touch_consume_current_gesture(void)
++{
++    for (int i = 0; i < MAX_ACTIVE_TOUCHES; ++i) {
++        if (data.finger[i].in_use) {
++            data.finger[i].long_press_handled = 1;
++        }
++    }
++}
++
  int touch_is_scroll(void)
  {
      int num_touches = get_total_active_touches();
-@@ -146,6 +161,7 @@ int touch_create(touch_coords start_coords, time_millis start_time)
+@@ -146,6 +171,7 @@ int touch_create(touch_coords start_coords, time_millis start_time)
          t->in_use = 1;
          t->has_started = 1;
          t->has_ended = 0;
@@ -45,7 +64,7 @@ index 91cae459b..4f0f03d24 100644
          t->start_point = start_coords;
          t->current_point = start_coords;
          t->previous_frame_point = start_coords;
-@@ -188,6 +204,7 @@ void touch_end(int index, time_millis current_time)
+@@ -188,6 +214,7 @@ void touch_end(int index, time_millis current_time)
      if (current_time - t->last_change_time < MILLIS_TOLERANCE_BETWEEN_LAST_MOVE_AND_TOUCH_END) {
          t->frame_movement = t->last_movement;
      }
@@ -54,7 +73,7 @@ index 91cae459b..4f0f03d24 100644
 
  void reset_touches(int reset_old_touch)
 diff --git a/src/input/touch.h b/src/input/touch.h
-index abb451533..646555dff 100644
+index abb451533..e42a04beb 100644
 --- a/src/input/touch.h
 +++ b/src/input/touch.h
 @@ -22,6 +22,7 @@ typedef struct {
@@ -65,19 +84,53 @@ index abb451533..646555dff 100644
      touch_coords start_point;
      touch_coords current_point;
      touch_coords previous_frame_point;
-@@ -37,6 +38,7 @@ const touch *touch_get_latest(void);
+@@ -37,6 +38,8 @@ const touch *touch_get_latest(void);
  int touch_not_click(const touch *t);
  int touch_was_click(const touch *t);
  int touch_was_double_click(const touch *t);
 +int touch_poll_long_press(void);
++void touch_consume_current_gesture(void);
 
  int touch_is_scroll(void);
  int touch_get_scroll(void);
 diff --git a/src/widget/city/city.c b/src/widget/city/city.c
-index 3fb85eb4f..7e5c05bd4 100644
+index 3fb85eb4f..33bc984c2 100644
 --- a/src/widget/city/city.c
 +++ b/src/widget/city/city.c
-@@ -502,6 +502,18 @@ static void handle_first_touch(map_tile *tile)
+@@ -450,18 +450,28 @@ static void handle_touch_zoom(const touch *first, const touch *last)
+     }
+ }
+
+-static void handle_last_touch(void)
++static int handle_last_touch(map_tile *tile)
+ {
++    const touch *first = touch_get_earliest();
+     const touch *last = touch_get_latest();
+     if (!last->in_use) {
+-        return;
++        return 0;
+     }
+     if (touch_was_click(first) || touch_was_click(last)) {
+-        building_construction_cancel();
+-        window_request_refresh();
++        touch_consume_current_gesture();
++        scroll_drag_end();
++        data.capture_input = 0;
++        if (building_construction_type() != BUILDING_NONE) {
++            building_construction_cancel();
++            window_request_refresh();
++        } else if (handle_right_click_allow_building_info(tile)) {
++            window_building_info_show(tile->grid_offset);
++        }
++        return 1;
+     } else if (touch_not_click(last)) {
+         handle_touch_zoom(touch_get_earliest(), last);
+     }
++    return 0;
+ }
+
+ static int handle_play_pause_button(const touch *t)
+@@ -502,6 +511,18 @@ static void handle_first_touch(map_tile *tile)
      const touch *first = touch_get_earliest();
      building_type type = building_construction_type();
 
@@ -96,3 +149,15 @@ index 3fb85eb4f..7e5c05bd4 100644
      if (touch_was_click(first)) {
          if (handle_play_pause_button(first) ||
              handle_construction_buttons(first->current_point.x, first->current_point.y, 1) ||
+@@ -595,8 +616,9 @@ static void handle_touch(void)
+         scroll_restore_margins();
+     }
+
+-    handle_last_touch();
+-    handle_first_touch(tile);
++    if (!handle_last_touch(tile)) {
++        handle_first_touch(tile);
++    }
+
+     if (first->has_ended) {
+         data.capture_input = 0;
