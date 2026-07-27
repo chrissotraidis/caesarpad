@@ -1,0 +1,25 @@
+From: CaesarPad <caesarpad@local>
+Subject: [PATCH] iOS: show the CaesarPad app name
+Upstream-status: Not submitted
+Reason: The downstream icon and installed app need one consistent public identity.
+
+diff --git a/res/ios/Info.plist b/res/ios/Info.plist
+--- a/res/ios/Info.plist
++++ b/res/ios/Info.plist
+@@ -5,14 +5,14 @@
+   <key>CFBundleDevelopmentRegion</key>
+   <string>en</string>
+   <key>CFBundleDisplayName</key>
+-  <string>${MACOSX_BUNDLE_BUNDLE_NAME}</string>
++  <string>CaesarPad</string>
+   <key>CFBundleExecutable</key>
+   <string>${MACOSX_BUNDLE_EXECUTABLE_NAME}</string>
+   <key>CFBundleIdentifier</key>
+   <string>${MACOSX_BUNDLE_GUI_IDENTIFIER}</string>
+   <key>CFBundleInfoDictionaryVersion</key>
+   <string>6.0</string>
+   <key>CFBundleName</key>
+-  <string>${MACOSX_BUNDLE_BUNDLE_NAME}</string>
++  <string>CaesarPad</string>
+   <key>CFBundlePackageType</key>
+   <string>APPL</string>

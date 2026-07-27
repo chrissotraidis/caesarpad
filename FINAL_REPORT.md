@@ -1,6 +1,6 @@
 # CaesarPad Final Report
 
-Date: 2026-07-26
+Date: 2026-07-27
 
 ## Outcome
 
@@ -16,7 +16,7 @@ remained ignored throughout verification.
 
 Augustus is pinned as a Git submodule at
 `69c69827682a11eaaa400c5a77198131249bfe2a`. CaesarPad makes no vendor copy of the
-engine. Its four required changes are maintained in `patches/augustus/`:
+engine. Its five required changes are maintained in `patches/augustus/`:
 
 1. `0001-ios-landscape-only.patch` — removes portrait orientations so the iPad
    game canvas always launches in landscape.
@@ -29,6 +29,12 @@ engine. Its four required changes are maintained in `patches/augustus/`:
 4. `0004-ios-lifecycle-autosave.patch` — writes the active city to
    `Documents/caesarpad-autosave.svx` when iOS backgrounds the app, resumes it
    after a cold launch, and consumes a successfully loaded recovery save.
+5. `0005-ios-caesarpad-name.patch` — gives the downstream app and original icon
+   one consistent installed display name.
+
+The original opaque 1024×1024 app icon is owned downstream at
+`assets/ios/AppIcon.png`, validated during every build, and copied into the generated
+Augustus asset catalog without committing a binary change to the engine submodule.
 
 SDL2 2.32.10 and SDL2_mixer 2.8.2 are checksum-pinned source downloads fetched
 into `ext/SDL2/` by the build, following the Augustus iOS layout.
@@ -43,7 +49,7 @@ into `ext/SDL2/` by the build, following the Augustus iOS layout.
 - starts a mission and verifies selection, building placement, map panning,
   speed control, and pause without a keyboard;
 - verifies tap, drag, long press, pinch, two-finger tap, and the native pause
-  affordance through XCUITest;
+  affordance through XCUITest, including clock stability while paused;
 - backgrounds the app through `simctl`, confirms the autosave file appears,
   terminates the app, and verifies cold-start resume.
 
@@ -64,10 +70,17 @@ scripts/build.sh && scripts/test.sh
 
 passed twice consecutively.
 
+After the public-preview and control hardening work, the finalized suite passed twice
+again in succession. Those runs are recorded at
+`artifacts/public-preview/full-suite-repeat.log` and
+`artifacts/public-preview/full-suite-repeat-2.log`.
+
 ## Known limitations
 
 - Automated verification targets the recorded iPad Simulator and assumes local,
   legally purchased Caesar III data is available.
+- `scripts/install.sh` automatically selects an available iPad Simulator and provides
+  the clean human launch path; it does not produce a physical-device build.
 - The recovery save is intentionally single-slot and consumed after a successful
   resume; Caesar III's normal save UI remains available for durable saves.
 - Distribution signing, App Store packaging, and a user-facing document importer
@@ -84,9 +97,10 @@ passed twice consecutively.
 
 ## Simplicity audit
 
-The final implementation contains only the Augustus submodule, four gate-required
-patches, build/data/test scripts, the small XCUITest harness, and evidence. No
-Julius flavor, mode-switching UI, native toolbar, vendored engine copy, or extra
-dependency was added. The audit found no tracked implementation that could be
-deleted while retaining G0–G8; generated build products and test result bundles
-remain ignored.
+The final implementation contains only the Augustus submodule, five narrowly scoped
+patches, one downstream icon, build/data/test scripts, the small XCUITest harness, and
+evidence. No Julius flavor, mode-switching UI, native toolbar, vendored engine copy, or
+extra dependency was added. A duplicate README copy of the 2 MB icon was deleted; the
+README and build now share `assets/ios/AppIcon.png`. The remaining audit found no tracked
+implementation that could be deleted while retaining the verified behavior; generated
+build products and test result bundles remain ignored.

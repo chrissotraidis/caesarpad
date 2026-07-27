@@ -1,0 +1,16 @@
+Command: scripts/install.sh
+Date: 2026-07-27
+Simulator: iPad Pro 11-inch (M4), iOS 18.5
+UDID: 08636791-2675-4675-8335-EF72EF954DCF
+
+Using iPad Simulator 08636791-2675-4675-8335-EF72EF954DCF
+Applied: 0001-ios-landscape-only.patch
+Applied: 0002-ios-long-press-right-click.patch
+Applied: 0003-ios-native-pause-button.patch
+Applied: 0004-ios-lifecycle-autosave.patch
+Applied: 0005-ios-caesarpad-name.patch
+** BUILD SUCCEEDED **
+Built build/ios/Release-iphonesimulator/augustus.app
+Injected 602 files into the Simulator app container at Documents/C3
+Launched com.github.keriew.augustus
+CaesarPad is installed and running in iPad Simulator 08636791-2675-4675-8335-EF72EF954DCF

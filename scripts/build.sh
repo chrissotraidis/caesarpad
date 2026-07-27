@@ -5,10 +5,24 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 ENGINE_DIR="$ROOT_DIR/engines/augustus"
 BUILD_DIR="${BUILD_DIR:-$ROOT_DIR/build/ios}"
-SIMULATOR_UDID="${SIMULATOR_UDID:-08636791-2675-4675-8335-EF72EF954DCF}"
+ICON_SOURCE="$ROOT_DIR/assets/ios/AppIcon.png"
+ICON_TARGET="$ENGINE_DIR/res/ios/Assets.xcassets/AppIcon.appiconset/augustus_1024.png"
+
+# shellcheck source=scripts/simulator.sh
+source "$ROOT_DIR/scripts/simulator.sh"
+caesarpad_select_simulator
 
 "$ROOT_DIR/scripts/fetch-deps.sh"
 "$ROOT_DIR/scripts/apply-patches.sh"
+
+ICON_INFO="$(sips -g pixelWidth -g pixelHeight -g hasAlpha "$ICON_SOURCE")"
+if ! grep -q "pixelWidth: 1024" <<<"$ICON_INFO" ||
+    ! grep -q "pixelHeight: 1024" <<<"$ICON_INFO" ||
+    ! grep -q "hasAlpha: no" <<<"$ICON_INFO"; then
+    echo "App icon must be an opaque 1024x1024 PNG: $ICON_SOURCE" >&2
+    exit 1
+fi
+cp "$ICON_SOURCE" "$ICON_TARGET"
 
 cmake \
     -S "$ENGINE_DIR" \

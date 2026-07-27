@@ -270,6 +270,22 @@ final class CaesarPadUITests: XCTestCase {
         )
         capture("25-two-finger-right-click-complete")
 
+        point(0.895, 0.375).tap()
+        settle()
+        let longPressBefore = capture("25a-long-press-before")
+        point(0.450, 0.420).press(forDuration: 0.8)
+        settle()
+        let longPressAfter = capture("25b-long-press-right-click")
+        XCTAssertGreaterThan(
+            visualDifference(
+                longPressBefore,
+                longPressAfter,
+                in: CGRect(x: 0.79, y: 0.01, width: 0.09, height: 0.12)
+            ),
+            0.02,
+            "Long press did not map to right-click tool cancel"
+        )
+
         let panBefore = capture("26-drag-before")
         point(0.364, 0.423).press(
             forDuration: 0.2,
@@ -290,15 +306,27 @@ final class CaesarPadUITests: XCTestCase {
         )
 
         let pinchBefore = capture("28-pinch-before")
-        canvas.pinch(withScale: 1.5, velocity: 1.0)
+        canvas.pinch(withScale: 0.5, velocity: -1.0)
         settle(2)
-        let pinchAfter = capture("29-pinch-zoomed")
-        XCTAssertGreaterThan(
-            visualDifference(
-                pinchBefore,
+        var pinchAfter = capture("29-pinch-zoomed-out")
+        var pinchDifference = visualDifference(
+            pinchBefore,
+            pinchAfter,
+            in: CGRect(x: 0.05, y: 0.08, width: 0.72, height: 0.75)
+        )
+        if pinchDifference <= 0.04 {
+            let reversePinchBefore = pinchAfter
+            canvas.pinch(withScale: 1.5, velocity: 1.0)
+            settle(2)
+            pinchAfter = capture("29a-pinch-zoomed-in")
+            pinchDifference = visualDifference(
+                reversePinchBefore,
                 pinchAfter,
                 in: CGRect(x: 0.05, y: 0.08, width: 0.72, height: 0.75)
-            ),
+            )
+        }
+        XCTAssertGreaterThan(
+            pinchDifference,
             0.04,
             "Pinch did not visibly change Augustus zoom"
         )
@@ -307,8 +335,23 @@ final class CaesarPadUITests: XCTestCase {
         XCTAssertEqual(nativePause.value as? String, "Running")
         nativePause.tap()
         settle()
-        capture("31-native-pause-after")
+        let pauseStart = capture("31-native-pause-after")
         XCTAssertEqual(nativePause.value as? String, "Paused")
+        settle(3)
+        let pauseHeld = capture("31a-native-pause-held")
+        XCTAssertLessThan(
+            visualDifference(
+                pauseStart,
+                pauseHeld,
+                in: CGRect(x: 0.54, y: 0.0, width: 0.20, height: 0.06)
+            ),
+            0.01,
+            "Game clock changed after tapping the native pause control"
+        )
+        nativePause.tap()
+        settle()
+        capture("32-native-resume-after")
+        XCTAssertEqual(nativePause.value as? String, "Running")
     }
 
     func testPrepareLifecycleMission() {

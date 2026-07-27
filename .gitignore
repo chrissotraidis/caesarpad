@@ -4,5 +4,6 @@ build/
 ext/SDL2/
 artifacts/*.xcresult/
 artifacts/g[3-8]/*.xcresult/
+artifacts/**/*.xcresult/
 artifacts/g[3-8]/*.png
 artifacts/g[3-8]/*.jpg

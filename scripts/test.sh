@@ -3,11 +3,14 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-SIMULATOR_UDID="${SIMULATOR_UDID:-08636791-2675-4675-8335-EF72EF954DCF}"
 BUNDLE_ID="${BUNDLE_ID:-com.github.keriew.augustus}"
 APP_PATH="$ROOT_DIR/build/ios/Release-iphonesimulator/augustus.app"
 ARTIFACT_DIR="$ROOT_DIR/artifacts/g7"
 RUN_ID="$(date +%Y%m%d-%H%M%S)"
+
+# shellcheck source=scripts/simulator.sh
+source "$ROOT_DIR/scripts/simulator.sh"
+caesarpad_select_simulator
 
 mkdir -p "$ARTIFACT_DIR"
 "$ROOT_DIR/scripts/build.sh"
