@@ -1,0 +1,147 @@
+From: CaesarPad maintainers
+Subject: [PATCH] Separate two-finger pan from pinch zoom
+
+Reason: Augustus previously ran map dragging and touch zoom together whenever
+two fingers moved. Lock parallel motion to pan and opposing motion to zoom so
+minor spacing jitter cannot steal a two-finger drag.
+
+diff --git a/src/input/touch.h b/src/input/touch.h
+--- a/src/input/touch.h
++++ b/src/input/touch.h
+@@ -17,6 +17,12 @@ typedef enum {
+     TOUCH_MODE_MAX = 3
+ } touch_mode;
+ 
++typedef enum {
++    TOUCH_GESTURE_UNDECIDED = 0,
++    TOUCH_GESTURE_PAN = 1,
++    TOUCH_GESTURE_ZOOM = 2
++} touch_gesture;
++
+ typedef struct {
+     int in_use;
+     int has_started;
+@@ -41,6 +47,7 @@ int touch_was_double_click(const touch *t);
+ int touch_was_two_finger_tap(void);
+ int touch_poll_long_press(void);
+ void touch_consume_current_gesture(void);
++touch_gesture touch_get_two_finger_gesture(void);
+ 
+ int touch_is_scroll(void);
+ int touch_get_scroll(void);
+diff --git a/src/input/touch.c b/src/input/touch.c
+--- a/src/input/touch.c
++++ b/src/input/touch.c
+@@ -9,6 +9,8 @@
+ #define LONG_PRESS_TIME 350
+ #define NOT_MOVING_RANGE 5
+ #define SCROLL_FINGER_RADIUS 25
++#define TWO_FINGER_PAN_ACTIVATION 16
++#define TWO_FINGER_ZOOM_ACTIVATION 24
+ #define MILLIS_TOLERANCE_BETWEEN_LAST_MOVE_AND_TOUCH_END 60
+ 
+ typedef enum {
+@@ -22,6 +24,7 @@ static struct {
+     touch old_touch;
+     int last_scroll_position;
+     touch_mode mode;
++    touch_gesture two_finger_gesture;
+     emulated_mouse_click touchpad_mode_click_type;
+ } data;
+ 
+@@ -127,7 +130,39 @@ void touch_consume_current_gesture(void)
+         if (data.finger[i].in_use) {
+             data.finger[i].long_press_handled = 1;
+         }
++    }
++}
++
++touch_gesture touch_get_two_finger_gesture(void)
++{
++    if (data.two_finger_gesture != TOUCH_GESTURE_UNDECIDED) {
++        return data.two_finger_gesture;
++    }
++    if (get_total_active_touches() != 2) {
++        return TOUCH_GESTURE_UNDECIDED;
++    }
++
++    const touch *first = touch_get_earliest();
++    const touch *last = touch_get_latest();
++    if (!first->has_moved || !last->has_moved) {
++        return TOUCH_GESTURE_UNDECIDED;
++    }
++
++    int first_dx = first->current_point.x - first->start_point.x;
++    int first_dy = first->current_point.y - first->start_point.y;
++    int last_dx = last->current_point.x - last->start_point.x;
++    int last_dy = last->current_point.y - last->start_point.y;
++    int pan_delta = abs(first_dx + last_dx) + abs(first_dy + last_dy);
++    int zoom_delta = abs(last_dx - first_dx) + abs(last_dy - first_dy);
++
++    // Opposing motion is a pinch; shared motion is a two-finger pan. Bias
++    // ambiguous movement toward panning so small finger jitter cannot steal it.
++    if (zoom_delta >= TWO_FINGER_ZOOM_ACTIVATION && zoom_delta > pan_delta) {
++        data.two_finger_gesture = TOUCH_GESTURE_ZOOM;
++    } else if (pan_delta >= TWO_FINGER_PAN_ACTIVATION) {
++        data.two_finger_gesture = TOUCH_GESTURE_PAN;
+     }
++    return data.two_finger_gesture;
+ }
+ 
+ int touch_is_scroll(void)
+@@ -261,6 +296,9 @@ void reset_touches(int reset_old_touch)
+             t->has_started = start_delayed(t);
+         }
+     }
++    if (get_total_active_touches() < 2) {
++        data.two_finger_gesture = TOUCH_GESTURE_UNDECIDED;
++    }
+ }
+ 
+ static int any_touch_went_up(void)
+diff --git a/src/widget/city/city.c b/src/widget/city/city.c
+--- a/src/widget/city/city.c
++++ b/src/widget/city/city.c
+@@ -470,8 +470,17 @@ static int handle_last_touch(map_tile *tile)
+             window_building_info_show(tile->grid_offset);
+         }
+         return 1;
+-    } else if (touch_not_click(last)) {
++    }
++
++    touch_gesture gesture = touch_get_two_finger_gesture();
++    if (gesture == TOUCH_GESTURE_ZOOM) {
++        scroll_drag_end();
+         handle_touch_zoom(touch_get_earliest(), last);
++        return 1;
++    }
++    zoom_end_touch();
++    if (gesture == TOUCH_GESTURE_UNDECIDED) {
++        return 1;
+     }
+     return 0;
+ }
+@@ -761,11 +770,21 @@ void widget_city_handle_input_military(const mouse *m, const hotkeys *h, int leg
+         if (t->has_started) {
+             data.capture_input = 1;
+         }
++        int should_scroll = 1;
+         const touch *last = touch_get_latest();
+         if (last->in_use) {
+-            handle_touch_zoom(t, last);
++            touch_gesture gesture = touch_get_two_finger_gesture();
++            if (gesture == TOUCH_GESTURE_ZOOM) {
++                scroll_drag_end();
++                handle_touch_zoom(t, last);
++            } else {
++                zoom_end_touch();
++            }
++            should_scroll = gesture == TOUCH_GESTURE_PAN;
+         }
+-        handle_touch_scroll(t);
++        if (should_scroll) {
++            handle_touch_scroll(t);
++        }
+         if (t->has_ended) {
+             data.capture_input = 0;
+         }

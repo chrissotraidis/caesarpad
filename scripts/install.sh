@@ -3,7 +3,7 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-BUNDLE_ID="${BUNDLE_ID:-com.github.keriew.augustus}"
+BUNDLE_ID="${BUNDLE_ID:-com.chrissotraidis.caesarpad}"
 APP_PATH="$ROOT_DIR/build/ios/Release-iphonesimulator/augustus.app"
 SOURCE_DIR="${C3_SOURCE_DIR:-$ROOT_DIR/ref/Caesar 3/C3}"
 

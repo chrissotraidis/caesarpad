@@ -1,0 +1,396 @@
+From: CaesarPad maintainers
+Subject: [PATCH] Add a persistent Apple Pencil control mode
+
+Reason: Pencil users need precise selection without accidental finger taps.
+Distinguish Pencil events from finger touches, reserve fingers for navigation
+while Pencil mode is active, and expose a persistent native toolbar toggle.
+
+diff --git a/ext/SDL2/SDL2/src/video/uikit/SDL_uikitview.m b/ext/SDL2/SDL2/src/video/uikit/SDL_uikitview.m
+--- a/ext/SDL2/SDL2/src/video/uikit/SDL_uikitview.m
++++ b/ext/SDL2/SDL2/src/video/uikit/SDL_uikitview.m
+@@ -47,6 +47,7 @@
+ 
+     SDL_TouchID directTouchId;
+     SDL_TouchID indirectTouchId;
++    SDL_TouchID pencilTouchId;
+ }
+ 
+ - (instancetype)initWithFrame:(CGRect)frame
+@@ -81,10 +82,12 @@
+ 
+         directTouchId = 1;
+         indirectTouchId = 2;
++        pencilTouchId = 3;
+ 
+ #if !TARGET_OS_TV
+         self.multipleTouchEnabled = YES;
+         SDL_AddTouch(directTouchId, SDL_TOUCH_DEVICE_DIRECT, "");
++        SDL_AddTouch(pencilTouchId, SDL_TOUCH_DEVICE_DIRECT, "Apple Pencil");
+ #endif
+ 
+ #if !TARGET_OS_TV && defined(__IPHONE_13_4)
+@@ -200,6 +203,16 @@
+     }
+ }
+ 
++- (SDL_TouchID)touchIdForTouch:(UITouch *)touch
++{
++#ifdef __IPHONE_9_1
++    if (touch.type == UITouchTypePencil) {
++        return pencilTouchId;
++    }
++#endif
++    return [self touchIdForType:[self touchTypeForTouch:touch]];
++}
++
+ - (CGPoint)touchLocation:(UITouch *)touch shouldNormalize:(BOOL)normalize
+ {
+     CGPoint point = [touch locationInView:self];
+@@ -264,7 +277,7 @@
+         if (!handled) {
+             CGPoint locationInView;
+             SDL_TouchDeviceType touchType = [self touchTypeForTouch:touch];
+-            SDL_TouchID touchId = [self touchIdForType:touchType];
++            SDL_TouchID touchId = [self touchIdForTouch:touch];
+             float pressure = [self pressureForTouch:touch];
+ 
+             if (SDL_AddTouch(touchId, touchType, "") < 0) {
+@@ -320,7 +333,7 @@
+         if (!handled) {
+             CGPoint locationInView;
+             SDL_TouchDeviceType touchType = [self touchTypeForTouch:touch];
+-            SDL_TouchID touchId = [self touchIdForType:touchType];
++            SDL_TouchID touchId = [self touchIdForTouch:touch];
+             float pressure = [self pressureForTouch:touch];
+ 
+             if (SDL_AddTouch(touchId, touchType, "") < 0) {
+@@ -357,7 +370,7 @@
+         if (!handled) {
+             CGPoint locationInView;
+             SDL_TouchDeviceType touchType = [self touchTypeForTouch:touch];
+-            SDL_TouchID touchId = [self touchIdForType:touchType];
++            SDL_TouchID touchId = [self touchIdForTouch:touch];
+             float pressure = [self pressureForTouch:touch];
+ 
+             if (SDL_AddTouch(touchId, touchType, "") < 0) {
+diff --git a/src/input/touch.h b/src/input/touch.h
+--- a/src/input/touch.h
++++ b/src/input/touch.h
+@@ -23,12 +23,18 @@ typedef enum {
+     TOUCH_GESTURE_ZOOM = 2
+ } touch_gesture;
+ 
++typedef enum {
++    TOUCH_INPUT_FINGER = 0,
++    TOUCH_INPUT_PENCIL = 1
++} touch_input_type;
++
+ typedef struct {
+     int in_use;
+     int has_started;
+     int has_moved;
+     int has_ended;
+     int long_press_handled;
++    touch_input_type input_type;
+     touch_coords start_point;
+     touch_coords current_point;
+     touch_coords previous_frame_point;
+@@ -48,6 +54,7 @@
+ int touch_poll_long_press(void);
+ void touch_consume_current_gesture(void);
+ touch_gesture touch_get_two_finger_gesture(void);
++int touch_is_navigation_only(const touch *t);
+ 
+ int touch_is_scroll(void);
+ int touch_get_scroll(void);
+@@ -55,6 +62,7 @@
+ void reset_touches(int reset_old_touch);
+ 
+ int touch_create(touch_coords start_coords, time_millis start_time);
++int touch_create_with_input(touch_coords start_coords, time_millis start_time, touch_input_type input_type);
+ void touch_move(int index, touch_coords current_coords, time_millis current_time);
+ void touch_end(int index, time_millis current_time);
+ int touch_in_use(int index);
+@@ -63,5 +71,7 @@
+ int touch_to_mouse(void);
+ 
+ void touch_set_mode(touch_mode mode);
+ void touch_cycle_mode(void);
++void touch_set_pencil_mode(int enabled);
++int touch_pencil_mode(void);
+ 
+ #endif // INPUT_TOUCH_H
+diff --git a/src/input/touch.c b/src/input/touch.c
+--- a/src/input/touch.c
++++ b/src/input/touch.c
+@@ -25,6 +25,7 @@ static struct {
+     int last_scroll_position;
+     touch_mode mode;
+     touch_gesture two_finger_gesture;
++    int pencil_mode;
+     emulated_mouse_click touchpad_mode_click_type;
+ } data;
+ 
+@@ -83,7 +84,7 @@ int touch_not_click(const touch *t)
+ 
+ int touch_was_click(const touch *t)
+ {
+-    return (t->has_ended && !t->has_moved && !t->long_press_handled &&
++    return (!touch_is_navigation_only(t) && t->has_ended && !t->has_moved && !t->long_press_handled &&
+         (t->last_change_time - t->start_time) < CLICK_TIME);
+ }
+ 
+@@ -98,7 +99,8 @@ int touch_was_two_finger_tap(void)
+ {
+     const touch *first = touch_get_earliest();
+     const touch *last = touch_get_latest();
+-    if (!last->in_use || last->start_time - first->start_time >= CLICK_TIME ||
++    if (!last->in_use || touch_is_navigation_only(first) || touch_is_navigation_only(last) ||
++        last->start_time - first->start_time >= CLICK_TIME ||
+         first->has_moved || last->has_moved ||
+         first->long_press_handled || last->long_press_handled) {
+         return 0;
+@@ -114,7 +116,7 @@ int touch_poll_long_press(void)
+ {
+     touch *t = (touch *) touch_get_earliest();
+     time_millis end_time = t->has_ended ? t->last_change_time : time_get_millis();
+-    if (!t->in_use || t->long_press_handled ||
++    if (!t->in_use || touch_is_navigation_only(t) || t->long_press_handled ||
+         abs(t->current_point.x - t->start_point.x) > 24 ||
+         abs(t->current_point.y - t->start_point.y) > 24 ||
+         end_time - t->start_time < LONG_PRESS_TIME) {
+@@ -124,6 +126,11 @@ int touch_poll_long_press(void)
+     return 1;
+ }
+ 
++int touch_is_navigation_only(const touch *t)
++{
++    return data.pencil_mode && t->input_type == TOUCH_INPUT_FINGER;
++}
++
+ void touch_consume_current_gesture(void)
+ {
+     for (int i = 0; i < MAX_ACTIVE_TOUCHES; ++i) {
+@@ -214,7 +221,7 @@ static int get_unused_touch_index(void)
+     return i;
+ }
+ 
+-int touch_create(touch_coords start_coords, time_millis start_time)
++int touch_create_with_input(touch_coords start_coords, time_millis start_time, touch_input_type input_type)
+ {
+     int index = get_unused_touch_index();
+     if (index != MAX_ACTIVE_TOUCHES) {
+@@ -231,10 +238,16 @@ int touch_create(touch_coords start_coords, time_millis start_time)
+         t->last_movement = t->frame_movement;
+         t->start_time = start_time;
+         t->last_change_time = start_time;
++        t->input_type = input_type;
+     }
+     return index;
+ }
+ 
++int touch_create(touch_coords start_coords, time_millis start_time)
++{
++    return touch_create_with_input(start_coords, start_time, TOUCH_INPUT_FINGER);
++}
++
+ int touch_in_use(int index)
+ {
+     return index >= 0 && index < MAX_ACTIVE_TOUCHES && data.finger[index].in_use;
+@@ -410,3 +423,14 @@ void touch_cycle_mode(void)
+ {
+     data.mode = (data.mode + 1) % TOUCH_MODE_MAX;
+ }
++
++void touch_set_pencil_mode(int enabled)
++{
++    reset_touches(1);
++    data.pencil_mode = enabled != 0;
++}
++
++int touch_pencil_mode(void)
++{
++    return data.pencil_mode;
++}
+diff --git a/src/input/mouse.c b/src/input/mouse.c
+--- a/src/input/mouse.c
++++ b/src/input/mouse.c
+@@ -44,6 +44,11 @@ void mouse_set_from_touch(const touch *first, const touch *last)
+     data.left.system_change = SYSTEM_NONE;
+     data.right.system_change = SYSTEM_NONE;
+ 
++    if (touch_is_navigation_only(first)) {
++        mouse_reset_button_state();
++        return;
++    }
++
+     if (touch_is_scroll()) {
+         mouse_reset_button_state();
+         return;
+diff --git a/src/platform/SDL2/touch.c b/src/platform/SDL2/touch.c
+--- a/src/platform/SDL2/touch.c
++++ b/src/platform/SDL2/touch.c
+@@ -7,6 +7,8 @@
+ 
+ #include "SDL.h"
+ 
++#include <string.h>
++
+ static SDL_FingerID touch_id[MAX_ACTIVE_TOUCHES];
+ 
+ #ifdef __APPLE__
+@@ -31,6 +33,22 @@ static int get_touch_index(SDL_FingerID id)
+     return MAX_ACTIVE_TOUCHES;
+ }
+ 
++static touch_input_type get_touch_input_type(SDL_TouchID id)
++{
++#if defined(__IOS__)
++    for (int i = 0; i < SDL_GetNumTouchDevices(); ++i) {
++        if (SDL_GetTouchDevice(i) == id) {
++            const char *name = SDL_GetTouchName(i);
++            if (name && strcmp(name, "Apple Pencil") == 0) {
++                return TOUCH_INPUT_PENCIL;
++            }
++            break;
++        }
++    }
++#endif
++    return TOUCH_INPUT_FINGER;
++}
++
+ void platform_touch_start(void *event)
+ {
+     SDL_TouchFingerEvent *e = (SDL_TouchFingerEvent *)event;
+@@ -57,7 +75,8 @@ void platform_touch_start(void *event)
+ 
+ #undef FRONT_PANEL_TOUCH_ID
+ #endif
+-    int index = touch_create(get_touch_coordinates(e->x, e->y), e->timestamp);
++    int index = touch_create_with_input(get_touch_coordinates(e->x, e->y), e->timestamp,
++        get_touch_input_type(e->touchId));
+     if (index != MAX_ACTIVE_TOUCHES) {
+         touch_id[index] = e->fingerId;
+     }
+diff --git a/src/platform/ios/ios.m b/src/platform/ios/ios.m
+--- a/src/platform/ios/ios.m
++++ b/src/platform/ios/ios.m
+@@ -5,6 +5,7 @@
+ #import <UniformTypeIdentifiers/UniformTypeIdentifiers.h>
+ 
+ #include "game/state.h"
++#include "input/touch.h"
+ 
+ #define GAME_PATH_MAX 300
+ static int has_directory;
+@@ -15,11 +16,21 @@ static UIWindow *alertwindow = nil;
+ @interface CaesarPadPauseTarget : NSObject
+ - (void)togglePause;
+ - (void)showControls;
++- (void)togglePencilMode;
+ @end
+ 
+ static UIButton *pauseButton = nil;
+ static UIButton *helpButton = nil;
++static UIButton *pencilButton = nil;
++static BOOL pencilMode = NO;
+ 
++static void updatePencilButton(void) {
++    pencilButton.accessibilityValue = pencilMode ? @"On" : @"Off, traditional touch controls";
++    pencilButton.backgroundColor = pencilMode ?
++        [UIColor.systemBlueColor colorWithAlphaComponent:0.85] :
++        [UIColor.blackColor colorWithAlphaComponent:0.65];
++}
++
+ @implementation CaesarPadPauseTarget
+ 
+ - (void)togglePause {
+@@ -35,9 +46,12 @@ static BOOL pencilMode = NO;
+         return;
+     }
+ 
++    NSString *message = pencilMode ?
++        @"PENCIL MODE\nPencil: select, inspect, and place\nDrag one finger: pan only\nPinch: zoom\n\nFinger taps cannot change the city while Pencil mode is on. Tap the Pencil button to return to traditional touch controls.\n\nCaesar III is a city builder, not an RTS. Walkers move automatically and cannot be group-selected; military legions are ordered individually." :
++        @"TRADITIONAL TOUCH\nTap: select buildings and controls\nDrag one finger: pan the map\nDrag two fingers together: pan the map\nPinch: zoom\nLong press or two-finger tap: inspect or cancel\n\nTap the Pencil button for precise Pencil interaction with finger-only navigation.\n\nCaesar III is a city builder, not an RTS. Walkers move automatically and cannot be group-selected; military legions are ordered individually.";
+     UIAlertController *alert = [UIAlertController
+         alertControllerWithTitle:@"CaesarPad Controls"
+-        message:@"Tap: select buildings and controls\nDrag one finger: pan the map\nDrag two fingers together: pan the map\nPinch: zoom\nLong press or two-finger tap: inspect or cancel\n\nCaesar III is a city builder, not an RTS. Walkers move automatically and cannot be group-selected; military legions are ordered individually."
++        message:message
+         preferredStyle:UIAlertControllerStyleAlert];
+     UIWindow *gameWindow = helpButton.window;
+     [alert addAction:[UIAlertAction actionWithTitle:@"Got it" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+@@ -53,6 +67,13 @@ static BOOL pencilMode = NO;
+     [alertwindow.rootViewController presentViewController:alert animated:YES completion:nil];
+ }
+ 
++- (void)togglePencilMode {
++    pencilMode = !pencilMode;
++    [[NSUserDefaults standardUserDefaults] setBool:pencilMode forKey:@"CaesarPadPencilMode"];
++    touch_set_pencil_mode(pencilMode);
++    updatePencilButton();
++}
++
+ @end
+ 
+ @interface CaesarPadCanvasAccessibilityElement : UIAccessibilityElement
+@@ -96,6 +117,8 @@ void ios_install_pause_button(void) {
+         }
+ 
+         pauseTarget = [CaesarPadPauseTarget new];
++        pencilMode = [[NSUserDefaults standardUserDefaults] boolForKey:@"CaesarPadPencilMode"];
++        touch_set_pencil_mode(pencilMode);
+         pauseButton = [UIButton buttonWithType:UIButtonTypeSystem];
+         pauseButton.translatesAutoresizingMaskIntoConstraints = NO;
+         pauseButton.accessibilityIdentifier = @"caesarpad.pause";
+@@ -117,13 +140,24 @@ void ios_install_pause_button(void) {
+         [helpButton setImage:[UIImage systemImageNamed:@"questionmark"] forState:UIControlStateNormal];
+         [helpButton addTarget:pauseTarget action:@selector(showControls) forControlEvents:UIControlEventTouchUpInside];
+ 
++        pencilButton = [UIButton buttonWithType:UIButtonTypeSystem];
++        pencilButton.translatesAutoresizingMaskIntoConstraints = NO;
++        pencilButton.accessibilityIdentifier = @"caesarpad.pencil-mode";
++        pencilButton.accessibilityLabel = @"Apple Pencil controls";
++        pencilButton.tintColor = UIColor.whiteColor;
++        pencilButton.layer.cornerRadius = 10;
++        [pencilButton setImage:[UIImage systemImageNamed:@"pencil"] forState:UIControlStateNormal];
++        [pencilButton addTarget:pauseTarget action:@selector(togglePencilMode) forControlEvents:UIControlEventTouchUpInside];
++        updatePencilButton();
++
+         [gameWindow addSubview:pauseButton];
+         [gameWindow addSubview:helpButton];
++        [gameWindow addSubview:pencilButton];
+         canvasAccessibility = [[CaesarPadCanvasAccessibilityElement alloc] initWithAccessibilityContainer:gameWindow];
+         canvasAccessibility.accessibilityIdentifier = @"caesarpad.canvas";
+         canvasAccessibility.accessibilityLabel = @"Caesar III game canvas";
+         canvasAccessibility.accessibilityTraits = UIAccessibilityTraitAllowsDirectInteraction;
+-        gameWindow.accessibilityElements = @[pauseButton, helpButton, canvasAccessibility];
++        gameWindow.accessibilityElements = @[pauseButton, helpButton, pencilButton, canvasAccessibility];
+         [NSLayoutConstraint activateConstraints:@[
+             [pauseButton.leadingAnchor constraintEqualToAnchor:gameWindow.safeAreaLayoutGuide.leadingAnchor constant:12],
+             [pauseButton.bottomAnchor constraintEqualToAnchor:gameWindow.safeAreaLayoutGuide.bottomAnchor constant:-12],
+@@ -133,6 +167,10 @@ void ios_install_pause_button(void) {
+             [helpButton.bottomAnchor constraintEqualToAnchor:pauseButton.bottomAnchor],
+             [helpButton.widthAnchor constraintEqualToConstant:48],
+             [helpButton.heightAnchor constraintEqualToConstant:48],
++            [pencilButton.leadingAnchor constraintEqualToAnchor:helpButton.trailingAnchor constant:8],
++            [pencilButton.bottomAnchor constraintEqualToAnchor:pauseButton.bottomAnchor],
++            [pencilButton.widthAnchor constraintEqualToConstant:48],
++            [pencilButton.heightAnchor constraintEqualToConstant:48],
+         ]];
+     });
+ }
+diff --git a/src/widget/city/city.c b/src/widget/city/city.c
+--- a/src/widget/city/city.c
++++ b/src/widget/city/city.c
+@@ -523,6 +523,11 @@ static void handle_first_touch(map_tile *tile)
+     const touch *first = touch_get_earliest();
+     building_type type = building_construction_type();
+ 
++    if (touch_is_navigation_only(first)) {
++        handle_touch_scroll(first);
++        return;
++    }
++
+     if (touch_poll_long_press()) {
+         scroll_drag_end();
+         data.capture_input = 0;

@@ -7,3 +7,8 @@ artifacts/g[3-8]/*.xcresult/
 artifacts/**/*.xcresult/
 artifacts/g[3-8]/*.png
 artifacts/g[3-8]/*.jpg
+artifacts/current-run/
+*.ipa
+*.mobileprovision
+*.p12
+*.p8

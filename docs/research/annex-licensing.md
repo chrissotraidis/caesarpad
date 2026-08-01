@@ -6,8 +6,8 @@
 
 - **Julius: AGPL-3.0** ([LICENSE.txt](https://github.com/bvschaik/julius/blob/master/LICENSE.txt), [license API](https://api.github.com/repos/bvschaik/julius/license)). **Augustus: AGPL-3.0** (same).
 - Julius `ext/`: libpng (PNG Reference Library v2), zlib 1.2.11 trimmed (zlib), tinyfiledialogs (zlib), dirent (MIT), SDL2 (zlib). MP3 decoding is delegated to SDL2_mixer (minimp3 bundled on iOS; desktop wiki mentions libmpg123/LGPL — not needed on iOS).
-- Augustus `ext/`: spng (BSD-2-Clause, SPDX header), pl_mpeg (MIT), miniz (public domain/Unlicense), tinyfiledialogs (zlib), **⚠ sxml.h — vendored copy has no license header** (upstream capmar/sxml), **⚠ zip.h — only a warranty fragment** (upstream kuba--/zip is Unlicense), easyav1 (by Augustus lead crudelios; license to verify).
-- All verified third-party components are permissive and AGPL-compatible. The sxml/zip notice gaps are compliance housekeeping for anyone redistributing, not blockers.
+- Augustus `ext/`: spng (BSD-2-Clause), pl_mpeg (MIT), miniz (permissive), tinyfiledialogs (zlib), sxml (Unlicense), the pinned kuba--/zip copy (Unlicense), and easyav1 (BSD-3-Clause). The pinned tree includes `UNLICENSE` files for sxml and zip plus an explicit easyav1 license.
+- All verified third-party components are permissive and AGPL-compatible. Public packages reproduce the relevant notices and complete license texts alongside the app.
 - **Consequence for CaesarPad:** the whole distributed work is AGPL-3.0; CaesarPad's own code must be AGPL-3.0-compatible with full corresponding source published per release (pin exact submodule SHAs + patch set).
 
 ## 2. AGPL vs Apple distribution
