@@ -1,0 +1,65 @@
+name: CaesarPad iOS preview
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Fetch pinned SDL sources
+        run: scripts/fetch-deps.sh
+
+      - name: Repository safety
+        run: scripts/check-repo-safety.sh
+
+      - name: Build unsigned iOS app
+        run: scripts/build-device.sh
+
+      - name: Package and audit IPA
+        env:
+          SOURCE_REVISION: ${{ github.sha }}
+        run: scripts/package-ios.sh
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: CaesarPad-0.1.0-preview.1-unsigned
+          path: |
+            build/release/CaesarPad-0.1.0-preview.1-unsigned.ipa
+            build/release/CaesarPad-0.1.0-preview.1-unsigned.ipa.sha256
+          if-no-files-found: error
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: CaesarPad-0.1.0-preview.1-unsigned
+          path: release-assets
+
+      - name: Create prerelease
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          gh release create "${GITHUB_REF_NAME}"
+          release-assets/CaesarPad-0.1.0-preview.1-unsigned.ipa
+          release-assets/CaesarPad-0.1.0-preview.1-unsigned.ipa.sha256
+          --repo "${GITHUB_REPOSITORY}"
+          --verify-tag
+          --prerelease
+          --generate-notes

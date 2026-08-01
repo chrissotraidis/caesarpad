@@ -85,10 +85,70 @@ int main(void)
     test_time = 7400;
     assert(!touch_was_two_finger_tap());
 
+    reset_touches(1);
+    touch_coords second_start = {200, 100};
+    touch_coords first_pan = {130, 120};
+    touch_coords second_pan = {230, 120};
+    first = touch_create(start, 8000);
+    second = touch_create(second_start, 8010);
+    test_time = 8060;
+    touch_move(first, first_pan, 8050);
+    assert(touch_get_two_finger_gesture() == TOUCH_GESTURE_UNDECIDED);
+    touch_move(second, second_pan, 8060);
+    assert(touch_get_two_finger_gesture() == TOUCH_GESTURE_PAN);
+    touch_coords second_jitter = {245, 120};
+    touch_move(second, second_jitter, 8070);
+    assert(touch_get_two_finger_gesture() == TOUCH_GESTURE_PAN);
+    touch_end(first, 8100);
+    touch_end(second, 8100);
+
+    reset_touches(1);
+    touch_coords first_pinch = {80, 100};
+    touch_coords second_pinch = {220, 100};
+    first = touch_create(start, 9000);
+    second = touch_create(second_start, 9010);
+    test_time = 9060;
+    touch_move(first, first_pinch, 9050);
+    touch_move(second, second_pinch, 9060);
+    assert(touch_get_two_finger_gesture() == TOUCH_GESTURE_ZOOM);
+    touch_end(first, 9100);
+    touch_end(second, 9100);
+    reset_touches(1);
+    assert(touch_get_two_finger_gesture() == TOUCH_GESTURE_UNDECIDED);
+
+    touch_set_pencil_mode(1);
+    int finger = touch_create(start, 10000);
+    assert(touch_is_navigation_only(touch_get_earliest()));
+    touch_end(finger, 10100);
+    test_time = 10100;
+    assert(!touch_was_click(touch_get_earliest()));
+    assert(!touch_poll_long_press());
+
+    reset_touches(1);
+    int pencil = touch_create_with_input(start, 11000, TOUCH_INPUT_PENCIL);
+    test_time = 11160;
+    assert(!touch_is_navigation_only(touch_get_earliest()));
+    touch_end(pencil, 11170);
+    test_time = 11170;
+    assert(touch_was_click(touch_get_earliest()));
+
+    reset_touches(1);
+    touch_set_pencil_mode(0);
+    finger = touch_create(start, 12000);
+    touch_end(finger, 12100);
+    test_time = 12100;
+    assert(touch_was_click(touch_get_earliest()));
+    reset_touches(1);
+
     puts("PASS: 350 ms stationary hold maps once to engine long-press right-click");
     puts("PASS: moved touch does not map to long-press right-click");
     puts("PASS: release timestamp preserves completed long-press");
     puts("PASS: only a short stationary two-finger pair maps to alternate right-click");
     puts("PASS: consumed two-finger right-click cannot leak a later single tap");
+    puts("PASS: parallel two-finger motion locks to pan despite later jitter");
+    puts("PASS: opposing two-finger motion locks to pinch zoom");
+    puts("PASS: Pencil mode reserves finger input for navigation");
+    puts("PASS: Pencil input keeps precise click interaction");
+    puts("PASS: traditional mode restores finger clicks");
     return 0;
 }

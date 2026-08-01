@@ -11,7 +11,7 @@ caesarpad_select_simulator() {
         fi
     else
         SIMULATOR_UDID="$(
-            sed -nE '/iPad.*\(Booted\)/{
+            sed -nE '/^[[:space:]]+iPad.*\(Booted\)/{
                 s/.*\(([0-9A-Fa-f-]{36})\).*/\1/
                 p
                 q
@@ -19,7 +19,7 @@ caesarpad_select_simulator() {
         )"
         if [[ -z "$SIMULATOR_UDID" ]]; then
             SIMULATOR_UDID="$(
-                sed -nE '/iPad/{
+                sed -nE '/^[[:space:]]+iPad/{
                     s/.*\(([0-9A-Fa-f-]{36})\).*/\1/
                     p
                     q

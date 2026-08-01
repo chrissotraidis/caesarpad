@@ -1,0 +1,49 @@
+From: CaesarPad maintainers
+Subject: [PATCH] Give the iOS preview a release identity and Files access
+
+Reason: A public sideload build must not use Augustus's upstream bundle ID,
+and users need a Files-visible Documents directory for their own legally
+purchased Caesar III data. Set the CaesarPad preview version and build number,
+use a downstream bundle ID, and enable iOS document sharing in place.
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -997,15 +997,15 @@ if(${TARGET_PLATFORM} STREQUAL "ios")
+     set_target_properties(${SHORT_NAME} PROPERTIES
+ 
+         MACOSX_BUNDLE_BUNDLE_NAME  ${USER_FRIENDLY_NAME}
+-        MACOSX_BUNDLE_BUNDLE_VERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}${VERSION_REVISION}"
+-        MACOSX_BUNDLE_GUI_IDENTIFIER "com.github.keriew.augustus"
++        MACOSX_BUNDLE_BUNDLE_VERSION "1"
++        MACOSX_BUNDLE_GUI_IDENTIFIER "com.chrissotraidis.caesarpad"
+         MACOSX_BUNDLE_INFO_PLIST "${PROJECT_SOURCE_DIR}/res/ios/Info.plist"
+-        MACOSX_BUNDLE_SHORT_VERSION_STRING "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}"
++        MACOSX_BUNDLE_SHORT_VERSION_STRING "0.1.0"
+         MACOSX_BUNDLE_UI_LAUNCH_STORYBOARD_NAME "LaunchScreen"
+         OUTPUT_NAME "${PROJECT_NAME}"
+         XCODE_ATTRIBUTE_ASSETCATALOG_COMPILER_APPICON_NAME "AppIcon"
+         XCODE_ATTRIBUTE_TARGETED_DEVICE_FAMILY 1,2
+-        XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER "com.github.keriew.augustus"
++        XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER "com.chrissotraidis.caesarpad"
+     )
+     set(CMAKE_OSX_DEPLOYMENT_TARGET "14.0" CACHE STRING "Minimum OS X deployment version" FORCE)
+     set_source_files_properties(${PROJECT_SOURCE_DIR}/res/ios/Assets.xcassets PROPERTIES
+diff --git a/res/ios/Info.plist b/res/ios/Info.plist
+--- a/res/ios/Info.plist
++++ b/res/ios/Info.plist
+@@ -24,6 +24,14 @@
+   <string>${MACOSX_BUNDLE_BUNDLE_VERSION}</string>
+   <key>LSRequiresIPhoneOS</key>
+   <true/>
++  <key>LSSupportsOpeningDocumentsInPlace</key>
++  <true/>
++  <key>UIApplicationSupportsIndirectInputEvents</key>
++  <true/>
++  <key>UIFileSharingEnabled</key>
++  <true/>
++  <key>UIRequiresFullScreen</key>
++  <true/>
+   <key>UIRequiredDeviceCapabilities</key>
+   <array>
+     <string>armv7</string>
