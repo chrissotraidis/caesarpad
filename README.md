@@ -195,7 +195,7 @@ separate from the completed local iPad build, install, launch, and touch testing
 ## How it works
 
 CaesarPad keeps Augustus as a pinned Git submodule at
-`69c69827682a11eaaa400c5a77198131249bfe2a`. The engine is never vendor-copied. Twelve small
+`69c69827682a11eaaa400c5a77198131249bfe2a`. The engine is never vendor-copied. Thirteen small
 patches provide only the downstream behavior needed here:
 
 1. landscape-only iOS presentation;

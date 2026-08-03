@@ -77,5 +77,11 @@ grep -q '<key>UIFileSharingEnabled</key>' "$PATCH_TEST_DIR/res/ios/Info.plist" |
     fail "Files sharing metadata is missing"
 grep -q '<key>UIRequiresFullScreen</key>' "$PATCH_TEST_DIR/res/ios/Info.plist" ||
     fail "landscape full-screen metadata is missing"
+grep -q 'usesExistingGameData' "$PATCH_TEST_DIR/src/platform/ios/CaesarPadGameDataPickerController.m" ||
+    fail "Files-visible C3 folder handling is missing"
+grep -q 'Importing Game Data' "$PATCH_TEST_DIR/src/platform/ios/CaesarPadGameDataPickerController.m" ||
+    fail "game-data import feedback is missing"
+grep -q 'dispatch_get_global_queue' "$PATCH_TEST_DIR/src/platform/ios/CaesarPadGameDataPickerController.m" ||
+    fail "game-data import still blocks the UIKit thread"
 
 echo "PASS: repository safety, scripts, assets, submodule pin, and patch series"

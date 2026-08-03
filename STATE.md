@@ -1,13 +1,14 @@
 # CaesarPad build state
 
-Last updated: 2026-08-01
+Last updated: 2026-08-03
 
 ## Release candidate
 
 | Item | Status | Current evidence |
 |---|---|---|
-| Source safety | PASS | `scripts/check-repo-safety.sh` applies all 12 patches from a clean Augustus checkout and audits tracked paths, scripts, metadata, screenshots, and the pinned submodule. |
+| Source safety | PASS | `scripts/check-repo-safety.sh` applies all 13 patches from a clean Augustus checkout and audits tracked paths, scripts, metadata, screenshots, and the pinned submodule. |
 | Simulator build | PASS | arm64 `iPhoneSimulator` Release app built with Xcode 26.6. |
+| Game-data importer | PASS | On iPad Simulator, selecting the existing Files-visible `CaesarPad/C3` folder continued without a self-copy, while a separate 601-file folder imported with visible progress; the imported `c3.eng` and `c3_model.txt` hashes matched the source. |
 | Touch engine tests | PASS | Long press, two-finger alternate click, pan-versus-pinch intent, and Pencil/finger routing all pass in `scripts/test-touch.sh`. |
 | Native iPad controls | PASS | On an iPad Pro 13-inch (M5) Simulator, the top-right controls, controls guide, and persistent Pencil mode passed focused XCUITests on 2026-08-01. |
 | Physical device build | PASS | Developer-signed arm64 `iPhoneOS` app, bundle ID `com.chrissotraidis.caesarpad`, version `0.1.0` (1), passed strict code-signature verification. |
@@ -41,13 +42,14 @@ the exact unsigned IPA still requires the acceptance pass in
   provisioning profiles are stripped before packaging.
 - `ref/`, `artifacts/current-run/`, saves, generated builds, `.ipa` files, and signing
   material remain local and ignored.
-- Files access is enabled for the app's Documents directory, but a polished in-app import
-  workflow is not part of this preview.
+- Files access is enabled for the app's Documents directory. The in-app folder picker
+  accepts any folder name, provides progress while importing, and reuses an existing
+  Files-visible `CaesarPad/C3` folder without copying it onto itself.
 
 ## Remaining prerelease acceptance
 
 - Re-sign and install the exact candidate IPA rather than the directly built `.app`.
-- Confirm Files visibility and copy owned Caesar III data into the installed container.
+- Confirm the game-data importer with owned Caesar III data in the exact candidate IPA.
 - Load the developed demo save, then validate touch, Pencil, audio, lifecycle, performance,
   and thermals on the exact packaged candidate.
 - Recalibrate the pixel-coordinate gameplay XCUITests for the current iOS Simulator runtime.

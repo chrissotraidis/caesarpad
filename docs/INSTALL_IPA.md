@@ -30,13 +30,18 @@ collect or receive your Apple credentials.
 
 ## Add your Caesar III data
 
-1. Open **Files → On My iPad → CaesarPad**.
-2. Create a folder named `C3` if one is not already present.
-3. Copy the contents of your purchased Caesar III data directory into `C3`.
-4. Confirm that `C3` directly contains `c3.eng`, `c3_model.txt`, `c3.sg2`, and
-   the rest of the game's data files.
-5. Return to CaesarPad. When Augustus asks for the game-data location, select or
-   confirm the `C3` folder.
+1. Put your purchased Caesar III data folder anywhere in Files. The folder name
+   does not matter.
+2. Confirm that the selected folder directly contains `c3.eng`, `c3_model.txt`,
+   `c3.sg2`, and the rest of the game's data files.
+3. In CaesarPad, acknowledge the game-data prompt, select that folder, and tap
+   **Open**. CaesarPad shows an importing message while it copies the files into
+   its Files-visible storage.
+
+If you already copied the files to **Files → On My iPad → CaesarPad → C3**, select
+that exact `C3` folder. CaesarPad uses it in place instead of trying to copy the
+folder onto itself. You can also force-quit and reopen CaesarPad to have it detect
+that folder during startup.
 
 Do not share those files or attach them to GitHub issues.
 
