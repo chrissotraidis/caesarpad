@@ -32,6 +32,14 @@ def inventory(root, excluded=()):
                 'link:' + os.readlink(p) if p.is_symlink() else hashlib.sha256(p.read_bytes()).hexdigest()]
     return result
 
+def normalize_modes(root):
+    # Match ordinary tar extraction under umask 022, retaining executable bits.
+    for folder, dirs, files in os.walk(root):
+        for name in dirs + files:
+            p = Path(folder) / name
+            if not p.is_symlink():
+                p.chmod(stat.S_IMODE(p.stat().st_mode) & ~0o022)
+
 def verify_files(root, expected):
     actual = inventory(root)
     differences = [p for p in actual.keys() | expected.keys() if actual.get(p) != expected.get(p)]
@@ -80,10 +88,11 @@ def check(fetch=False):
                 unpack.mkdir()
                 # Pinned trusted release contains framework symlinks; retain their exact targets.
                 with tarfile.open(archive) as tar:
-                    tar.extractall(unpack)
+                    tar.extractall(unpack, **({"filter": "fully_trusted"} if hasattr(tarfile, "fully_trusted_filter") else {}))
                 entries = list(unpack.iterdir())
                 if len(entries) != 1:
                     raise RuntimeError('Unexpected archive layout')
+                normalize_modes(entries[0])
                 verify_files(entries[0], expected)
                 p.parent.mkdir(parents=True, exist_ok=True)
                 shutil.move(str(entries[0]), p)
@@ -108,18 +117,13 @@ def export_source(output, provenance):
             target.mkdir(parents=True, exist_ok=True)
             data = subprocess.check_output(['git', '-C', str(ROOT / rel), 'archive', 'HEAD'])
             with tarfile.open(fileobj=io.BytesIO(data)) as tar:
-                tar.extractall(target)
+                tar.extractall(target, **({"filter": "fully_trusted"} if hasattr(tarfile, "fully_trusted_filter") else {}))
         for item in LOCK['archives']:
             shutil.copytree(ROOT / item['path'], stage / item['path'], symlinks=True,
                             ignore=shutil.ignore_patterns('.caesarpad-source'))
         # Historical tracked run logs are not build inputs and may contain device identifiers.
         shutil.rmtree(stage / 'artifacts', ignore_errors=True)
-        # Git archive emits group-writable modes; normalize for ordinary tar/umask restoration.
-        for folder, dirs, files in os.walk(stage):
-            for name in dirs + files:
-                p = Path(folder) / name
-                if not p.is_symlink():
-                    p.chmod(stat.S_IMODE(p.stat().st_mode) & ~0o022)
+        normalize_modes(stage)
         manifest = {'provenance': provenance, 'files': inventory(stage)}
         (stage / 'SOURCE_MANIFEST.json').write_text(json.dumps(manifest, indent=2, sort_keys=True) + '\n')
         output = Path(output).resolve()
