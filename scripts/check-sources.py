@@ -5,6 +5,7 @@ import hashlib
 import io
 import json
 import os
+import plistlib
 from pathlib import Path
 import shutil
 import stat
@@ -59,7 +60,12 @@ def check(fetch=False):
         entry = git(parent, 'ls-files', '--stage', str(p.relative_to(parent))).split()
         if len(entry) < 2 or entry[0] != '160000' or entry[1] != item['commit']:
             raise RuntimeError(f"Lock/gitlink mismatch: {item['path']}")
-        if git(p, 'status' , '--porcelain', '--untracked-files=all'):
+        module_path = str(p.relative_to(parent))
+        paths = git(parent, 'config', '-f', '.gitmodules', '--get-regexp', r'^submodule\..*\.path$').splitlines()
+        module_key = next(line.split()[0][:-5] for line in paths if line.split(maxsplit=1)[1] == module_path)
+        if git(parent, 'config', '-f', '.gitmodules', '--get', module_key + '.url') != item['url']:
+            raise RuntimeError(f"Lock/submodule URL mismatch: {item['path']}")
+        if git(p, 'status', '--porcelain', '--untracked-files=all'):
             raise RuntimeError(f"Dirty dependency: {item['path']}; preserve changes, do not reset automatically")
     for item in LOCK['archives']:
         p = ROOT / item['path']
@@ -134,6 +140,11 @@ if __name__ == '__main__':
         provenance = check(args.fetch)
         if args.stamp or args.archive or args.verify_stamp:
             require_clean()
+        if args.stamp or args.verify_stamp:
+            app = (args.stamp or args.verify_stamp).parent
+            info = plistlib.loads((app / 'Info.plist').read_bytes())
+            provenance['built_files'] = {name: hashlib.sha256((app / name).read_bytes()).hexdigest()
+                                         for name in ('Info.plist', info['CFBundleExecutable'])}
         if args.stamp:
             args.stamp.write_text(json.dumps(provenance, indent=2) + '\n')
         if args.verify_stamp and json.loads(args.verify_stamp.read_text()) != provenance:
