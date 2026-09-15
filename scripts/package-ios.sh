@@ -81,7 +81,7 @@ root, out = map(pathlib.Path, sys.argv[1:])
 for folder, dirs, files in os.walk(root):
     dirs[:] = [d for d in dirs if d not in ('.git', 'build')]
     for name in files:
-        if name.upper().startswith(('LICENSE', 'COPYING', 'COPYRIGHT', 'NOTICE', 'UNLICENSE', 'AUTHORS')):
+        if name.upper().startswith(('LICENSE', 'COPYING', 'COPYRIGHT', 'NOTICE', 'UNLICENSE', 'AUTHORS')) or name in ('pl_mpeg.h', 'dr_flac.h', 'stb_vorbis.h'):
             p = pathlib.Path(folder) / name
             if not p.is_symlink():
                 dest = out / 'components' / p.relative_to(root)
