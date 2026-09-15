@@ -13,7 +13,8 @@ BUNDLE_ID="com.chrissotraidis.caesarpad"
 OUTPUT_NAME="CaesarPad-$VERSION-$RELEASE_LABEL-unsigned.ipa"
 OUTPUT_PATH="$OUTPUT_DIR/$OUTPUT_NAME"
 SHA_PATH="$OUTPUT_PATH.sha256"
-SOURCE_REVISION="${SOURCE_REVISION:-$(git -C "$ROOT_DIR" rev-parse HEAD)}"
+SOURCE_REVISION="$(git -C "$ROOT_DIR" rev-parse HEAD)"
+"$ROOT_DIR/scripts/check-sources.py" --verify-stamp "$APP_PATH/CaesarPad-source.json"
 
 for tool in codesign file find plutil shasum unzip zip zipinfo; do
     if ! command -v "$tool" >/dev/null; then
@@ -73,15 +74,28 @@ cp "$ENGINE_DIR/ext/miniz/LICENSE" "$LEGAL_DIR/miniz-License.txt"
 cp "$ENGINE_DIR/ext/SDL2/SDL2/LICENSE.txt" "$LEGAL_DIR/SDL2-zlib.txt"
 cp "$ENGINE_DIR/ext/SDL2/SDL2_mixer/LICENSE.txt" "$LEGAL_DIR/SDL2_mixer-zlib.txt"
 
+cp "$APP_PATH/CaesarPad-source.json" "$LEGAL_DIR/PROVENANCE.json"
+python3 - "$ENGINE_DIR" "$LEGAL_DIR" <<'PYNOTICES'
+import os, pathlib, shutil, sys
+root, out = map(pathlib.Path, sys.argv[1:])
+for folder, dirs, files in os.walk(root):
+    dirs[:] = [d for d in dirs if d not in ('.git', 'build')]
+    for name in files:
+        if name.upper().startswith(('LICENSE', 'COPYING', 'COPYRIGHT', 'NOTICE', 'UNLICENSE', 'AUTHORS')):
+            p = pathlib.Path(folder) / name
+            if not p.is_symlink():
+                dest = out / 'components' / p.relative_to(root)
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(p, dest)
+PYNOTICES
 printf '%s\n' \
     "CaesarPad corresponding source for this build:" \
     "https://github.com/chrissotraidis/caesarpad/tree/$SOURCE_REVISION" \
-    "" \
-    "Pinned Augustus source:" \
-    "https://github.com/Keriew/augustus/tree/69c69827682a11eaaa400c5a77198131249bfe2a" \
-    "" \
-    "Clone with submodules and apply the maintained patches as documented in README.md." \
+    "Exact recursive pins: Legal/PROVENANCE.json and sources.lock.json." \
+    "Obtain the matching complete source.tar.gz beside the IPA; automatic GitHub ZIPs omit submodules." \
+    "Build and source update instructions: docs/source-maintenance/README.md." \
     > "$LEGAL_DIR/SOURCE_OFFER.txt"
+"$ROOT_DIR/scripts/check-sources.py" --archive "$OUTPUT_DIR/CaesarPad-$VERSION-$RELEASE_LABEL-source.tar.gz"
 
 PROHIBITED_FILES="$(find "$STAGED_APP" -type f \( \
     -iname 'c3.eng' -o \

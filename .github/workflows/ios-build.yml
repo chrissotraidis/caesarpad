@@ -24,6 +24,9 @@ jobs:
       - name: Repository safety
         run: scripts/check-repo-safety.sh
 
+      - name: Touch regression tests
+        run: scripts/test-touch.sh
+
       - name: Build unsigned iOS app
         run: scripts/build-device.sh
 
@@ -38,6 +41,7 @@ jobs:
           path: |
             build/release/CaesarPad-0.1.0-preview.1-unsigned.ipa
             build/release/CaesarPad-0.1.0-preview.1-unsigned.ipa.sha256
+            build/release/*-source.tar.gz*
           if-no-files-found: error
 
   release:
@@ -59,6 +63,7 @@ jobs:
           gh release create "${GITHUB_REF_NAME}"
           release-assets/CaesarPad-0.1.0-preview.1-unsigned.ipa
           release-assets/CaesarPad-0.1.0-preview.1-unsigned.ipa.sha256
+          release-assets/*-source.tar.gz*
           --repo "${GITHUB_REPOSITORY}"
           --verify-tag
           --prerelease

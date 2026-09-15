@@ -1,0 +1,54 @@
+[
+  {
+    "patch": "0001-ios-landscape-only.patch",
+    "commit": "b0d0d92108d1c842515ca9f0a610221cb5355799"
+  },
+  {
+    "patch": "0002-ios-long-press-right-click.patch",
+    "commit": "eb21a0e6cff2d3207be520ec5020a55b82ff8f83"
+  },
+  {
+    "patch": "0003-ios-native-pause-button.patch",
+    "commit": "f1cbeb2c045fe82e54411006266156f3ce8f9249"
+  },
+  {
+    "patch": "0004-ios-lifecycle-autosave.patch",
+    "commit": "47e2fbdc0222027647a50ced59a9d654baf97dde"
+  },
+  {
+    "patch": "0005-ios-caesarpad-name.patch",
+    "commit": "f5110d18d8ddad3db117abbf1686c6cf900da663"
+  },
+  {
+    "patch": "0006-ios-touch-cursor-and-scale.patch",
+    "commit": "757bb25591a7cd5c29be410ee9ecfde46e806d50"
+  },
+  {
+    "patch": "0007-ios-two-finger-pan-intent.patch",
+    "commit": "4568d1ad95053ec9d24c092057a06411cdcce011"
+  },
+  {
+    "patch": "0008-ios-controls-help.patch",
+    "commit": "fe909e60045c7513349ce3c36646b038fb3f3631"
+  },
+  {
+    "patch": "0009-ios-apple-pencil-mode.patch",
+    "commit": "b77de74e270714da6e896c9506835ebda42e3aeb"
+  },
+  {
+    "patch": "0010-ios-simplify-control-bar.patch",
+    "commit": "1e780fae3701be7e67f84b71b1f4ad8f5178ead3"
+  },
+  {
+    "patch": "0011-ios-top-controls-and-video-lifecycle.patch",
+    "commit": "010bdcf84430b64cd652f6d78adbb1186a94829b"
+  },
+  {
+    "patch": "0012-ios-release-identity-and-files.patch",
+    "commit": "8d290ae2b84956569527d1024eab4ac930704c7c"
+  },
+  {
+    "patch": "0013-ios-importer-feedback.patch",
+    "commit": "914a35dfcc85436c6e2e0a5b220968b544183d42"
+  }
+]

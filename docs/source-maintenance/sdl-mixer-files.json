@@ -1,0 +1,1894 @@
+{
+  ".git-hash": [
+    420,
+    "1e47ff704b0c7ce7fe12ec1f50167830e0ef6d25bcab60884faf8c0445e35fd2"
+  ],
+  ".gitmodules": [
+    420,
+    "6632011b8a0660518537bba2dd451607af471ea388f8889dbec3a83a6dac9880"
+  ],
+  ".wikiheaders-options": [
+    420,
+    "fe2b89b8f3683fa1478aadc4359f4b610d3a664a8455ba24d0a95d29112e0473"
+  ],
+  "Android.mk": [
+    420,
+    "91e0397af787b9fdf0f77a4ae9de409c198cb9bc158c75a708cfb25d54b864d1"
+  ],
+  "CHANGES.txt": [
+    420,
+    "4fb7f02e9648528a3ff8f6e74857610fd717a994e23c92b705094bfaba90961d"
+  ],
+  "CMakeLists.txt": [
+    420,
+    "c14000d099bb2135ef7994dce44adad1f6dfa9b35a21f28d75476d5b001a0e08"
+  ],
+  "LICENSE.txt": [
+    420,
+    "7826eca0a0f7e591f38dd844e207a200aac81a59b20d8a30c3af8c6282af13e6"
+  ],
+  "Makefile.in": [
+    420,
+    "9565c4da1656f1b53ccc2b7fa6e89ea70fac87beda71a9674237739cbb331767"
+  ],
+  "Makefile.os2": [
+    420,
+    "dba06e682dfcd0fc70d4d875c932cfd482d67aee87348924219dfa5ecf53230e"
+  ],
+  "README-versions.md": [
+    420,
+    "bd91f70f6e493bf351f2088646760af03d29913207a5ae6de17a0a121680a096"
+  ],
+  "README.txt": [
+    420,
+    "3edf4716645f6893a1086f2c08cd19e74f88576c5ed151de250570effaac401c"
+  ],
+  "REVISION.txt": [
+    420,
+    "3afa2d3d69d82ff8e69e15170c6f3e5bdcaf9be967bb6d85cb59498e641c085f"
+  ],
+  "SDL2_mixer.pc.in": [
+    420,
+    "753a94dcc0b5fb8ad48fa7b03cb83a45905109f4d59450625ca53a6e18abe34c"
+  ],
+  "SDL2_mixer.spec.in": [
+    420,
+    "64ad866e3f84853ac97c64f0dacdaa1d624b160f4c5cabb0511fce60a31549ad"
+  ],
+  "SDL2_mixerConfig.cmake.in": [
+    420,
+    "66c59f7bce43bdcc0a1c22ba749a2dbb810ad825556524be8027171c37ecee2a"
+  ],
+  "VisualC-WinRT/SDL_mixer-UWP.sln": [
+    420,
+    "54c1e18df65ab89d1a59b7902367501156b99ecef7ca57b49f7653afe2c6344b"
+  ],
+  "VisualC-WinRT/SDL_mixer-UWP.vcxproj": [
+    420,
+    "378459fe504b3a0ff633ad5cf53d2e416a76827dafac93347550c1f4d03299b0"
+  ],
+  "VisualC-WinRT/SDL_mixer-UWP.vcxproj.filters": [
+    420,
+    "3093290fe7af085e8374a44930e82fbb7aa5b0a2cddfaaa998090751c36a79c2"
+  ],
+  "VisualC/SDL_mixer.sln": [
+    420,
+    "382bd83165d687a0ffaacdd6f2a28ab22a5202dea69d86706d9f95f1acf1c0c2"
+  ],
+  "VisualC/SDL_mixer.vcxproj": [
+    420,
+    "efe8d1409cb38e5feaf887e43185dedb2e09f296346e0b1ee981a0d0a57e0784"
+  ],
+  "VisualC/SDL_mixer.vcxproj.filters": [
+    420,
+    "c06216820fb7dfc7c815955da784876bfe4ead634975633a87e85c2e344a1dda"
+  ],
+  "VisualC/Version.rc": [
+    420,
+    "d1af9aa6407a157bc35d5e22136689123c44504ecca37edf7bfd6b5d2e986f9d"
+  ],
+  "VisualC/clean.sh": [
+    493,
+    "484c71036effec465c4c02900a17a0344ae5c56a5719fbd32bb08ee0a43f003f"
+  ],
+  "VisualC/external/include/gme/gme.h": [
+    420,
+    "b067a5673b8d4b184894120dfa11ce2d955236015377d73506fe82a80e08ed55"
+  ],
+  "VisualC/external/include/ogg/config_types.h": [
+    420,
+    "bd424c5670e21bf37fcd039d4e39a9f8f19aa5af7ee720810a07092da6557e60"
+  ],
+  "VisualC/external/include/ogg/ogg.h": [
+    420,
+    "aad86109c1fdb377738675a63e0b19859e06ada25ae5c59c290ca7263d1dc4ca"
+  ],
+  "VisualC/external/include/ogg/os_types.h": [
+    420,
+    "486dae565b007f826ad604e7d63190549dec5e931cedc822028d3a8f1e7404a7"
+  ],
+  "VisualC/external/include/opus/opus.h": [
+    420,
+    "64f99262371aa7ecd86889e379891cf44a2d2329a6ceae06774e80e2bbbd6db5"
+  ],
+  "VisualC/external/include/opus/opus_defines.h": [
+    420,
+    "bf80c4c436a217a91f9257c1fd82bffcaeb8846fc2ef73f27816433078ad43f5"
+  ],
+  "VisualC/external/include/opus/opus_multistream.h": [
+    420,
+    "f4c082891d582fab7b570a7bd349949e59d15044db99475833e529bc26059e2c"
+  ],
+  "VisualC/external/include/opus/opus_projection.h": [
+    420,
+    "a53752449f55b5f60679eab8fda96835102251aeefccf7c54256460d02747216"
+  ],
+  "VisualC/external/include/opus/opus_types.h": [
+    420,
+    "19cb301ea1eedbcbdbb5049363de061893bf11c20e505a657b69ce6ffa5b11fa"
+  ],
+  "VisualC/external/include/opus/opusfile.h": [
+    420,
+    "01eca65ea03ccf493650286f84cfd1fdce254eec6e47550da24901bb579fb313"
+  ],
+  "VisualC/external/include/opusfile.h": [
+    420,
+    "8b4d782dbe21e1389c4e5ff237d283806d43152beb696749d1a5bc55fc35d80c"
+  ],
+  "VisualC/external/include/wavpack/wavpack.h": [
+    420,
+    "067d27558089bfa5345372e32f41571bdefbba18e49e3b2c57e178611fcdb92c"
+  ],
+  "VisualC/external/include/xmp.h": [
+    420,
+    "ab58827065c7a92081043d3e517eda64822a2155f521f403d1a7dccf383e0020"
+  ],
+  "VisualC/external/optional/x64/LICENSE.gme.txt": [
+    420,
+    "319daefe38ebeead3df178e5937898a52d67c0c795f54f1c0bb10ac3b9cffb63"
+  ],
+  "VisualC/external/optional/x64/LICENSE.ogg-vorbis.txt": [
+    420,
+    "1300208dc709bce1f7b1bf5295acb4df8eca42a67a301ce4317c9b901560092a"
+  ],
+  "VisualC/external/optional/x64/LICENSE.opus.txt": [
+    420,
+    "fde149f902d124a8c02a218527c440ee2fab6884323f180061b1405fb06af60e"
+  ],
+  "VisualC/external/optional/x64/LICENSE.opusfile.txt": [
+    420,
+    "54e125c8250361407b34322e0f328f6bdf7fd30cd4f2941a321e47b41f9c159d"
+  ],
+  "VisualC/external/optional/x64/LICENSE.wavpack.txt": [
+    420,
+    "c580b15e1391e59164d17c642df7019cb11946ab89281b5d781b43c732d4bf97"
+  ],
+  "VisualC/external/optional/x64/LICENSE.xmp.txt": [
+    420,
+    "02962db795b4b5dd0b23102bb449fe97fec9c71993d1c06d4e0657303cf759fe"
+  ],
+  "VisualC/external/optional/x64/libgme.dll": [
+    420,
+    "50b739c925702d381e163e66887699eb980e03681577d8d7a19cd9972a315dea"
+  ],
+  "VisualC/external/optional/x64/libogg-0.dll": [
+    420,
+    "76344182f53695db65fca5921ab4e478cdf2f954d86628b27dab0fb9327bf2e7"
+  ],
+  "VisualC/external/optional/x64/libopus-0.dll": [
+    420,
+    "064aaa2aee76ac93df0f9ec78a670a49954e3f4ac1bc1fd70ebda2f035ccc073"
+  ],
+  "VisualC/external/optional/x64/libopusfile-0.dll": [
+    420,
+    "31f695d1e45596aa29a3fa4e694ce3a5355216ddc74d15f1b3739cc09bbda529"
+  ],
+  "VisualC/external/optional/x64/libwavpack-1.dll": [
+    420,
+    "eb288e9e8d18e5477dcaffd49712daa393bcb58f8dbd988027a53a8684654ee7"
+  ],
+  "VisualC/external/optional/x64/libxmp.dll": [
+    420,
+    "53e9650b772fc510f70d5e307e8c7802fb205124113c1f1d994d2142b2b39d05"
+  ],
+  "VisualC/external/optional/x86/LICENSE.gme.txt": [
+    420,
+    "319daefe38ebeead3df178e5937898a52d67c0c795f54f1c0bb10ac3b9cffb63"
+  ],
+  "VisualC/external/optional/x86/LICENSE.ogg-vorbis.txt": [
+    420,
+    "1300208dc709bce1f7b1bf5295acb4df8eca42a67a301ce4317c9b901560092a"
+  ],
+  "VisualC/external/optional/x86/LICENSE.opus.txt": [
+    420,
+    "fde149f902d124a8c02a218527c440ee2fab6884323f180061b1405fb06af60e"
+  ],
+  "VisualC/external/optional/x86/LICENSE.opusfile.txt": [
+    420,
+    "54e125c8250361407b34322e0f328f6bdf7fd30cd4f2941a321e47b41f9c159d"
+  ],
+  "VisualC/external/optional/x86/LICENSE.wavpack.txt": [
+    420,
+    "c580b15e1391e59164d17c642df7019cb11946ab89281b5d781b43c732d4bf97"
+  ],
+  "VisualC/external/optional/x86/LICENSE.xmp.txt": [
+    420,
+    "02962db795b4b5dd0b23102bb449fe97fec9c71993d1c06d4e0657303cf759fe"
+  ],
+  "VisualC/external/optional/x86/libgme.dll": [
+    420,
+    "44caebba421df519ebb6ba27558da63f5b49b692f14523500cc0cba2ac59a727"
+  ],
+  "VisualC/external/optional/x86/libogg-0.dll": [
+    420,
+    "e313d8710679e3fbf3cfc8420c50580146dca50695176f5680f5942c6c5b7328"
+  ],
+  "VisualC/external/optional/x86/libopus-0.dll": [
+    420,
+    "f1447b7dd38a04df75f6e582f5861da3384ace7271be9ac88bb8a5ceaaf81b2e"
+  ],
+  "VisualC/external/optional/x86/libopusfile-0.dll": [
+    420,
+    "47b3bdcdef62001748011f0c22b2a8acffb33258cd4937b6e9afe957ef268694"
+  ],
+  "VisualC/external/optional/x86/libwavpack-1.dll": [
+    420,
+    "820207924db2cbd6476610f688f8a5a1371f2f565b7da6e2dac165723a32a466"
+  ],
+  "VisualC/external/optional/x86/libxmp.dll": [
+    420,
+    "fbaf03818512abaadd9a8be3dc083e68ee50b1418e8bfd745b9ae1732ce5f4e1"
+  ],
+  "VisualC/native_midi/native_midi.vcxproj": [
+    420,
+    "522255be9873ed011d0dcba20680c04c21856eefe32d719f8b94f7653ba45eb7"
+  ],
+  "VisualC/pkg-support/cmake/sdl2_mixer-config-version.cmake": [
+    420,
+    "f49a91ce41adfe15334d391773a105244f14526c8f04b14e8b70f1e29d022c0c"
+  ],
+  "VisualC/pkg-support/cmake/sdl2_mixer-config.cmake": [
+    420,
+    "6d980dcb073280c25ea952d23328cb284d483c5b6b2f82251d6ddb2d1beed5e4"
+  ],
+  "VisualC/playmus/playmus.vcxproj": [
+    420,
+    "a1a936e93153a4c076588276e0f977a83fa7dd9b583c27f4b6d22bc7e6c95f25"
+  ],
+  "VisualC/playwave/playwave.vcxproj": [
+    420,
+    "0ee0fb026827ea2765d8406a3e77ae44708151b777eaa604ed68b6dc7268c8fa"
+  ],
+  "VisualC/resource.h": [
+    420,
+    "cfeb7362d83f211c8a0a0ff75023c53189494f530f3d2afb8cb49ed8c4f2e3e4"
+  ],
+  "VisualC/timidity/timidity.vcxproj": [
+    420,
+    "62040a7bf89a18fb48610aa2d01b563b73c6a649847e6ab781aff29ec7a4f9b8"
+  ],
+  "Xcode/FLAC/FLAC.xcodeproj/project.pbxproj": [
+    420,
+    "f3bc316b17fabbc2f62adc4fe77ca488b2baffd52d6e83e4ef2014663780c0f3"
+  ],
+  "Xcode/FLAC/config.h": [
+    420,
+    "1f8f8cad5d74c40b5d588ba40e5df87723fc781a5d3f58269c56d453202ea297"
+  ],
+  "Xcode/Info-Framework.plist": [
+    420,
+    "8d906a254299fbf318b834fc98ba68377367fdc4dd22bac00c36e53b93394a42"
+  ],
+  "Xcode/SDL_mixer.xcodeproj/project.pbxproj": [
+    420,
+    "33396c196e4ed994bec145baa5c10ef601955ebb4d4dba8f41ce2ca69a3282f2"
+  ],
+  "Xcode/config.xcconfig": [
+    420,
+    "b2bd1ec2bfdf49f654ebfb614b2a30d7d213b630245b6462ce2f77400f8f9a81"
+  ],
+  "Xcode/gme/gme.xcodeproj/project.pbxproj": [
+    420,
+    "ca5d777ec2f5aa0848e3c806a3ea3cc0d5e7abad8ec8059de4243136bf41e8fd"
+  ],
+  "Xcode/iOS/SDL2.framework/CMake/sdl2-config-version.cmake": [
+    420,
+    "61e43c4a85c6a8c6a6de693fdfd86dbd0e5f1794f0775e97e493df97bfe14ae9"
+  ],
+  "Xcode/iOS/SDL2.framework/CMake/sdl2-config.cmake": [
+    420,
+    "dc270180b4ab223b4ddc29ca9a29d0cfb373703b7691c30cd805bf3d25f7ff44"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL.h": [
+    420,
+    "c43ba6939522023ff7e5e9e3b70be8373f62f455a116fa231ece3ee7d7299db2"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_assert.h": [
+    420,
+    "0463475d34b9ac10f7c2ec9490a8606e5e74a3c154875daef7aa0592b038285a"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_atomic.h": [
+    420,
+    "0e01d1fa127ac75337f8d078c14348e12f178f66b0a4c7b87560f5849e82f809"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_audio.h": [
+    420,
+    "ec6127fedd5d28b783033f9d0a5a844ee7270428342508918153b198e9fb2453"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_bits.h": [
+    420,
+    "a3634b76fda38b691013582fb0a356ff171dd6dc4cc615c6457e83f4b5d9a40d"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_blendmode.h": [
+    420,
+    "6d08de2fa8404e471e2f49e09e5ceb618d99a7b8cd74b5b6e82af732dede33aa"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_clipboard.h": [
+    420,
+    "bbda947e8ac42c47097eaf901070a0677c1df20e6d3d6f49235fb38f8c449b91"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_config.h": [
+    420,
+    "b3f8587a9690a1b33f7b0af0d4c50ba60fcb29bc969c81c4559438b1b498ef0b"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_config_iphoneos.h": [
+    420,
+    "00653516d1e26d55fef74b4dc3fd93e5792f2c8971cdc2b2820da4b3f8282671"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_copying.h": [
+    420,
+    "3f90be470c18f99f4aef39444e9374edba166cfeb1b90f99f35286cc33924642"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_cpuinfo.h": [
+    420,
+    "2699dc3d61e4aaa437f56be358116f74c2c63808651afc2d11db447e5512c304"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_endian.h": [
+    420,
+    "7a3b2aa5107cb9a84c93f668d8a31551eb361fd9d6aeb48c0d7b72a483260141"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_error.h": [
+    420,
+    "4ac58857e61eadbeec9a6464db939c0f7dea5f550233de23af0d22bb7f3341ca"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_events.h": [
+    420,
+    "d8fa3e802b86086c60991e8374b3eb5aed9d7931c52e158014f6540a46a9f0ca"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_filesystem.h": [
+    420,
+    "b59a4ab7ba4b939c8abe30223cca9da1e16c356199970637f74a59033c9e08b3"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_gamecontroller.h": [
+    420,
+    "91c767df0b0bc5bbce61421f4fa46367a3d5c0427288fd7d50709567548ad178"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_gesture.h": [
+    420,
+    "8dc1908bade52cae9dd2628fa6d6a50bca083c72189095d516607e3e1d371487"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_guid.h": [
+    420,
+    "fb69640f8caed3285fd5f3bb09b77dd7e670eebb16d51ee855e4fd67a60ec195"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_haptic.h": [
+    420,
+    "ab81957f3001e2c4840e3fa320f5a9f57c360771dabb24c7a3fa34eb479aca04"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_hidapi.h": [
+    420,
+    "0816c67a46dccd4330d333ac7cf6708e49ed68dd6795ce1f868f12e4b4d06d37"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_hints.h": [
+    420,
+    "5ecda965b250a818271a66d602030e44fdcd7532992a26f1f1f41709d4812bc4"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_joystick.h": [
+    420,
+    "b8a8e1bd7dca2213d34ff96902ed58deafca32a2105d57e2d87f9515f99be268"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_keyboard.h": [
+    420,
+    "706457b794e46c3fd40e84c87c63097baa60de1047ff8342bb59c41da78a78fc"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_keycode.h": [
+    420,
+    "c25e57728c4f2ca5ee65f45a54c1da3790a39f281582b48da301511127afa5df"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_loadso.h": [
+    420,
+    "cebca3a9d9e1f735904606c12da1fc6731581f14b4ff011e057aaaf4a5bcc1db"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_locale.h": [
+    420,
+    "feb7c633174ca077ed555d1051dcf3c8c095e43341540276b767c37e65c6128d"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_log.h": [
+    420,
+    "088638d3b5549d2f692cf30ec608c9a4019cbf7ce7cb72ecf98ef28553b4aaa1"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_main.h": [
+    420,
+    "b7bc986ccde42fec380a36ede9c21cc8b279f650c53bb630942c5b3573dfefff"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_messagebox.h": [
+    420,
+    "f5a07faaffe704157b04ec2ea88638317483e9ba43ae403869f7a32307cd069f"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_metal.h": [
+    420,
+    "87044d32ff39e2aae8cfc8755f401a69be67b776ba24b63419220bcaf681bc29"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_misc.h": [
+    420,
+    "95ccc3e6ae2f54d274330904f682c861a66c59eb1b56502ed5c2d0d4383e9e63"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_mouse.h": [
+    420,
+    "3033da5a9a06c25bce17b431903974ae1e9b8ec3e1bdfe284700ce753cd68d30"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_mutex.h": [
+    420,
+    "11c61436bb530960be7ebec052364ba56371ab44c7d0d9846772e48d557dfd31"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_name.h": [
+    420,
+    "fdc6c648734220285056ad8b8273511c75d5be00d17fc1ea3eb4c06526b13fa3"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_opengl.h": [
+    420,
+    "93c4752d5e5e2af902b1a3011df27594d348ec8fddaa621baabfaa8dbb119fae"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_opengl_glext.h": [
+    420,
+    "1abb28891c9b0661b6ff3749de2671da5fe12beb5bcb1833b2d6bdf5c89ecdf8"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_opengles.h": [
+    420,
+    "ed43e496dd86556c2368b4bd05272e01027556725fcf239643b5df7ce520285e"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_opengles2.h": [
+    420,
+    "a7a61a6502d596c5be5ed9b0ab66a96d450dd15e4f401a9b2fe29be74b72f3be"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_opengles2_gl2.h": [
+    420,
+    "d6ec44b1d73f3afce3a20ac6976db7fb3dac656c5190f0b563e4ce90d79a15aa"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_opengles2_gl2ext.h": [
+    420,
+    "4fc5b0034dcde9c125922e3e70d01489a6b335076856ee660294e1a6305a3719"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_opengles2_gl2platform.h": [
+    420,
+    "4779be999acd1904458238f09c86983b7960ac40e612e05db2db97db615f1e0f"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_opengles2_khrplatform.h": [
+    420,
+    "7b1e01aaa7ad8f6fc34b5c7bdf79ebf5189bb09e2c4d2e79fc5d350623d11e83"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_pixels.h": [
+    420,
+    "0cc9c280446646a3618c8bbc6c49dc7b758e9612ee789effd9542592577472a3"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_platform.h": [
+    420,
+    "fd474252210b316e4ba67c90b62448ae5b41d1f9ac394ba8e4f7097e285448fe"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_power.h": [
+    420,
+    "bbcd3176803c426e8b8c162ec68a789881eba5c0b26b804be68c6b1fd23e0da3"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_quit.h": [
+    420,
+    "d68ae4106ca60595335bcf977d992378611b80a7173f1664c2578381d4d75855"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_rect.h": [
+    420,
+    "e1af9a4d415e3724fc15ca6126650cd9326c3aaa59af9a435d798a8d059fc0b0"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_render.h": [
+    420,
+    "60a08f249f46909f21899f793bcefa997b59e52bc1bf9562894b20624bb290fb"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_revision.h": [
+    420,
+    "0e7e24c76cda00d1128cdb800d384ec8f87742e90a64c46f52b21c0e8f2f211e"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_rwops.h": [
+    420,
+    "c7ff5136d25fa251dc2bb0f12703c7ddca2b40677605bcc2f0f82fcf31d2c57f"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_scancode.h": [
+    420,
+    "333c0651281e3f40a68fbcf6d28c1283912c7e9c15f727c6edb20552a833ae27"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_sensor.h": [
+    420,
+    "80016619510816bdeaf924225e61c172d9d2d6a31af60ba88146e9d890de0dd9"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_shape.h": [
+    420,
+    "ceb9474fa68605834563938e867b8fa7afc7508ab7d8dcc7abb45c1c49d8e30c"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_stdinc.h": [
+    420,
+    "712ad733c1320b8bff3ee8dac457dac784ef166db3b76e1d15e6dfe77a2d0293"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_surface.h": [
+    420,
+    "1c19bd3386b9cf64c03bb8d8ac44441013e6148675d077be4b2880849f740ba3"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_system.h": [
+    420,
+    "115e240d111cee9da44782ed1e83ae63a27646c9be297eb9650bf9f32f90573f"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_syswm.h": [
+    420,
+    "ad7a7faed061123449a199c657d17a22b00876813958976d52dc0dca949417b1"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_thread.h": [
+    420,
+    "eea9f6a95e74df24b525b605501d87bc21e83750337adce3ae665664821fdeaa"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_timer.h": [
+    420,
+    "43c06ff3ed62d9e29f1b24b37d15d94f4dc297371ef65f2e3fd4038c64f3cd57"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_touch.h": [
+    420,
+    "30ec35bb65fc664f5f96309d6df49147211711b813f9c695dba37e4f4363174b"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_types.h": [
+    420,
+    "8eb2683114eaa8eadd242ea32fd5073e66478c00af13b7d4f29a31c4b2e329df"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_version.h": [
+    420,
+    "1bdbd3d9fff6650d47a80b45b716ecfffb7712eb1c34fa532c06a5d9c413ddae"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_video.h": [
+    420,
+    "5f266452dcb494eb301387372e8910b3ddb7df9a63bfa31daaefde1640745cda"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/SDL_vulkan.h": [
+    420,
+    "82a6f49809f5f00c7477bfb7330a0398eda4309db05d1f74d14fcac6ced03fc0"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/begin_code.h": [
+    420,
+    "9803dab29fb4522ce3500ab789260e9622df6307ce90f92ad20c1808e19c4e7b"
+  ],
+  "Xcode/iOS/SDL2.framework/Headers/close_code.h": [
+    420,
+    "4599e9cedba7451ff07a6306f0b7531beed05b1c5a65b1a2613d1b771be43fda"
+  ],
+  "Xcode/iOS/SDL2.framework/Info.plist": [
+    420,
+    "3485c6dd6405b7dfe58a1f7e8c3d6c47ecc4ee2af3f20b01a0ccd9a0007dc627"
+  ],
+  "Xcode/iOS/SDL2.framework/License.txt": [
+    420,
+    "37b975b5273734ea157fb1e363d06191036f289eca7767f736967816bedd156f"
+  ],
+  "Xcode/iOS/SDL2.framework/ReadMe.txt": [
+    420,
+    "3a34ea48469e349a49cabad92332a29af4e7d35d425bab9c36e94f3f153080bd"
+  ],
+  "Xcode/iOS/SDL2.framework/SDL2": [
+    493,
+    "03d023fc3df0f10fab7fc80a951a5a69a875ae1233ba9aef97389de9293660a8"
+  ],
+  "Xcode/iOS/SDL2.framework/default.metallib": [
+    420,
+    "cf421eb95ad9dd62733a6261d5c29718cc1beccbf038925b5eeee1737d7f470c"
+  ],
+  "Xcode/libmodplug/libmodplug.xcodeproj/project.pbxproj": [
+    420,
+    "adbc787c38dcbf09b87b8e677e1f7d6b1482f5e0612acdcde987854e0a4f9174"
+  ],
+  "Xcode/macOS/SDL2.framework/Headers": [
+    493,
+    "link:Versions/Current/Headers"
+  ],
+  "Xcode/macOS/SDL2.framework/Resources": [
+    493,
+    "link:Versions/Current/Resources"
+  ],
+  "Xcode/macOS/SDL2.framework/SDL2": [
+    493,
+    "link:Versions/Current/SDL2"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL.h": [
+    420,
+    "6d6d8712dc35ded1a7dfc425052bf003a82a9521d1ba20fe749986bcf91e9665"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_assert.h": [
+    420,
+    "da0f2ff6a9030a44a906202620ce02b93db4489536d5c18635d3f3a3123b5d96"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_atomic.h": [
+    420,
+    "aa6c41285b2008521573ca26e52f35e5b92cd8f6849279cf7234886a61b879d9"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_audio.h": [
+    420,
+    "4ec771bf9c1672cd91df9f60ba48707630c45170acf34adf28752e74cf4bfcd6"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_bits.h": [
+    420,
+    "e682a9049384bccd7b0495f3c42fd8421842a16d910fa6597b6d88d1c3f3ee57"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_blendmode.h": [
+    420,
+    "c641d8553d95fda414eb822012d1836c46ea68156549c6863d8e21dbdfd9194f"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_clipboard.h": [
+    420,
+    "ae9c1232ddf1b3eb5f998af9a1263125813f022adaa3431eae5ed274c401cf4c"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_config.h": [
+    420,
+    "e66311c2e201df64a4d60e01eeb1736519fb146e94fa21d2ea484e02e7282c53"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_config_macosx.h": [
+    420,
+    "a2ec0e7e16aeb71a308cb66e6260a95d9f3d6d99262283ab6b0835dd1788d2f1"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_copying.h": [
+    420,
+    "3f90be470c18f99f4aef39444e9374edba166cfeb1b90f99f35286cc33924642"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_cpuinfo.h": [
+    420,
+    "84ab741f1ae9886ad3101d76fed8499a97656c343626d65d7270bf847d134f9c"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_endian.h": [
+    420,
+    "61205689f46ee3496797225e90fc93d6275e11fa20f3ae67a54b1d48bb5187f0"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_error.h": [
+    420,
+    "a780812174ff03e8c3470b476941f7c41d1bc0d574689fdef63a927b19ad1b67"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_events.h": [
+    420,
+    "6cd3f0db4a0b6b8e6829bf776fb3da4458015eb9f1f77a2907427c2a4b6c6081"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_filesystem.h": [
+    420,
+    "328f8de1bcb3df9297afb3a9a045cd9c89475056e150fae9ee67093941f4cafc"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_gamecontroller.h": [
+    420,
+    "b40a69d95e1835c488d442845d66cd81591712aac27e95ce3fbeb29a99128658"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_gesture.h": [
+    420,
+    "2ea96f27282ac7a0a043fed5e23dd7f08f680730faba94aa88d41ce1c84d42ce"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_guid.h": [
+    420,
+    "d1a93e907e35acf97a989eff7b80f16e4b19d26a341640b5975810054e6c5734"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_haptic.h": [
+    420,
+    "5524d8cf04dd3e7c566de4709da9bb3fa8573a492e1ac8f112dbf7e2592c21f3"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_hidapi.h": [
+    420,
+    "1054c063937f44343f976f225ede9853cda8e3041f92c12f83d34709ef3bc224"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_hints.h": [
+    420,
+    "02f830b4f5ca8a6d59d03b4a89a045e6012b25e9bd2d7317110d265c54c3dbd6"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_joystick.h": [
+    420,
+    "442681946863a89855ca9c97abbaa26eef426342d5a1a6ec777107c241138db5"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_keyboard.h": [
+    420,
+    "f74b2897c9099ca9b0a7503b7128c78c5f7bc448c69626602f85d1015c11a762"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_keycode.h": [
+    420,
+    "7a3b91c823699817193c337b4d582e43d6e78caae2c5f6410271eebb6efeda15"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_loadso.h": [
+    420,
+    "e8594242c2ffb7dae8b569e7470229d16f53e0dc7a6d8f98dd295f9f9e245965"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_locale.h": [
+    420,
+    "a98add89cd8ddf40b48ba55a5e04e338050af7a669a5a2c8fc3d97dfbb355852"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_log.h": [
+    420,
+    "d6a462e4d42497b2c6dd188c17b1e66bd35d8a41a548af94ff0aed573d2bd011"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_main.h": [
+    420,
+    "7691449c7bc5083434ce7f0f2c6b1927dada69c62c095795d041120efe237638"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_messagebox.h": [
+    420,
+    "ef9fee7f6a6051c633baef6aff01ffd0baf0dbc7850172a4e04252011b9a3e57"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_metal.h": [
+    420,
+    "50e857e42af65a44424a3ad0fff0745df61a8c0f66ef4ad195531d215492f148"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_misc.h": [
+    420,
+    "96d398d2296ddf4191372b84ed3d805bde0af7b08013ab38c0b65da4b0d5225b"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_mouse.h": [
+    420,
+    "6c5e4e01c161d852d901608ec5b700c8777555c4e0694504fc4920e7ae90f880"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_mutex.h": [
+    420,
+    "8389e112056c9d769aa1d7dd851d06265cbc5eaf36025571ffc6a77534a54b85"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_name.h": [
+    420,
+    "fdc6c648734220285056ad8b8273511c75d5be00d17fc1ea3eb4c06526b13fa3"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_opengl.h": [
+    420,
+    "04f7777a09ad198015bb08f46079e0a880860ea432dcdce1ffc3534c70f4c806"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_opengl_glext.h": [
+    420,
+    "1abb28891c9b0661b6ff3749de2671da5fe12beb5bcb1833b2d6bdf5c89ecdf8"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_opengles.h": [
+    420,
+    "7bfdb3fee59400950e9fa06202f61c149cf3b8f00d430f95d5ff8f94ac4ebb55"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_opengles2.h": [
+    420,
+    "ff2e8ae893a7fad1ae7d7f55423d4745cb749ad56fd4eb2b2c1fd5eb42ae4703"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_opengles2_gl2.h": [
+    420,
+    "d6ec44b1d73f3afce3a20ac6976db7fb3dac656c5190f0b563e4ce90d79a15aa"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_opengles2_gl2ext.h": [
+    420,
+    "4fc5b0034dcde9c125922e3e70d01489a6b335076856ee660294e1a6305a3719"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_opengles2_gl2platform.h": [
+    420,
+    "4779be999acd1904458238f09c86983b7960ac40e612e05db2db97db615f1e0f"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_opengles2_khrplatform.h": [
+    420,
+    "7b1e01aaa7ad8f6fc34b5c7bdf79ebf5189bb09e2c4d2e79fc5d350623d11e83"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_pixels.h": [
+    420,
+    "ee079a6b0b91c00f75c9e970b4d0449746ff551fabfc24abf38bd561ad5820ce"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_platform.h": [
+    420,
+    "48d23f542010df945e14bf6a179c63f0b86ee1afcfae6e779d32bbb510358e18"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_power.h": [
+    420,
+    "2233e6e5fc3c1b87c69881036e242e919c419fdad82adf0e488bad5fd41f66e0"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_quit.h": [
+    420,
+    "132b099d6696d88c1f0bab3f13cc76bcac1b6f06df896f23eff3a329c7eb3e9f"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_rect.h": [
+    420,
+    "b3c62c65a9740f37e9e395a1421d92a29e2127f94f19e1d4c131d94b833cf8f7"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_render.h": [
+    420,
+    "d2cca1407bae61c713f4aff47356124acec020565d59a8f55e96cae974e322f8"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_revision.h": [
+    420,
+    "0e7e24c76cda00d1128cdb800d384ec8f87742e90a64c46f52b21c0e8f2f211e"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_rwops.h": [
+    420,
+    "9cb792bfe21164e96a0c5acaf8aabfa130a8b701acfcc70a00764f961326d24d"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_scancode.h": [
+    420,
+    "bfce0b9d4d7a4d5e912b001cc213f48feca9719f2d61acc9e71e352fc5971fd1"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_sensor.h": [
+    420,
+    "951d6628db637b62e14ea7f0874e8075fd5a17c5cf6fb652427c0b943343f45e"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_shape.h": [
+    420,
+    "ecce27dab7e7bc27d3139fa74bfb49a7a880df92fa7331112aebfd890942fe7d"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_stdinc.h": [
+    420,
+    "11db2e9a9479981e5568956ccaf66060627404b6bd8c0e659baebf57e84ea3ea"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_surface.h": [
+    420,
+    "2f87d093b5a23ebbd11f628dd4101111dc07145fe2155d2f6e18be61f936724d"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_system.h": [
+    420,
+    "9adf9555f47cc5667a1c5c11d883d3b158a8c6595ed7f97b04cf3f42586584db"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_syswm.h": [
+    420,
+    "704c4162bb9f3609c4da1d83ffe8387bd3fbf2dc3bf14ea5c0fb7fe92021f7da"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_thread.h": [
+    420,
+    "8cfae808e6fa967b48b5ed82f31b2760c79d35460268c8029389337f52644616"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_timer.h": [
+    420,
+    "8f3ad24dc5da3418e98f520a63f0038628aeb9d25eee0670f4d0f639ad05c96e"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_touch.h": [
+    420,
+    "fd0fc2d26457172e045deebd03eca0ad5eb4a688c7cc8f94121d61a70edae54c"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_types.h": [
+    420,
+    "aa6bc87055cd035afccdf242e576582e7dc508babd6164156760a64f13d12b0e"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_version.h": [
+    420,
+    "1016316d10d9a473fd192a9fe9680a034bff20a68e81f94a3c4d9557afdf4716"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_video.h": [
+    420,
+    "7821de88fa76ec4e94bb2fb25568409ccbfdd27f53d7cb2d38ca87f3146dc354"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/SDL_vulkan.h": [
+    420,
+    "a2b5677617397c1f97b9ca4071a4bc845c628c10d4da84781758e16dcec9bb59"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/begin_code.h": [
+    420,
+    "0b61a158e4ee9834da0b35fef6ca017b928407c40ebc2fbe848410738c2105b1"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Headers/close_code.h": [
+    420,
+    "4599e9cedba7451ff07a6306f0b7531beed05b1c5a65b1a2613d1b771be43fda"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Resources/CMake/sdl2-config-version.cmake": [
+    420,
+    "61e43c4a85c6a8c6a6de693fdfd86dbd0e5f1794f0775e97e493df97bfe14ae9"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Resources/CMake/sdl2-config.cmake": [
+    420,
+    "dc270180b4ab223b4ddc29ca9a29d0cfb373703b7691c30cd805bf3d25f7ff44"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Resources/Info.plist": [
+    420,
+    "aa6db52510ad4397a6ea2cb0277657c819f7bca75bc0139f4e620ea3e180007f"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Resources/License.txt": [
+    420,
+    "37b975b5273734ea157fb1e363d06191036f289eca7767f736967816bedd156f"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Resources/ReadMe.txt": [
+    420,
+    "3a34ea48469e349a49cabad92332a29af4e7d35d425bab9c36e94f3f153080bd"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/Resources/default.metallib": [
+    420,
+    "15ee57855ae6a4eab61ea939272ed886a77e217701fcf0d4239f1b1de291e028"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/SDL2": [
+    493,
+    "e1e4f45db59d7209ebe45f550212c19c2674f20897cbba4bcdda04a7ade18a20"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/A/_CodeSignature/CodeResources": [
+    420,
+    "db3b57ce6ab50d9fa805737043b5ea2bed0fa1a6072ce93da67b1519af65db58"
+  ],
+  "Xcode/macOS/SDL2.framework/Versions/Current": [
+    493,
+    "link:A"
+  ],
+  "Xcode/mpg123/arm64/config.h": [
+    420,
+    "57032aab67d82aaed8182ebc62c1e61e8c41d2ddea36c7cc62d7c4f86adc9ca5"
+  ],
+  "Xcode/mpg123/armv7/config.h": [
+    420,
+    "79258682406b7c9ea11bc95831a693f019998e81d23027d81356beabead1f331"
+  ],
+  "Xcode/mpg123/config.xcconfig": [
+    420,
+    "ae2a9ae1302ca1bf2506089ec8cf923b03e34ceff22e442a121d4b11a109b3a7"
+  ],
+  "Xcode/mpg123/mpg123.xcodeproj/project.pbxproj": [
+    420,
+    "7d17325a0c132e4a2cd759d664de2f3360e61019e74876935d97c7818ffe7e96"
+  ],
+  "Xcode/mpg123/x86_64/config.h": [
+    420,
+    "57032aab67d82aaed8182ebc62c1e61e8c41d2ddea36c7cc62d7c4f86adc9ca5"
+  ],
+  "Xcode/ogg/ogg.xcodeproj/project.pbxproj": [
+    420,
+    "f5d2c7e2b7f3564c9716956e9a9f4a6edddbb6a92bb94b9b47a9383465c981f3"
+  ],
+  "Xcode/opus/arm64/config.h": [
+    420,
+    "8cd1a7c891c384857521e210579e73365a8d48ae7cf9823bea21e516cbb7a5d7"
+  ],
+  "Xcode/opus/armv7/config.h": [
+    420,
+    "21ce46e1289ad1b7f5e1c885773d80b1663821428ef45ded8b6813f138e88f5e"
+  ],
+  "Xcode/opus/config.xcconfig": [
+    420,
+    "4e8c64c42d204886ac30b59a5d9969961ad98e808436bd84b9ecfec6630c3e97"
+  ],
+  "Xcode/opus/opus.xcodeproj/project.pbxproj": [
+    420,
+    "d1d2faf2e1990a214959a33fdd213a20736ea54dcd39fb395d4329146ae4dc77"
+  ],
+  "Xcode/opus/x86_64/config.h": [
+    420,
+    "462e6a43ec5ae938f21b9bc4c1dc8797921526a9261cc76ede99fb2e2005c919"
+  ],
+  "Xcode/pkg-support/SDL_mixer.info": [
+    420,
+    "9a8d653d3d2270488f8928734650e3fe99a4e55c2d3e92c5e8dc1819d197ddae"
+  ],
+  "Xcode/pkg-support/build.xcconfig": [
+    420,
+    "d1dc2781e43ee88c145d6f87f039b037bf1527aaa2116250a145313ede513686"
+  ],
+  "Xcode/pkg-support/mkpackage.sh": [
+    493,
+    "7d9f6bb7172023812deb59bd1336adbf09b7d001f4a164f45e792238c8256591"
+  ],
+  "Xcode/pkg-support/resources/CMake/sdl2_mixer-config-version.cmake": [
+    420,
+    "afc4d7b984688bf01ec1c5cf678b947ca0062ef8f405b527ea5929e780e7c3bc"
+  ],
+  "Xcode/pkg-support/resources/CMake/sdl2_mixer-config.cmake": [
+    420,
+    "5dc7d6b4435020ffa091f9a70e415d0b30de2f9fe03bed6a9bc65e56a0712435"
+  ],
+  "Xcode/pkg-support/resources/ReadMe.txt": [
+    420,
+    "d27640840a6b0954cc9bc0938d4093ca9cfbe8992930486f090dbff36459c98d"
+  ],
+  "Xcode/pkg-support/resources/Welcome.txt": [
+    420,
+    "c120d67c1a153edb42cf0439d5fbf5261cb12d57335801f60c1545a1c60b5e30"
+  ],
+  "Xcode/playmus/SDL_uikit_main.c": [
+    420,
+    "cbccfd574f7467505481083a61e9dd264117dafe96043b927096d4337cc3b1fb"
+  ],
+  "Xcode/playmus/macOS/macOS.entitlements": [
+    420,
+    "4fac1e8d6c1678dc0ca36b0711bb8ee505279b72e1a38cbd0f6b5f4f36fb1cd3"
+  ],
+  "Xcode/playmus/playmus.xcodeproj/project.pbxproj": [
+    420,
+    "f43bdd4d582a2e39940c15a4454a36b1aa29c97113f89bd59e1cb369b6dc59de"
+  ],
+  "Xcode/playwave/SDL_uikit_main.c": [
+    420,
+    "cbccfd574f7467505481083a61e9dd264117dafe96043b927096d4337cc3b1fb"
+  ],
+  "Xcode/playwave/macOS/macOS.entitlements": [
+    420,
+    "4fac1e8d6c1678dc0ca36b0711bb8ee505279b72e1a38cbd0f6b5f4f36fb1cd3"
+  ],
+  "Xcode/playwave/playwave.xcodeproj/project.pbxproj": [
+    420,
+    "57496e038b6dfe120e84b913c571c0c978f4f2d2f7053c1e5d10c965b2b5c518"
+  ],
+  "Xcode/tremor/config.h": [
+    420,
+    "027cd30f8c2956484a159dd1e1daed0540f8e255fc58b6906196d0c4349bb306"
+  ],
+  "Xcode/tremor/tremor.xcodeproj/project.pbxproj": [
+    420,
+    "3f46159d589929af993d2d6885cb090074db38ac1de0267bcf95ac585b9b4085"
+  ],
+  "Xcode/tvOS/SDL2.framework/CMake/sdl2-config-version.cmake": [
+    420,
+    "61e43c4a85c6a8c6a6de693fdfd86dbd0e5f1794f0775e97e493df97bfe14ae9"
+  ],
+  "Xcode/tvOS/SDL2.framework/CMake/sdl2-config.cmake": [
+    420,
+    "dc270180b4ab223b4ddc29ca9a29d0cfb373703b7691c30cd805bf3d25f7ff44"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL.h": [
+    420,
+    "c43ba6939522023ff7e5e9e3b70be8373f62f455a116fa231ece3ee7d7299db2"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_assert.h": [
+    420,
+    "0463475d34b9ac10f7c2ec9490a8606e5e74a3c154875daef7aa0592b038285a"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_atomic.h": [
+    420,
+    "0e01d1fa127ac75337f8d078c14348e12f178f66b0a4c7b87560f5849e82f809"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_audio.h": [
+    420,
+    "ec6127fedd5d28b783033f9d0a5a844ee7270428342508918153b198e9fb2453"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_bits.h": [
+    420,
+    "a3634b76fda38b691013582fb0a356ff171dd6dc4cc615c6457e83f4b5d9a40d"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_blendmode.h": [
+    420,
+    "6d08de2fa8404e471e2f49e09e5ceb618d99a7b8cd74b5b6e82af732dede33aa"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_clipboard.h": [
+    420,
+    "bbda947e8ac42c47097eaf901070a0677c1df20e6d3d6f49235fb38f8c449b91"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_config.h": [
+    420,
+    "b3f8587a9690a1b33f7b0af0d4c50ba60fcb29bc969c81c4559438b1b498ef0b"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_config_iphoneos.h": [
+    420,
+    "00653516d1e26d55fef74b4dc3fd93e5792f2c8971cdc2b2820da4b3f8282671"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_copying.h": [
+    420,
+    "3f90be470c18f99f4aef39444e9374edba166cfeb1b90f99f35286cc33924642"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_cpuinfo.h": [
+    420,
+    "2699dc3d61e4aaa437f56be358116f74c2c63808651afc2d11db447e5512c304"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_endian.h": [
+    420,
+    "7a3b2aa5107cb9a84c93f668d8a31551eb361fd9d6aeb48c0d7b72a483260141"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_error.h": [
+    420,
+    "4ac58857e61eadbeec9a6464db939c0f7dea5f550233de23af0d22bb7f3341ca"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_events.h": [
+    420,
+    "d8fa3e802b86086c60991e8374b3eb5aed9d7931c52e158014f6540a46a9f0ca"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_filesystem.h": [
+    420,
+    "b59a4ab7ba4b939c8abe30223cca9da1e16c356199970637f74a59033c9e08b3"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_gamecontroller.h": [
+    420,
+    "91c767df0b0bc5bbce61421f4fa46367a3d5c0427288fd7d50709567548ad178"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_gesture.h": [
+    420,
+    "8dc1908bade52cae9dd2628fa6d6a50bca083c72189095d516607e3e1d371487"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_guid.h": [
+    420,
+    "fb69640f8caed3285fd5f3bb09b77dd7e670eebb16d51ee855e4fd67a60ec195"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_haptic.h": [
+    420,
+    "ab81957f3001e2c4840e3fa320f5a9f57c360771dabb24c7a3fa34eb479aca04"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_hidapi.h": [
+    420,
+    "0816c67a46dccd4330d333ac7cf6708e49ed68dd6795ce1f868f12e4b4d06d37"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_hints.h": [
+    420,
+    "5ecda965b250a818271a66d602030e44fdcd7532992a26f1f1f41709d4812bc4"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_joystick.h": [
+    420,
+    "b8a8e1bd7dca2213d34ff96902ed58deafca32a2105d57e2d87f9515f99be268"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_keyboard.h": [
+    420,
+    "706457b794e46c3fd40e84c87c63097baa60de1047ff8342bb59c41da78a78fc"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_keycode.h": [
+    420,
+    "c25e57728c4f2ca5ee65f45a54c1da3790a39f281582b48da301511127afa5df"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_loadso.h": [
+    420,
+    "cebca3a9d9e1f735904606c12da1fc6731581f14b4ff011e057aaaf4a5bcc1db"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_locale.h": [
+    420,
+    "feb7c633174ca077ed555d1051dcf3c8c095e43341540276b767c37e65c6128d"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_log.h": [
+    420,
+    "088638d3b5549d2f692cf30ec608c9a4019cbf7ce7cb72ecf98ef28553b4aaa1"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_main.h": [
+    420,
+    "b7bc986ccde42fec380a36ede9c21cc8b279f650c53bb630942c5b3573dfefff"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_messagebox.h": [
+    420,
+    "f5a07faaffe704157b04ec2ea88638317483e9ba43ae403869f7a32307cd069f"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_metal.h": [
+    420,
+    "87044d32ff39e2aae8cfc8755f401a69be67b776ba24b63419220bcaf681bc29"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_misc.h": [
+    420,
+    "95ccc3e6ae2f54d274330904f682c861a66c59eb1b56502ed5c2d0d4383e9e63"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_mouse.h": [
+    420,
+    "3033da5a9a06c25bce17b431903974ae1e9b8ec3e1bdfe284700ce753cd68d30"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_mutex.h": [
+    420,
+    "11c61436bb530960be7ebec052364ba56371ab44c7d0d9846772e48d557dfd31"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_name.h": [
+    420,
+    "fdc6c648734220285056ad8b8273511c75d5be00d17fc1ea3eb4c06526b13fa3"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_opengl.h": [
+    420,
+    "93c4752d5e5e2af902b1a3011df27594d348ec8fddaa621baabfaa8dbb119fae"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_opengl_glext.h": [
+    420,
+    "1abb28891c9b0661b6ff3749de2671da5fe12beb5bcb1833b2d6bdf5c89ecdf8"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_opengles.h": [
+    420,
+    "ed43e496dd86556c2368b4bd05272e01027556725fcf239643b5df7ce520285e"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_opengles2.h": [
+    420,
+    "a7a61a6502d596c5be5ed9b0ab66a96d450dd15e4f401a9b2fe29be74b72f3be"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_opengles2_gl2.h": [
+    420,
+    "d6ec44b1d73f3afce3a20ac6976db7fb3dac656c5190f0b563e4ce90d79a15aa"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_opengles2_gl2ext.h": [
+    420,
+    "4fc5b0034dcde9c125922e3e70d01489a6b335076856ee660294e1a6305a3719"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_opengles2_gl2platform.h": [
+    420,
+    "4779be999acd1904458238f09c86983b7960ac40e612e05db2db97db615f1e0f"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_opengles2_khrplatform.h": [
+    420,
+    "7b1e01aaa7ad8f6fc34b5c7bdf79ebf5189bb09e2c4d2e79fc5d350623d11e83"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_pixels.h": [
+    420,
+    "0cc9c280446646a3618c8bbc6c49dc7b758e9612ee789effd9542592577472a3"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_platform.h": [
+    420,
+    "fd474252210b316e4ba67c90b62448ae5b41d1f9ac394ba8e4f7097e285448fe"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_power.h": [
+    420,
+    "bbcd3176803c426e8b8c162ec68a789881eba5c0b26b804be68c6b1fd23e0da3"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_quit.h": [
+    420,
+    "d68ae4106ca60595335bcf977d992378611b80a7173f1664c2578381d4d75855"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_rect.h": [
+    420,
+    "e1af9a4d415e3724fc15ca6126650cd9326c3aaa59af9a435d798a8d059fc0b0"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_render.h": [
+    420,
+    "60a08f249f46909f21899f793bcefa997b59e52bc1bf9562894b20624bb290fb"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_revision.h": [
+    420,
+    "0e7e24c76cda00d1128cdb800d384ec8f87742e90a64c46f52b21c0e8f2f211e"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_rwops.h": [
+    420,
+    "c7ff5136d25fa251dc2bb0f12703c7ddca2b40677605bcc2f0f82fcf31d2c57f"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_scancode.h": [
+    420,
+    "333c0651281e3f40a68fbcf6d28c1283912c7e9c15f727c6edb20552a833ae27"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_sensor.h": [
+    420,
+    "80016619510816bdeaf924225e61c172d9d2d6a31af60ba88146e9d890de0dd9"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_shape.h": [
+    420,
+    "ceb9474fa68605834563938e867b8fa7afc7508ab7d8dcc7abb45c1c49d8e30c"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_stdinc.h": [
+    420,
+    "712ad733c1320b8bff3ee8dac457dac784ef166db3b76e1d15e6dfe77a2d0293"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_surface.h": [
+    420,
+    "1c19bd3386b9cf64c03bb8d8ac44441013e6148675d077be4b2880849f740ba3"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_system.h": [
+    420,
+    "115e240d111cee9da44782ed1e83ae63a27646c9be297eb9650bf9f32f90573f"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_syswm.h": [
+    420,
+    "ad7a7faed061123449a199c657d17a22b00876813958976d52dc0dca949417b1"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_thread.h": [
+    420,
+    "eea9f6a95e74df24b525b605501d87bc21e83750337adce3ae665664821fdeaa"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_timer.h": [
+    420,
+    "43c06ff3ed62d9e29f1b24b37d15d94f4dc297371ef65f2e3fd4038c64f3cd57"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_touch.h": [
+    420,
+    "30ec35bb65fc664f5f96309d6df49147211711b813f9c695dba37e4f4363174b"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_types.h": [
+    420,
+    "8eb2683114eaa8eadd242ea32fd5073e66478c00af13b7d4f29a31c4b2e329df"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_version.h": [
+    420,
+    "1bdbd3d9fff6650d47a80b45b716ecfffb7712eb1c34fa532c06a5d9c413ddae"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_video.h": [
+    420,
+    "5f266452dcb494eb301387372e8910b3ddb7df9a63bfa31daaefde1640745cda"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/SDL_vulkan.h": [
+    420,
+    "82a6f49809f5f00c7477bfb7330a0398eda4309db05d1f74d14fcac6ced03fc0"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/begin_code.h": [
+    420,
+    "9803dab29fb4522ce3500ab789260e9622df6307ce90f92ad20c1808e19c4e7b"
+  ],
+  "Xcode/tvOS/SDL2.framework/Headers/close_code.h": [
+    420,
+    "4599e9cedba7451ff07a6306f0b7531beed05b1c5a65b1a2613d1b771be43fda"
+  ],
+  "Xcode/tvOS/SDL2.framework/Info.plist": [
+    420,
+    "ed39d383a05dff967802b43c7c3ef87101b48b393b304a119ce7fd07dbfe3ce8"
+  ],
+  "Xcode/tvOS/SDL2.framework/License.txt": [
+    420,
+    "37b975b5273734ea157fb1e363d06191036f289eca7767f736967816bedd156f"
+  ],
+  "Xcode/tvOS/SDL2.framework/ReadMe.txt": [
+    420,
+    "3a34ea48469e349a49cabad92332a29af4e7d35d425bab9c36e94f3f153080bd"
+  ],
+  "Xcode/tvOS/SDL2.framework/SDL2": [
+    493,
+    "3a6025f30acce87e0cccacaff8d266c0d07c345a0267532bc8b29f084dc9232f"
+  ],
+  "Xcode/tvOS/SDL2.framework/default.metallib": [
+    420,
+    "cf421eb95ad9dd62733a6261d5c29718cc1beccbf038925b5eeee1737d7f470c"
+  ],
+  "Xcode/vorbis/config.h": [
+    420,
+    "1adb0d036a0faf1d759fed5e788ba89120488d6d6b3f05b1f7f953d9700374e0"
+  ],
+  "Xcode/vorbis/vorbis.xcodeproj/project.pbxproj": [
+    420,
+    "97de8a91286e13c9b69ee739e8820da56db3cdfe2e6e5de77ab061d2f12099b4"
+  ],
+  "Xcode/wavpack/config.xcconfig": [
+    420,
+    "7184412ec43dd96b6e13cb3865e97b7b0dbb2c2fa886f602f558b23cdaa51c93"
+  ],
+  "Xcode/wavpack/wavpack.xcodeproj/project.pbxproj": [
+    420,
+    "72a953d717c03f21f3576a2bb56f3a41052080482f8552314f618043b77e7bcb"
+  ],
+  "Xcode/xmp/xmp.xcodeproj/project.pbxproj": [
+    420,
+    "27a898c2f765fcf95ebbb44e94511cc8c7223fdec978080386ea8c220af25c82"
+  ],
+  "acinclude/ax_compute_relative_paths.m4": [
+    420,
+    "107b85fb796c782937e822e1a7f3de91af9e44082bc0b38df012b20ff52463f6"
+  ],
+  "acinclude/ax_normalize_path.m4": [
+    420,
+    "6afd700d8ff7d2360e7d87cf482f2b4cb0f2de864e1922b52cc9d7e90edcbdac"
+  ],
+  "acinclude/ax_recursive_eval.m4": [
+    420,
+    "e03d2fcb4617102f534439279e152862ff1291f3d4d1b7244022d5950a09b565"
+  ],
+  "acinclude/libtool.m4": [
+    420,
+    "9bbf74ad9e612bfe0487ad30fdc8f76d590006a17b6776a3456dd546d207468d"
+  ],
+  "acinclude/ltoptions.m4": [
+    420,
+    "251e479269d9a18a423f8020e27f4c783c6dcc3c84de15c5ea40d5b17f323c04"
+  ],
+  "acinclude/ltsugar.m4": [
+    420,
+    "9fa43a52a0b9d7c696cb036a7f1acdae6925874a375056e76cd4d2496e4b463e"
+  ],
+  "acinclude/ltversion.m4": [
+    420,
+    "f6590808ddc4561c2816b9df5b68aa72324aff93c97a3617a1a4b7c5cf2dadcf"
+  ],
+  "acinclude/lt~obsolete.m4": [
+    420,
+    "c381ebd410139c7afbb002dab09b043262c2357c4858bfa07416e2582b7a4ddd"
+  ],
+  "acinclude/pkg.m4": [
+    420,
+    "140b9a7bc1fa8730b62e74f8413af2bd15b53969a084fc4a041ba70b11e352f3"
+  ],
+  "acinclude/sdl2.m4": [
+    420,
+    "ace5c16362f700de2b60ef371e3816df31c7a3ac51a61f4f8592b516a5ae8930"
+  ],
+  "autogen.sh": [
+    493,
+    "e1eb0acd62dfe579e5bf721743856fbb97d8bfec2bf025aeaf5234785d785f84"
+  ],
+  "build-scripts/android-prefab.sh": [
+    493,
+    "194a972699597dff9ced5a2ac75b0ae8a518e751086e0a3769db87e4819cdb0d"
+  ],
+  "build-scripts/build-release.py": [
+    493,
+    "717bdb72158c8f80eb3ef7a9e42855a57abef309ab5abc1d9bbb5b58eaee4be9"
+  ],
+  "build-scripts/cmake-toolchain-mingw64-i686.cmake": [
+    420,
+    "99616473a7c8a589c6b0489b274ca03740af9c6b18b4917eb6619999517df7eb"
+  ],
+  "build-scripts/cmake-toolchain-mingw64-x86_64.cmake": [
+    420,
+    "9b01dbe66e9f2072884c7166f0d33613a6b541f5cf309130dfe254b52010afbf"
+  ],
+  "build-scripts/config.guess": [
+    493,
+    "50205cf3ec5c7615b17f937a0a57babf4ec5cd0aade3d7b3cccbe5f1bf91a7ef"
+  ],
+  "build-scripts/config.sub": [
+    493,
+    "26b852f75a637448360a956931439f7e818bf63150eaadb9b85484347628d1fd"
+  ],
+  "build-scripts/create-release.py": [
+    493,
+    "856eb1b5e9bd4c6dbb63457da402028344ffd8c23e826b13dcd6c10b0e763a64"
+  ],
+  "build-scripts/install-sh": [
+    493,
+    "3d7488bebd0cfc9b5c440c55d5b44f1c6e2e3d3e19894821bae4a27f9307f1d2"
+  ],
+  "build-scripts/ltmain.sh": [
+    420,
+    "ffd1193680d7aee00110e3bf9334771fbeabff7414d1ff5994a1b5053dc4a78f"
+  ],
+  "build-scripts/mkinstalldirs": [
+    493,
+    "42262b72fea21c2b40e283498d74c3fd704a11292da195e813896cebd1528b91"
+  ],
+  "build-scripts/release-info.json": [
+    420,
+    "caf71896cd7ae799242e21a0b3c6c76fda357244737cd4d7083e78288aa7d113"
+  ],
+  "build-scripts/test-versioning.sh": [
+    493,
+    "5dfca552472e70e83727bc91cd773e5d49c64a495f29efcf22d7ac8c4885760d"
+  ],
+  "cmake/CommonFindSDL2.cmake": [
+    420,
+    "c1c16288ff0087d701243472e22c028a49a3b31549890a0ff2dc62faefa7dff1"
+  ],
+  "cmake/FindFLAC.cmake": [
+    420,
+    "7b025f588b14f189214dc36e89d0ef714647cad8858b1c34d0c6a1c8c5120c8f"
+  ],
+  "cmake/FindFluidSynth.cmake": [
+    420,
+    "5c5276576b27214051991240381cb253bfc817d0144cd8a8497c01c1c1dbf9b9"
+  ],
+  "cmake/FindOpusFile.cmake": [
+    420,
+    "dddda863b2c77bd9c07bdc623f0c3078795c19157a00f76df0b852f7186b9a89"
+  ],
+  "cmake/FindPrivateSDL2.cmake": [
+    420,
+    "7e81d02ed65dfce9316c33a31309247f91bd6d0d3bb03fe9f64870be6dd43ee5"
+  ],
+  "cmake/FindSDL2main.cmake": [
+    420,
+    "1463023164511a1047a84e42bf33c05056d345c53ae1e3ceb5601e00179ee248"
+  ],
+  "cmake/FindVorbis.cmake": [
+    420,
+    "770ca8aa9fe4088f5c371da733903249425f072c91dba9515bcd0c3ad0ec1369"
+  ],
+  "cmake/Findgme.cmake": [
+    420,
+    "c6d41b8acec0794889e4d81c61d1ecd29090f19e747e55018b3bf8519b1689f6"
+  ],
+  "cmake/Findlibxmp-lite.cmake": [
+    420,
+    "c17c7cff22c526c262ce47289240dfb383c81a35b0561889eb9c2fb0776e6cac"
+  ],
+  "cmake/Findlibxmp.cmake": [
+    420,
+    "66ff1e31121415231af484cbe4476f38c3e6bfa5fd2126dd47c2661647ec97d4"
+  ],
+  "cmake/Findmodplug.cmake": [
+    420,
+    "f44e831528ecf4b23d32dba7cef22bd20ac8556ad39083b2eaebdb93b23a9501"
+  ],
+  "cmake/Findmpg123.cmake": [
+    420,
+    "692fc6a5338f08b545b3d7af7eae9dc1a526e9f3d2884f69ea886f7b87583a5a"
+  ],
+  "cmake/Findtremor.cmake": [
+    420,
+    "0b948e5167744de46bd37e48f76ce62bcbb8bed13b04cac1d6333b95701edc5a"
+  ],
+  "cmake/Findwavpack.cmake": [
+    420,
+    "9ab9d1ba233a9ec905267460ead9c4534293ac82410e4288343453e837f2da96"
+  ],
+  "cmake/PkgConfigHelper.cmake": [
+    420,
+    "cfcdd45cd9069d664f3f46a356074042e88e7ad1301231ef3db1181ce988fa84"
+  ],
+  "cmake/PrivateSdlFunctions.cmake": [
+    420,
+    "0b5759bbbbd2b9c0e5a4b7d8475fe0dbbef54a790c2f130fee5927492b67f9ec"
+  ],
+  "cmake/test/CMakeLists.txt": [
+    420,
+    "041572af6a6c07546d5edde7bbdc0a8a39229c14590f668a59cde455900ae239"
+  ],
+  "cmake/test/main.c": [
+    420,
+    "b5979394dd18236c71bd374d292eeaa4a1cbb373d649f90bcc2079d5956348f2"
+  ],
+  "configure": [
+    493,
+    "80737fbb8bfb5be4f1a0a9a3c178d5397178bc8cf21fbf0ed3e760609848a4b3"
+  ],
+  "configure.ac": [
+    420,
+    "108f0e9dcafad9d101bb4154a12d1f31817dfdebaa62a1a8060b4e37297a9872"
+  ],
+  "external/Get-GitModules.ps1": [
+    420,
+    "db7e9d9935301282efc6d54918ac5956d17c9a141fa2a6622a9ba21de36cf051"
+  ],
+  "external/download.sh": [
+    493,
+    "17751017f016877fc6cc33c9c568998e7d7dd905e6be8bb69e544181a31248d0"
+  ],
+  "include/SDL_mixer.h": [
+    420,
+    "d7284c74e5abe94049b5b483084edd0980faa0050144631931a7359c14f35851"
+  ],
+  "mingw/pkg-support/Makefile": [
+    420,
+    "0796fb3f87f1897f82b311471366c957dd936316107a66cf4f8dea83511fde1b"
+  ],
+  "mingw/pkg-support/cmake/sdl2_mixer-config-version.cmake": [
+    420,
+    "a77fc9422e08c258ca9d89401663d0a425bb7a7f3c3f19b46841f0a81c38d012"
+  ],
+  "mingw/pkg-support/cmake/sdl2_mixer-config.cmake": [
+    420,
+    "bda4979ab626abcce7f9fb59be547a00ff0dcc37cc1b7089d4a9f662a4856ad7"
+  ],
+  "playmus.c": [
+    420,
+    "dac365d608a7b175669ada9fe20446630fdbead214da957938a9304cb1d6bc8d"
+  ],
+  "playwave.c": [
+    420,
+    "037e1bdd995b7c77544418acc0852dbb84cd2981cb3b8879b31609ef8fa42bfe"
+  ],
+  "release_checklist.md": [
+    420,
+    "a806e6757768a6512930ceb16557bb332a35e349410613c480f675e685fa5352"
+  ],
+  "sdl2_mixer-config-version.cmake.in": [
+    420,
+    "ce4a336c749177804d8b09bbf0f986e3c40e0c5f4ce22a3f72e6ea59c5000264"
+  ],
+  "sdl2_mixer-config.cmake.in": [
+    420,
+    "b2f785becfc23cc274deecbf06b2802a45ad14c987814f80be36384fd0f627bb"
+  ],
+  "src/codecs/dr_libs/LICENSE": [
+    420,
+    "dd1c647e6f767f8ff4b2dfae0fed314726600a01e0cf1ef556afddd5fa96ff15"
+  ],
+  "src/codecs/dr_libs/README.md": [
+    420,
+    "5853038ae4b74ccaa213be9b29ff85c59a13b7ab8e1127f3a1e166782a60067a"
+  ],
+  "src/codecs/dr_libs/dr_flac.h": [
+    420,
+    "4c4ecf25e31e0766871db99e31c1867524bf5aa5cd1b5e442177ffbeb6c0c183"
+  ],
+  "src/codecs/load_aiff.c": [
+    420,
+    "40bcdc5923547948386055133a6d65148dabcff83edd9cba2ecac9b13b9f5d89"
+  ],
+  "src/codecs/load_aiff.h": [
+    420,
+    "3913f684b83f1372d07927a82916a73f74649b192f656275ce570552b4e5d477"
+  ],
+  "src/codecs/load_voc.c": [
+    420,
+    "fcd8477b977f21fa3f1407c25689663154c2187c2565e18e994c959b514add84"
+  ],
+  "src/codecs/load_voc.h": [
+    420,
+    "4276a2425b21630d09623e07ae7a880c92908a3eb1c3a91e86e7c08d7a3bb54a"
+  ],
+  "src/codecs/minimp3/LICENSE": [
+    420,
+    "6a1ee543e5282cd9061881edf462e6fdab181f328da71fc2c9a6950a80e94d01"
+  ],
+  "src/codecs/minimp3/README.md": [
+    420,
+    "ce8a219c5783d7b991070a7aca4c31f8dfcafc183925bf947b80b835ed36b45d"
+  ],
+  "src/codecs/minimp3/minimp3.h": [
+    420,
+    "976078e4a0e02c80bf0e06d76a9d3ee10b5923d0343d3d71bbbf1b7178079195"
+  ],
+  "src/codecs/minimp3/minimp3_ex.h": [
+    420,
+    "f19b9715877fe004b26917f076155918b284c3f201e479a4395ba23b719ed0cf"
+  ],
+  "src/codecs/mp3utils.c": [
+    420,
+    "12dbad073e7fc3e00829c6d231418a3b3769ab6fcbc0cad658d03c3652d5ac38"
+  ],
+  "src/codecs/mp3utils.h": [
+    420,
+    "6aa0e5eba9ab4f85c0601311f469741a4cec518a5b108ba10f4f361e964bbf87"
+  ],
+  "src/codecs/music_cmd.c": [
+    420,
+    "a2e9e60456f492bd30751468ab6096a2115a3aa2b715a8294426f26821d8e77d"
+  ],
+  "src/codecs/music_cmd.h": [
+    420,
+    "19ea5cd64559fd79f12edb7bf3f0c249c7aa5a27125c5038ee0facf327e17e45"
+  ],
+  "src/codecs/music_drflac.c": [
+    420,
+    "f1d6ac012a6d101d6870a420635704294fad52523b3065c87eae0aec0820c2eb"
+  ],
+  "src/codecs/music_drflac.h": [
+    420,
+    "32eaa7871244f955dba8e149034417de5aadd42c235f09940bee5dbc95cfd7ee"
+  ],
+  "src/codecs/music_flac.c": [
+    420,
+    "7ad16d390b92f0b7231de10b5500c5f3df48b95db8f479e1b68f31687a10c9f5"
+  ],
+  "src/codecs/music_flac.h": [
+    420,
+    "ea2eb5cbb018d66e51e01c449f54ffa8e898c195cb2c69d8f7a61817fb3277d7"
+  ],
+  "src/codecs/music_fluidsynth.c": [
+    420,
+    "5a130694ddad3ab85cd7e8bdae661ec021a2c532d33bcc31b88883bf4831b11f"
+  ],
+  "src/codecs/music_fluidsynth.h": [
+    420,
+    "95f10f574b1710777cc3c658e239502611b7393e5b9784feb10e7cfb4a0bbfe5"
+  ],
+  "src/codecs/music_gme.c": [
+    420,
+    "d0008649768b896ef9e1ee72e00cdd051e5a93dbe612bb59e1ddf66928a0fa3e"
+  ],
+  "src/codecs/music_gme.h": [
+    420,
+    "5674cd3b85507430b2266efa9105173f6c6bc83d9f05566501a1d47287053763"
+  ],
+  "src/codecs/music_minimp3.c": [
+    420,
+    "b3cda47ef0d2ca77622599d750c7f2b9249430aac3c58f226ac85ca3f3744108"
+  ],
+  "src/codecs/music_minimp3.h": [
+    420,
+    "394c19163546f417d4529e3c77fb164806e48602c2ae365bc0ace164c5988d38"
+  ],
+  "src/codecs/music_modplug.c": [
+    420,
+    "65266cf7ceaf18857702bc6843693859706a4241cc8e18bc1123e0d6b86798a3"
+  ],
+  "src/codecs/music_modplug.h": [
+    420,
+    "cea8201cf34ce52b9d192701bb1dccd035551dccaec486ddd70a37881ffb8c01"
+  ],
+  "src/codecs/music_mpg123.c": [
+    420,
+    "b39eccd60ff85875ef9f7a5d085a1bd64e3e03dbbf839e0234ed0bfc85924e60"
+  ],
+  "src/codecs/music_mpg123.h": [
+    420,
+    "23b6d8b1ff4c38979de6eac4563d52b8a39a2147d6eb769e329b6b1ab7f75468"
+  ],
+  "src/codecs/music_nativemidi.c": [
+    420,
+    "97c5623eb0dafeb950470adc03b004a3ae13c8c567477ac7386c316b1a770523"
+  ],
+  "src/codecs/music_nativemidi.h": [
+    420,
+    "bd26e74efc8f4f0eacae6e41b8ab4388d0957b7eca7df0cf462d9aa4ae3ae06d"
+  ],
+  "src/codecs/music_ogg.c": [
+    420,
+    "96e91777351c996823b56e88c7173c9ba2fdd7b2056d880c5bcb86f3c369db91"
+  ],
+  "src/codecs/music_ogg.h": [
+    420,
+    "e233b0c0c21f508e481a834a2e830fc4a4fba24ce6448cf28ab203c3003412ce"
+  ],
+  "src/codecs/music_ogg_stb.c": [
+    420,
+    "9d4a5a3c949d090faac0175b306b7a5f37eac83cc795d466ae2a75f5c104e8ab"
+  ],
+  "src/codecs/music_opus.c": [
+    420,
+    "175751dcaa9bf8c8c1385339b4045e67349a559297a02a8cb881cb40d3a917df"
+  ],
+  "src/codecs/music_opus.h": [
+    420,
+    "ae039f6890a424c92debbd36ce4c0d93084182634f551a376846d80e928a6dd5"
+  ],
+  "src/codecs/music_timidity.c": [
+    420,
+    "5a801a6f520cf19ea48f96bc41dd810bc34836a1d99887915c2fd47504d4ad3a"
+  ],
+  "src/codecs/music_timidity.h": [
+    420,
+    "157fcbc4ba734f0c8a4dd9b6a23b4070982ae1b39b02834b99a7f37f185f4245"
+  ],
+  "src/codecs/music_wav.c": [
+    420,
+    "47ad8c1a42cd47435c28d00baa4c99e05e8992221a10ecfe94cfe056fd12a739"
+  ],
+  "src/codecs/music_wav.h": [
+    420,
+    "b25f216ef9144897aca3713648fb6927f126bf689f15d856e7398d05b5cffd35"
+  ],
+  "src/codecs/music_wavpack.c": [
+    420,
+    "6de124d729cb99597ac8c904fb8a98ef880aa820e7b12d9ec3049d5a9d4f5ca2"
+  ],
+  "src/codecs/music_wavpack.h": [
+    420,
+    "d5dd383de04e3b80656213eed15d8e98a619d332857f1786625cec2194de1209"
+  ],
+  "src/codecs/music_xmp.c": [
+    420,
+    "89cd59afc161bd7255f06a4652dba24745bb91376449c84dfcb399c430ce4881"
+  ],
+  "src/codecs/music_xmp.h": [
+    420,
+    "4f8ffd148ed252db5db4300c4fa99c4d84cbe6568286ae0d6aaa08d05bf89c39"
+  ],
+  "src/codecs/native_midi/native_midi.h": [
+    420,
+    "df5fa139bb26313c3ff30ef45f93d91bfae669ff77e2bcf3f9b985fe1a89837f"
+  ],
+  "src/codecs/native_midi/native_midi_common.c": [
+    420,
+    "b440ded63fc4664c73f430eeae2a990ef82f75d63098ce3274b17ee0e8049483"
+  ],
+  "src/codecs/native_midi/native_midi_common.h": [
+    420,
+    "7088541c24f04ae62ac83d95b20c675b4b4f37a6185e380ed48b33eab31ca441"
+  ],
+  "src/codecs/native_midi/native_midi_haiku.cpp": [
+    420,
+    "f6e0f7dbff9ce5778759553df16be74d29bba61ca415a3207962567cf60b0f61"
+  ],
+  "src/codecs/native_midi/native_midi_macosx.c": [
+    420,
+    "c27089126fb14f024e2a08e6b159c1a375c40a1c5f268c274c0770a753499f0e"
+  ],
+  "src/codecs/native_midi/native_midi_win32.c": [
+    420,
+    "e28c2ac20e8e553ec756d2ccebb4c4848c918a41f3317596e20d8a3714090dab"
+  ],
+  "src/codecs/remap_channels.c": [
+    420,
+    "02f3d1353656effed27275596610acf01dd6ab11cb19136dff7881b90fd22c2b"
+  ],
+  "src/codecs/remap_channels.h": [
+    420,
+    "867a785d07b360fbc8aad7893338db4bea65515dd2e29fe7b7101407e1f41b43"
+  ],
+  "src/codecs/stb_vorbis/README.txt": [
+    420,
+    "7b9d3f516de5bafeaac28af6c77d7440d961e0ff63407762ed17404ea0ea2132"
+  ],
+  "src/codecs/stb_vorbis/stb_vorbis.h": [
+    420,
+    "5e259f31d2096b4cac09da3cea3b79f0e9ebbcae2902929154128a4c4868a66c"
+  ],
+  "src/codecs/timidity/Android.mk": [
+    420,
+    "0a2f8ce33a2a531ef489446d172fa971c2f58230db1c12d36fdc4f78fb80a8af"
+  ],
+  "src/codecs/timidity/CHANGES": [
+    420,
+    "d676471722ee14552bbbded896a229406106fa566d7d63ab5f47add63f5cb07c"
+  ],
+  "src/codecs/timidity/COPYING": [
+    420,
+    "188de23cc548f2afd04bfb85217220f6864ca2412dc3af003f0d89a9641f42c3"
+  ],
+  "src/codecs/timidity/FAQ": [
+    420,
+    "865c72c18a18bcb4221084dcc0d1cc5426edaf4632a8b316dd57c5dc0d6cc84d"
+  ],
+  "src/codecs/timidity/README": [
+    420,
+    "3bd883fd9facd030522eb8da9c89d6069082147782e8b2f98217d846d68cd6c0"
+  ],
+  "src/codecs/timidity/TODO": [
+    420,
+    "621ecedce2821806f0aaa3ca7c39aae0721094419f490a2051bbad58be00f4e0"
+  ],
+  "src/codecs/timidity/common.c": [
+    420,
+    "7e0886a823611beb8a0b1b4384ab271091909bda8bbc686dcf7dec102ea6fc49"
+  ],
+  "src/codecs/timidity/common.h": [
+    420,
+    "0e08e16673c48b752827a7ecb25825cd226660cd4fccb843ef758e25d8c97235"
+  ],
+  "src/codecs/timidity/instrum.c": [
+    420,
+    "3164c451e0362eae3b9479c2d760507fdf97efceb43a15eba55a83a68d651e76"
+  ],
+  "src/codecs/timidity/instrum.h": [
+    420,
+    "3319a5b9d8161d802bea6252bfec54cc7b8d13fe5a7b332ed1bf19f354d7c95b"
+  ],
+  "src/codecs/timidity/mix.c": [
+    420,
+    "b3f318ff051e989f97c29398bf43ac20e5b138466a7601378f0927e8dbeb9ddd"
+  ],
+  "src/codecs/timidity/mix.h": [
+    420,
+    "c695308c793bdf93b8d9836140bd092088257099147c50495b807edab4c538dd"
+  ],
+  "src/codecs/timidity/options.h": [
+    420,
+    "d7c3a4b1dd34f267398ba40bb9ae832e5f748ba74a2e5d52b22e2ba300b773e1"
+  ],
+  "src/codecs/timidity/output.c": [
+    420,
+    "e563941160d0d34ebe6760d51967c762610cdc1746d18d7bc2caf7a968586237"
+  ],
+  "src/codecs/timidity/output.h": [
+    420,
+    "f5c7ea111885b99f47ab0ffcbb52f15654c405755a1d7c03bbb8f1187c13efa3"
+  ],
+  "src/codecs/timidity/playmidi.c": [
+    420,
+    "2fa7dac556b394b09a8af4e32642d327b839b24ee74a2b5b06d5f4e34df138dc"
+  ],
+  "src/codecs/timidity/playmidi.h": [
+    420,
+    "c154fc926384febd1cfe9b79e96d66774b78a76acb7a55964b3db5152fb72259"
+  ],
+  "src/codecs/timidity/readmidi.c": [
+    420,
+    "863c628a9372af93c6f886527eb52b5254da48fb3b9123f81b2407aa5f63c987"
+  ],
+  "src/codecs/timidity/readmidi.h": [
+    420,
+    "31f8b3f3ecbd687e63f337b746edb142f948651558dfe39542f0fe10f91956d3"
+  ],
+  "src/codecs/timidity/resample.c": [
+    420,
+    "9e9ceccded26d26d1a75f98a997134cc32af3199a1356181ed2285a6847f024d"
+  ],
+  "src/codecs/timidity/resample.h": [
+    420,
+    "84a290cee1131a79397c6e8601a299223ba66f60a2b133c73e2c148c1b5780b6"
+  ],
+  "src/codecs/timidity/tables.c": [
+    420,
+    "6b99f33b4ea0d7f7c53bb41c49b512cfc9315e0bae3446ad047f52b833ee3a6c"
+  ],
+  "src/codecs/timidity/tables.h": [
+    420,
+    "3fcbcb35c7e7bd6cad3abbc434437f77833a37ca8789c361b78efebd56114db4"
+  ],
+  "src/codecs/timidity/timidity.c": [
+    420,
+    "ab8d1c067eba974c2ad0e93af9100d8afbd197463b1514136da2c929d054d2a6"
+  ],
+  "src/codecs/timidity/timidity.h": [
+    420,
+    "2004eb91e17a013e07d263b652510903395b580b0b01d59eee492bc30150dad0"
+  ],
+  "src/effect_position.c": [
+    420,
+    "9a4f9d5ca836ef268545d4b78a2bd96cc78f86adc41b77be2881c2b54a6e58b9"
+  ],
+  "src/effect_stereoreverse.c": [
+    420,
+    "742970c351547ec46399f817467a67757021ea0290c8adade7f59dec3ae85ed4"
+  ],
+  "src/effects_internal.c": [
+    420,
+    "c8e6efc82ca6158daefd650015b42d77be84d17c6b03f0fab30de923ac420cff"
+  ],
+  "src/effects_internal.h": [
+    420,
+    "a1311310149f641ce22709d3d3f7ce293adae4d8a8936d94aad72414e3a2d15b"
+  ],
+  "src/mixer.c": [
+    420,
+    "1e21519cfc2eb1dc4c0ab7693dd015701af36056fbde77d2786672d01e07cac5"
+  ],
+  "src/mixer.h": [
+    420,
+    "8c2139dac8f72d126e1537bb967f3eaeadcbc0ac18d9497e5543ee86ef36dd9f"
+  ],
+  "src/music.c": [
+    420,
+    "fcc8e93cae13472ffaee2be8be8f466e7c99f6158f3b2fc1a29bc9c6bebf62c6"
+  ],
+  "src/music.h": [
+    420,
+    "580eb38480ea952ff383558d333a0e67fc8f33d5e4a54aca909b01d6d4eccff0"
+  ],
+  "src/utils.c": [
+    420,
+    "3d22562925ff85c18bb7b565b2043f4289d38fbc4d3de69411e771e81d259d12"
+  ],
+  "src/utils.h": [
+    420,
+    "ca47d8d909360932adedee798d49313a723055b262beb4fb6e4d6bf32ec700b5"
+  ],
+  "version.rc": [
+    420,
+    "f787fd03be7ce57038d8a1935c1e6b76487a2d2bbb9d982bbb4311b21e96d39b"
+  ]
+}
