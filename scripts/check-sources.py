@@ -45,7 +45,8 @@ def check(fetch=False):
         manifest = json.loads(exported.read_text())
         actual = inventory(ROOT, ('build', 'artifacts', 'SOURCE_MANIFEST.json'))
         if actual != manifest['files']:
-            raise RuntimeError('Source archive has modified, missing or extra input files')
+            differences = sorted(p for p in actual.keys() | manifest['files'].keys() if actual.get(p) != manifest['files'].get(p))
+            raise RuntimeError(f'Source archive has modified, missing or extra input files: {differences[:8]}')
         provenance = manifest['provenance'].copy()
         provenance['toolchain'] = subprocess.check_output(['xcodebuild', '-version'], text=True).strip()
         provenance['cmake'] = subprocess.check_output(['cmake', '--version'], text=True).splitlines()[0]
@@ -105,6 +106,8 @@ def export_source(output, provenance):
         for item in LOCK['archives']:
             shutil.copytree(ROOT / item['path'], stage / item['path'], symlinks=True,
                             ignore=shutil.ignore_patterns('.caesarpad-source'))
+        # Historical tracked run logs are not build inputs and may contain device identifiers.
+        shutil.rmtree(stage / 'artifacts', ignore_errors=True)
         # Git archive emits group-writable modes; normalize for ordinary tar/umask restoration.
         for folder, dirs, files in os.walk(stage):
             for name in dirs + files:
