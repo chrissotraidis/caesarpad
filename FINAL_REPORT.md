@@ -1,5 +1,7 @@
 # CaesarPad 0.1.0 preview report
 
+> Historical product-validation record. For the current source graph and reproducibility checks, see [source maintenance](docs/source-maintenance/README.md) and [migration validation](docs/source-maintenance/VALIDATION.md).
+
 Date: 2026-08-01
 
 ## Outcome
