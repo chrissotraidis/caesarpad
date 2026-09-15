@@ -5,8 +5,8 @@ Use this checklist for every public source or IPA release.
 ## Source and rights
 
 - [ ] Release commit is on `main`, tagged, and matches `origin/main`.
-- [ ] Augustus submodule is exactly `69c69827682a11eaaa400c5a77198131249bfe2a`.
-- [ ] Every maintained patch applies cleanly in numeric order.
+- [ ] Recursive gitlinks match `sources.lock.json`; dependencies are clean.
+- [ ] No normal build path replays historical patches.
 - [ ] `scripts/check-repo-safety.sh` passes.
 - [ ] No `ref/`, Caesar III data, saves, signing material, or generated build
       products are tracked.
@@ -17,7 +17,7 @@ Use this checklist for every public source or IPA release.
 
 ```sh
 scripts/build-device.sh
-SOURCE_REVISION="$(git rev-parse HEAD)" scripts/package-ios.sh
+scripts/package-ios.sh
 ```
 
 - [ ] The device build reports `iPhoneOS`, arm64, bundle identifier
@@ -43,8 +43,14 @@ SOURCE_REVISION="$(git rev-parse HEAD)" scripts/package-ios.sh
 ## GitHub release
 
 - [ ] Release is marked as a prerelease until the physical acceptance list passes.
-- [ ] Attach the unsigned IPA and `.sha256` file.
+- [ ] Attach the unsigned IPA, complete source archive, and both `.sha256` files.
+- [ ] Restore the source archive without Git/private inputs; validate and build it.
+- [ ] App `Legal/PROVENANCE.json` agrees with the source archive and release commit.
 - [ ] Release notes state the CaesarPad version, Augustus SHA, supported iPadOS
       floor, known limitations, and bring-your-own-game-data requirement.
 - [ ] Link the exact source tag and IPA installation guide.
 - [ ] Download the published assets again and verify their size and SHA-256.
+
+Source-only pull requests do not authorize publication or imply new hardware acceptance.
+Keep historical release assets intact. Choose a new version/label for any future release;
+do not overwrite Preview 1 with a migration candidate.

@@ -7,11 +7,14 @@ Activision, Microsoft, Apple, GOG, or Valve.
 
 ## CaesarPad source
 
-CaesarPad's integration source, build scripts, maintained patches, and project
+CaesarPad's integration source, build scripts, historical patches, and project
 documentation are distributed under the GNU Affero General Public License v3.0,
 as provided in [LICENSE](LICENSE). Augustus remains under its upstream copyright
 and AGPL-3.0 terms. Each release identifies the exact Augustus submodule revision
-and includes the CaesarPad patch series needed to reproduce the iOS build.
+and SDL pins. The maintained source graph replaces patch replay without an
+upstream upgrade. Complete source archives accompany newly packaged candidates;
+see [source delivery](docs/source-maintenance/README.md). Preview 1 retains its
+original tagged patch-based source and has not been republished.
 
 Third-party components and engine assets retain their own licenses. See
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the license files in the

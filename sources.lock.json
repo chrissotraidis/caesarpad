@@ -1,0 +1,33 @@
+{
+  "upstream_base": "69c69827682a11eaaa400c5a77198131249bfe2a",
+  "git": [
+    {
+      "path": "engines/augustus",
+      "commit": "5b18072da2a43bd6b3e9df240553d8c9d9a72bf6",
+      "url": "https://github.com/chrissotraidis/augustus.git"
+    },
+    {
+      "path": "engines/augustus/ext/SDL2/SDL2",
+      "commit": "49cc7a303e4a7011d76b692b469b6f5f69269fd3",
+      "url": "https://github.com/chrissotraidis/SDL.git"
+    },
+    {
+      "path": "engines/augustus/ext/easyav1",
+      "commit": "8233d82f7334222289f95e1f42713a87f5e0e4c7",
+      "url": "https://github.com/crudelios/easyav1"
+    },
+    {
+      "path": "engines/augustus/ext/easyav1/ext/dav1d",
+      "commit": "46e901735541716e18d90d361e311b58ee95a281",
+      "url": "https://code.videolan.org/videolan/dav1d.git"
+    }
+  ],
+  "archives": [
+    {
+      "path": "engines/augustus/ext/SDL2/SDL2_mixer",
+      "url": "https://www.libsdl.org/projects/SDL_mixer/release/SDL2_mixer-2.8.2.tar.gz",
+      "sha256": "938dff531d00ace2296557a6599abe6f34599e2f34f0a4a08a397e2ccac8b8f7",
+      "manifest": "docs/source-maintenance/sdl-mixer-files.json"
+    }
+  ]
+}

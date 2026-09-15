@@ -18,7 +18,7 @@ collect or receive your Apple credentials.
 ## Install
 
 1. Download `CaesarPad-0.1.0-preview.1-unsigned.ipa` and its `.sha256` file from
-   the matching GitHub Release when it is published.
+   [Preview 1](https://github.com/chrissotraidis/caesarpad/releases/tag/v0.1.0-preview.1).
 2. Verify the download on macOS:
 
    ```sh
@@ -49,8 +49,11 @@ Do not share those files or attach them to GitHub issues.
 
 Install updates over the existing app. Do not uninstall first: uninstalling can
 remove the Files-visible Documents container and its saves. Make a backup of
-important `.sav` and `.svx` files through Files before changing sideloading tools
-or bundle identifiers.
+the complete app Documents and settings through your device backup workflow before
+changing sideloading tools. A save-only export is not a full recovery backup.
 
 The preview uses bundle identifier `com.chrissotraidis.caesarpad`. Packages with
 a different identifier are separate apps and do not share Documents data.
+
+Preserve the same bundle ID, signing team and entitlements for in-place updates.
+If signing identity is incompatible, stop and resolve it; do not uninstall to bypass it.

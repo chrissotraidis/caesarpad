@@ -24,20 +24,30 @@ jobs:
       - name: Repository safety
         run: scripts/check-repo-safety.sh
 
+      - name: Touch regression tests
+        run: scripts/test-touch.sh
+
       - name: Build unsigned iOS app
         run: scripts/build-device.sh
 
       - name: Package and audit IPA
-        env:
-          SOURCE_REVISION: ${{ github.sha }}
-        run: scripts/package-ios.sh
+        run: |
+          if [[ "$GITHUB_REF_TYPE" == tag ]]; then
+            label="${GITHUB_REF_NAME#v}"
+            [[ "$label" == *-* ]] || { echo "Expected vVERSION-LABEL prerelease tag" >&2; exit 1; }
+            export VERSION="${label%%-*}" RELEASE_LABEL="${label#*-}"
+          else
+            export RELEASE_LABEL="source-review-${GITHUB_SHA:0:7}"
+          fi
+          export BUILD_NUMBER="$GITHUB_RUN_NUMBER"
+          scripts/package-ios.sh
 
       - uses: actions/upload-artifact@v4
         with:
-          name: CaesarPad-0.1.0-preview.1-unsigned
+          name: CaesarPad-iOS
           path: |
-            build/release/CaesarPad-0.1.0-preview.1-unsigned.ipa
-            build/release/CaesarPad-0.1.0-preview.1-unsigned.ipa.sha256
+            build/release/*.ipa*
+            build/release/*-source.tar.gz*
           if-no-files-found: error
 
   release:
@@ -49,7 +59,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@v4
         with:
-          name: CaesarPad-0.1.0-preview.1-unsigned
+          name: CaesarPad-iOS
           path: release-assets
 
       - name: Create prerelease
@@ -57,8 +67,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: >-
           gh release create "${GITHUB_REF_NAME}"
-          release-assets/CaesarPad-0.1.0-preview.1-unsigned.ipa
-          release-assets/CaesarPad-0.1.0-preview.1-unsigned.ipa.sha256
+          release-assets/*
           --repo "${GITHUB_REPOSITORY}"
           --verify-tag
           --prerelease

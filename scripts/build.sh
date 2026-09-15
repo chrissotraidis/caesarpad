@@ -13,7 +13,7 @@ source "$ROOT_DIR/scripts/simulator.sh"
 caesarpad_select_simulator
 
 "$ROOT_DIR/scripts/fetch-deps.sh"
-"$ROOT_DIR/scripts/apply-patches.sh"
+"$ROOT_DIR/scripts/check-sources.py"
 
 ICON_INFO="$(sips -g pixelWidth -g pixelHeight -g hasAlpha "$ICON_SOURCE")"
 if ! grep -q "pixelWidth: 1024" <<<"$ICON_INFO" ||
@@ -22,7 +22,7 @@ if ! grep -q "pixelWidth: 1024" <<<"$ICON_INFO" ||
     echo "App icon must be an opaque 1024x1024 PNG: $ICON_SOURCE" >&2
     exit 1
 fi
-cp "$ICON_SOURCE" "$ICON_TARGET"
+cmp "$ICON_SOURCE" "$ICON_TARGET"
 
 cmake \
     -S "$ENGINE_DIR" \
@@ -49,4 +49,5 @@ if [[ ! -d "$APP_PATH" ]]; then
     exit 1
 fi
 
+"$ROOT_DIR/scripts/check-sources.py" --stamp "$APP_PATH/CaesarPad-source.json"
 echo "Built $APP_PATH"

@@ -6,7 +6,7 @@
 
 <p align="center">
   <strong>Caesar III on an iPad-shaped canvas, powered by Augustus.</strong><br>
-  0.1.0 preview candidate · Augustus only · Simulator and local iPad verified
+  0.1.0 Preview 1 · Augustus only · Simulator and local iPad verified
 </p>
 
 <p align="center">
@@ -28,9 +28,9 @@ This repository contains the mobile integration and build scripts. It does **not
 Caesar III or any of its game data; you supply your own legally purchased files locally.
 
 > [!IMPORTANT]
-> CaesarPad is currently a **developer-preview release candidate**. The repository builds
-> and audits an unsigned, re-signable IPA, but no GitHub Release, TestFlight build, App Store
-> listing, or AltStore source has been published yet.
+> [**Preview 1 is available**](https://github.com/chrissotraidis/caesarpad/releases/tag/v0.1.0-preview.1)
+> as an unsigned, re-signable IPA from source `07a8d38`. This source-maintenance branch
+> does not publish a new binary. No TestFlight, App Store listing, or AltStore source is announced.
 
 [What works](#what-works-today) · [Controls](#touch-controls) · [Screenshots](#current-screenshots) ·
 [Install IPA](docs/INSTALL_IPA.md) · [Run it](#run-in-ipad-simulator) · [How it works](#how-it-works) ·
@@ -41,8 +41,8 @@ Caesar III or any of its game data; you supply your own legally purchased files 
 | Option | Status | What to do |
 |---|---|---|
 | iPad Simulator | **Verified** | Supply your own Caesar III data and use the automated setup below. |
-| Local iPad build | **Verified for development** | Build and sign locally with your Apple development team; no end-user package is published. |
-| Unsigned `.ipa` | **Release candidate built locally** | Follow the [installation guide](docs/INSTALL_IPA.md) after the matching GitHub prerelease is published. |
+| Local iPad build | **Verified for development** | Build and sign locally with your Apple development team; the public IPA requires your own signing credentials. |
+| Unsigned `.ipa` | **Preview 1 published** | Download [Preview 1](https://github.com/chrissotraidis/caesarpad/releases/tag/v0.1.0-preview.1) and follow the [installation guide](docs/INSTALL_IPA.md). |
 | App Store / TestFlight | **Not announced** | No listing or public TestFlight currently exists. |
 
 ## What works today
@@ -167,8 +167,8 @@ game data into Git and `ref/` is ignored by the repository.
   `c3.eng` and `c3_model.txt`.
 - **SDL download fails:** check network access and retry. Downloads are version- and
   checksum-pinned; a mismatched archive is rejected.
-- **Patch application fails:** restore the Augustus submodule to its pinned SHA with
-  `git submodule update --init --recursive --force engines/augustus`, then rerun.
+- **Source validation fails:** preserve local edits and use a fresh recursive clone.
+  See the [source update guide](docs/source-maintenance/README.md); builds never reset dependencies.
 - **Choose another iPad:** run
   `SIMULATOR_UDID="<udid>" C3_SOURCE_DIR="/path/to/C3" scripts/install.sh`.
 
@@ -194,9 +194,11 @@ separate from the completed local iPad build, install, launch, and touch testing
 
 ## How it works
 
-CaesarPad keeps Augustus as a pinned Git submodule at
-`69c69827682a11eaaa400c5a77198131249bfe2a`. The engine is never vendor-copied. Thirteen small
-patches provide only the downstream behavior needed here:
+CaesarPad pins a [maintained Augustus fork](https://github.com/chrissotraidis/augustus/tree/caesarpad/maintained)
+and a [maintained SDL fork](https://github.com/chrissotraidis/SDL/tree/caesarpad/maintained).
+The upstream Augustus base remains `69c69827682a11eaaa400c5a77198131249bfe2a`; SDL remains
+2.32.10. [Exact pins](sources.lock.json), [patch-to-commit mapping and update instructions](docs/source-maintenance/README.md)
+make the source reproducible without patch replay. Existing integration features include:
 
 1. landscape-only iOS presentation;
 2. long-press and two-finger right-click mappings;
@@ -209,11 +211,13 @@ patches provide only the downstream behavior needed here:
 9. persistent Apple Pencil and traditional-touch modes;
 10. a simplified control bar that removes the duplicate native pause button and labels Pencil state;
 11. compact top-bar controls and safe event-video shutdown during iPad backgrounding;
-12. the CaesarPad release identity, version, and Files-visible Documents directory.
+12. the CaesarPad release identity, version, and Files-visible Documents directory;
+13. responsive game-folder import and reuse of existing app storage.
 
 The original 1024×1024 CaesarPad icon lives downstream in `assets/ios/` and is validated
-as opaque before each build. SDL2 and SDL2_mixer are downloaded from their official source
-releases and verified by SHA-256.
+as opaque before each build and is also tracked in the engine. SDL2_mixer 2.8.2 remains
+an unmodified, checksum-pinned release; every extracted file is verified. Source archives
+include all nested sources, retained licenses, and an integrity manifest.
 
 <details>
 <summary><strong>What the automated suite proves</strong></summary>
@@ -239,8 +243,8 @@ implementation and hardware-only boundary are summarized in
 
 ## Not shipped yet
 
-- a polished first-run folder picker with import progress and localized recovery UI;
-- the public GitHub prerelease asset and an AltStore source;
+- localized recovery UI beyond the existing importer feedback;
+- an AltStore source;
 - physical-iPad touch, audio, lifecycle-stress, performance, and thermal sign-off;
 - broader device and iPadOS-version coverage.
 
@@ -285,3 +289,11 @@ Engine and project code are available under the
 [GNU Affero General Public License v3.0](LICENSE). Augustus retains its own copyright and
 license notices. See the complete [rights boundary](RIGHTS_AND_LICENSES.md) and
 [third-party notices](THIRD_PARTY_NOTICES.md).
+
+## Support and source contributions
+
+Report app installation, touch, graphics and crash issues to [CaesarPad issues](https://github.com/chrissotraidis/caesarpad/issues)
+with the app version and source pins, excluding game files and private identifiers.
+Route a report upstream only after isolating it against that upstream revision.
+Augustus and its Julius foundation retain their authorship; CaesarPad contributes the
+Apple integration. See [rights and licenses](RIGHTS_AND_LICENSES.md).
