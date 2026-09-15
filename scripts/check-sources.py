@@ -2,6 +2,7 @@
 """Validate immutable sources; fetch only missing archives; export complete source."""
 import argparse
 import hashlib
+import gzip
 import io
 import json
 import os
@@ -128,8 +129,14 @@ def export_source(output, provenance):
         (stage / 'SOURCE_MANIFEST.json').write_text(json.dumps(manifest, indent=2, sort_keys=True) + '\n')
         output = Path(output).resolve()
         output.parent.mkdir(parents=True, exist_ok=True)
-        with tarfile.open(output, 'w:gz') as tar:
-            tar.add(stage, arcname=stage.name)
+        def stable_metadata(info):
+            info.uid = info.gid = info.mtime = 0
+            info.uname = info.gname = ''
+            info.pax_headers = {}
+            return info
+        with output.open('wb') as raw, gzip.GzipFile(filename='', mode='wb', fileobj=raw, mtime=0) as compressed:
+            with tarfile.open(fileobj=compressed, mode='w') as tar:
+                tar.add(stage, arcname=stage.name, filter=stable_metadata)
         output.with_name(output.name + '.sha256').write_text(hashlib.sha256(output.read_bytes()).hexdigest() + '  ' + output.name + '\n')
         print(f'Complete source: {output}')
 

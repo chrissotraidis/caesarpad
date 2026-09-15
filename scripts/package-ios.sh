@@ -132,6 +132,6 @@ if zipinfo -1 "$OUTPUT_PATH" | grep -Eq '(^|/)(_CodeSignature/|embedded\.mobilep
     exit 1
 fi
 
-shasum -a 256 "$OUTPUT_PATH" > "$SHA_PATH"
+(cd "$OUTPUT_DIR" && shasum -a 256 "$OUTPUT_NAME") > "$SHA_PATH"
 echo "Created $OUTPUT_PATH"
 cat "$SHA_PATH"
