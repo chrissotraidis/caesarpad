@@ -105,6 +105,12 @@ def export_source(output, provenance):
         for item in LOCK['archives']:
             shutil.copytree(ROOT / item['path'], stage / item['path'], symlinks=True,
                             ignore=shutil.ignore_patterns('.caesarpad-source'))
+        # Git archive emits group-writable modes; normalize for ordinary tar/umask restoration.
+        for folder, dirs, files in os.walk(stage):
+            for name in dirs + files:
+                p = Path(folder) / name
+                if not p.is_symlink():
+                    p.chmod(stat.S_IMODE(p.stat().st_mode) & ~0o022)
         manifest = {'provenance': provenance, 'files': inventory(stage)}
         (stage / 'SOURCE_MANIFEST.json').write_text(json.dumps(manifest, indent=2, sort_keys=True) + '\n')
         output = Path(output).resolve()
