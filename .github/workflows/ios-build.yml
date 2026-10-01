@@ -18,6 +18,9 @@ jobs:
         with:
           submodules: recursive
 
+      - name: Content gate regression tests
+        run: python3 -B tests/ci_content_gate_test.py
+
       - name: Fetch pinned SDL sources
         run: scripts/fetch-deps.sh
 
@@ -41,6 +44,21 @@ jobs:
           fi
           export BUILD_NUMBER="$GITHUB_RUN_NUMBER"
           scripts/package-ios.sh
+
+      - name: Fetch pinned public PadMint auditor
+        uses: actions/checkout@v4
+        with:
+          repository: chrissotraidis/padmint
+          ref: f0efbb738cac934559e986143343dc8720a6fb1d
+          path: .ci-padmint
+          persist-credentials: false
+
+      - name: Audit public app and source payloads
+        working-directory: .ci-padmint
+        run: >-
+          python3 -B -m padmint audit
+          "$GITHUB_WORKSPACE"/build/release/*.ipa
+          "$GITHUB_WORKSPACE"/build/release/*-source.tar.gz
 
       - uses: actions/upload-artifact@v4
         with:
