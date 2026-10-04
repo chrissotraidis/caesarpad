@@ -15,6 +15,8 @@
   <img alt="Powered by Augustus" src="https://img.shields.io/badge/engine-Augustus-8B5A2B">
   <img alt="Physical iPad build verified" src="https://img.shields.io/badge/physical%20iPad-build%20verified-30D158">
   <img alt="Caesar III game data not included" src="https://img.shields.io/badge/game%20data-not%20included-FF453A">
+  <a href="https://github.com/chrissotraidis/padmint"><img alt="CaesarPad setup in PadMint" src="https://img.shields.io/badge/PadMint-guided%20setup-3EB489"></a>
+  <a href="https://discord.gg/xwHfUD2bxW"><img alt="Join the CaesarPad Discord" src="https://img.shields.io/badge/Discord-Join%20the%20community-5865F2?logo=discord&amp;logoColor=white"></a>
 </p>
 
 ![CaesarPad running a developed Roman city on iPad](docs/readme/caesarpad-gameplay.jpg)
@@ -35,6 +37,13 @@ Caesar III or any of its game data; you supply your own legally purchased files 
 [What works](#what-works-today) · [Controls](#touch-controls) · [Screenshots](#current-screenshots) ·
 [Install IPA](docs/INSTALL_IPA.md) · [Run it](#run-in-ipad-simulator) · [How it works](#how-it-works) ·
 [Project status](STATE.md)
+
+> [!NOTE]
+> **AI disclosure:** CaesarPad uses substantial AI assistance for code, tests,
+> documentation, debugging and maintenance. Some support replies and maintenance
+> tasks are automated. There is no audited percentage of AI-generated code.
+> Build, test and device records describe what was checked. This disclosure
+> concerns CaesarPad's workflow, not the authorship of its upstream projects.
 
 ## Install status
 
@@ -275,6 +284,16 @@ preview.
 - [Licensing and legal research](docs/research/annex-licensing.md)
 
 </details>
+
+## Community and support
+
+[Join the Discord](https://discord.gg/xwHfUD2bxW) for help and news. It is one
+community for CaesarPad and its sibling projects, such as KartPad, BlueWake and
+MeleePad: ask about setup and installing, share how it runs on your device, and
+hear about new releases first.
+
+Found a bug? [Open an issue](https://github.com/chrissotraidis/caesarpad/issues)
+with your device, its OS version, and the steps that led to it.
 
 ## Legal
 
