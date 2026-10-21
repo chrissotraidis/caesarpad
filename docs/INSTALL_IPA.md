@@ -6,7 +6,7 @@ App Store or TestFlight build.
 
 ## What you need
 
-- a supported iPad running iPadOS 14 or newer;
+- a supported iPad running iPadOS 15 or newer (the 0.1.0 preview also runs on iPadOS 14);
 - a Mac or another supported sideloading setup;
 - an Apple ID used by your chosen signing tool; and
 - your own legally purchased Caesar III installation files.
