@@ -3,12 +3,12 @@
   "git": [
     {
       "path": "engines/augustus",
-      "commit": "2fedb653a79d7330c85aeaf35977d226d7e646bb",
+      "commit": "3e26be58ea4b073d8e8d64915c3bbd283be587e3",
       "url": "https://github.com/chrissotraidis/augustus.git"
     },
     {
       "path": "engines/augustus/ext/SDL2/SDL2",
-      "commit": "8e6c8d93c3d92eee1d65c82d5104256e0ffc033e",
+      "commit": "7ba5073775861fe8ceeb18ba4938793f6a56c484",
       "url": "https://github.com/chrissotraidis/SDL.git"
     },
     {
