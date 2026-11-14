@@ -17,12 +17,12 @@ collect or receive your Apple credentials.
 
 ## Install
 
-1. Download `CaesarPad-0.1.0-preview.1-unsigned.ipa` and its `.sha256` file from
-   [Preview 1](https://github.com/chrissotraidis/caesarpad/releases/tag/v0.1.0-preview.1).
+1. Download `CaesarPad-0.1.0-preview.2-unsigned.ipa` and its `.sha256` file from
+   [Preview 2](https://github.com/chrissotraidis/caesarpad/releases/tag/v0.1.0-preview.2).
 2. Verify the download on macOS:
 
    ```sh
-   shasum -a 256 -c CaesarPad-0.1.0-preview.1-unsigned.ipa.sha256
+   shasum -a 256 -c CaesarPad-0.1.0-preview.2-unsigned.ipa.sha256
    ```
 
 3. Import the IPA into your sideloading tool and sign it with your own Apple ID.

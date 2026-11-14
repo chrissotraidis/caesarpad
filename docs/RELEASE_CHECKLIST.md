@@ -21,8 +21,8 @@ scripts/package-ios.sh
 ```
 
 - [ ] The device build reports `iPhoneOS`, arm64, bundle identifier
-      `com.chrissotraidis.caesarpad`, version `0.1.0`, and build `1`.
-- [ ] The package is named `CaesarPad-0.1.0-preview.1-unsigned.ipa`.
+      `com.chrissotraidis.caesarpad`, version `0.1.0`, and build `2`.
+- [ ] The package is named `CaesarPad-0.1.0-preview.2-unsigned.ipa`.
 - [ ] `unzip -t` passes and the checksum file matches.
 - [ ] The IPA contains `Payload/CaesarPad.app/Legal/`.
 - [ ] The IPA contains no `_CodeSignature`, `embedded.mobileprovision`, Caesar III

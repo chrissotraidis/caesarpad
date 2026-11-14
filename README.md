@@ -6,7 +6,7 @@
 
 <p align="center">
   <strong>Caesar III on an iPad-shaped canvas, powered by Augustus.</strong><br>
-  0.1.0 Preview 1 · Augustus only · Simulator and local iPad verified
+  0.1.0 Preview 2 · Augustus only · Simulator and local iPad verified
 </p>
 
 <p align="center">
@@ -30,7 +30,7 @@ This repository contains the mobile integration and build scripts. It does **not
 Caesar III or any of its game data; you supply your own legally purchased files locally.
 
 > [!IMPORTANT]
-> [**Preview 1 is available**](https://github.com/chrissotraidis/caesarpad/releases/tag/v0.1.0-preview.1)
+> [**Preview 2 is available**](https://github.com/chrissotraidis/caesarpad/releases/tag/v0.1.0-preview.2)
 > as an unsigned, re-signable IPA from source `07a8d38`. This source-maintenance branch
 > does not publish a new binary. No TestFlight, App Store listing, or AltStore source is announced.
 
@@ -51,7 +51,7 @@ Caesar III or any of its game data; you supply your own legally purchased files 
 |---|---|---|
 | iPad Simulator | **Verified** | Supply your own Caesar III data and use the automated setup below. |
 | Local iPad build | **Verified for development** | Build and sign locally with your Apple development team; the public IPA requires your own signing credentials. |
-| Unsigned `.ipa` | **Preview 1 published** | Download [Preview 1](https://github.com/chrissotraidis/caesarpad/releases/tag/v0.1.0-preview.1) and follow the [installation guide](docs/INSTALL_IPA.md). |
+| Unsigned `.ipa` | **Preview 2 published** | Download [Preview 2](https://github.com/chrissotraidis/caesarpad/releases/tag/v0.1.0-preview.2) and follow the [installation guide](docs/INSTALL_IPA.md). |
 | App Store / TestFlight | **Not announced** | No listing or public TestFlight currently exists. |
 
 ## What works today
