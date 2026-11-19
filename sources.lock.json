@@ -3,7 +3,7 @@
   "git": [
     {
       "path": "engines/augustus",
-      "commit": "3e26be58ea4b073d8e8d64915c3bbd283be587e3",
+      "commit": "5be4e3f55ada5cf7e945cf4eeba823b334b33d87",
       "url": "https://github.com/chrissotraidis/augustus.git"
     },
     {
